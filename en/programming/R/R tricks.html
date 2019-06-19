@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>R tricks</title>
+    <link rel="stylesheet" href="../../../css/style.css"/>
+    <script type="text/javascript" src="../../../js/latexit.js"></script>
+    <script type="text/javascript">
+    LatexIT.add('p',true);
+    </script>
+</head>
+<body>
+<h2>R tips and tricks:</h2>
+<ul>
+    <li> Clear the environment/old data when re-analyze the data.
+        Moreover, if you are about to work with a big data set, clearing the environment might help R run faster in its impending sessions.
+
+  <li>Use R cheat sheet: There is no need to remember a bunch of commands.
+    You can get access R cheat sheet directly from RStudio by the option "Help >> Cheatsheet".
+
+<li>Use understandable notations: it’s might be easier for other people to read and for you to re-read your code if you use notations that is close to the
+
+    <p>Ex: If I have to compute $\mathbf{E}(ln(Z))$ where Z is a random variable,
+        then, in R, I would prefer using notation $ElnZ$ instead of some $u,v$, so that I
+        immediately know what is that for without having to read any further comment.
+</p>
+
+ <li>Write comments so that you know what you did if you have to reread in the future.
+
+    <hr color = "#F333FF" width="400px">
+    <li> Learn from source code:
+     to read source code in R, type " the name" (THE NAME ONLY) of the function. For example:
+<pre>
+    > ks.test
+function (x, y, ..., alternative = c("two.sided", "less", "greater"),
+    exact = NULL)
+{
+    alternative <- match.arg(alternative)
+    DNAME <- deparse(substitute(x))....
+</pre>
+
+Some other ways are to type:
+<pre>
+    View(ks.test)
+    functionBody(ks.test)
+</pre>
+
+</li>
+<hr color = "#F333FF" width="400px">
+<li>Use vectors and already defined functions instead of loops
+For example (Example from R help)
+
+<pre>
+    ## Compute row and column sums for a matrix:
+
+x <- cbind(x1 = 3, x2 = c(4:1, 2:5))
+
+dimnames(x)[[1]] <- letters[1:8]
+
+apply(x, 2, mean, trim = .2)
+
+col.sums <- apply(x, 2, sum)
+
+row.sums <- apply(x, 1, sum)
+</pre>
+
+ Fundamental functions you should know are apply, lapply, etc.
+
+<p>Ex: I have values: $r_1,…, r_n$, and I want to generate numbers $W_i \sim \chi_2^2/{r_i}, i=1,…,n$ then instead of using a long loop, I’m just gonna use:
+</p>
+<pre>
+    > r = 1:5
+
+> w = lapply(r,function(u){return(rchisq(1,2*u-2)/2)})
+
+> w = unlist(w)
+
+> w
+
+[1] 0.0000000 0.6211988 0.7875775 2.8056619 2.8979872
+</pre>
+
+
+This is just a simple example, but you will find it very useful in more complicated cases.
+<li> Note that if we have two vector
+
+<pre>
+    > u
+
+[1] 5 6 7 8 9
+
+> v
+
+[1] 1 2 3 4 5
+</pre>
+
+then u*v would return pairwise product, and u %*% v would return dot product of two vectors;
+
+<pre>> u * v
+
+[1] 5 12 21 32 45
+
+> u %*% v
+
+[,1] [1,] 115
+</pre>
+
+
+This is simple but can be really useful sometimes.
+    <hr color = "# F333FF" width="400px">
+
+<li> Write reproducible codes
+
+For example, if you have this problem:
+
+Giambra and Quilter (1989) performed a study to investigate gender and age difference in
+    ability to sustain attention when given Mackworth’s clock-test. This clock is metal with
+    a plain white face and a black pointer that moves around the face in 100 discrete steps of
+    368 each. During the test period, the pointer made 23 double jumps, defined as moving twice
+    the normal distance or 7.28 in the same time period, at random and irregular intervals.
+    Subjects were told that double jumps would occur and asked to signal their recognition of
+    occurrence by pressing a button. Scores were the number of correct recognitions of the
+    double jumps. The scores below are for 10 men aged 18–29 and 10 men aged 50–59. Determine
+    whether the median number of correct scores is larger for young men than for older men.
+
+<pre>
+    Age 18–29: 11 13 15 15 17 19 20 21 21 22
+
+    Age 50–59: 8 9 10 11 12 13 5 17 19 23
+</pre>
+
+and I want to use the median test for this problem. Then, instead of writing:
+<pre>
+
+young = c(11,13,15,15,17,19,20,21,21,22)
+
+old = c(8,9,10,11,12,13,5,17,19,23)
+
+m = length(young); n = length(old); N = m+n
+
+z = c(young, old); z_sorted = sort(z)
+
+med = (z[N/2]+z[N/2+1])/2
+
+U = sum(young<med)
+
+U_plus_V = sum(z<med)
+
+pval = phyper(U,m,n,U_plus_V)
+
+> pval
+
+[1] 0.03488926
+
+</pre>
+I would write a function so that I can reuse in the future
+
+ <pre>
+      med.test <- function(x,y){
+
+m = length(x), n= length(y); N=m+nz= c(x,y);
+
+z_sorted = sort(z)med = (z[N/2]+z[N/2+1])/2
+
+U = sum(x < med) U_plus_V = sum(z < med)
+
+pval = phyper(U,m,n,U_plus_V)
+
+return(pval)
+
+}
+
+med.test(young, old)
+ </pre>
+
+
+
+</ul>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm mật độ và đồ thị tần số</title>
+
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script type="text/javascript" src="../../js/latexit.js"></script>
+    <script type="text/javascript">
+    LatexIT.add('p',true);
+    </script>
+
+</head>
+<body>
+   <h2 id="hàm mật độ">hàm mật độ</h2>
+<p>Nếu $X$ là một biến ngẫu nhiên giá trị thực được định nghĩa trên không gian mẫu $\Omega$,
+    thì biến cố $\{\omega|u < X(\omega)\le v\}$
+    có thể được viết đơn giản là,$\{u< X \le v\}$. Hôm nay chúng ta sẽ nói về biến liên tục. </p>
+
+    Mai tranh thủ khoe kiến thức vật lý:</br>
+ <p>- Nếu trong vật lý có mật độ hạt đo lường số hạt trên mỗi đơn vị thể tích, mật độ năng lượng đo lường năng lượng trên mỗi đơn vị thể tích,
+    mật độ điện tích là điện tích trên mỗi đơn vị thể tích,... thì chúng ta cũng có "hàm mật độ xác suất" (Probability density function,
+    viết tắt là PDF) giúp chúng ta biết đo lường xác suất một biến ngẫu nhiên giao động trong mỗi biến cố.
+    Khả năng một thứ xảy ra thì luôn không âm nên một điều cũng dễ hiểu nhưng dễ quên với nhiều người trong đó có anh là
+    <font color="#00bfff">"hàm mật độ xác suất luôn có giá trị không âm"</font>.  <font color="#ff1493">
+         Nếu một phân bố xác suất có mật độ
+        $f(x)$, thì về mặt trực quan, khoảng vi phân (vô cùng bé) $[x, x + dx]$ có xác suất bằng $f(x) dx$.</font></p>
+
+ <p>Định nghĩa một cách chính thức thì một biến ngẫu nhiên $X$ có hàm mật độ $f(x)$ nếu $f:\Omega\rightarrow R$ là một hàm
+    khả tích không âm sao cho xác suất của khoảng $P(X\in [a, b])= P \left[a\leq X\leq b\right]=\int _{a}^{b}f(x)\,dx$ với hai số bất kỳ a và b.
+    Chú ý rằng xác suất luôn nằm trong khoảng $[0,1]$. Như vậy, ta luôn có $ \int _{\Omega} \,f(x)\,dx=1$</p>
+
+
+<p>   <font color="#ff8c00">Chú ý rằng, đối với phân phối liên tục thì $P(X< a) = P(X\le a)$.
+   Dù sao, 2 cái cũng là cùng một phần diện tích.  Do đó,
+    $P \left[a\leq X\leq b\right]= F_X(b)-F_X(a)  \forall a\le b$<br>
+    Tuy nhiên, trong ví dụ lần trước về con mèo nhà anh, chúng ta thấy  rằng điều này không áp dụng
+    cho biến ngẫu nhiên rời rạc. Trong ví dụ đó thì $P(2\le X\le 3)= F_X(3)-F_X(1)$</font>
+   </p>
+<hr color = "#F333FF" width="400px">
+
+   Đồ thị tần số/tần suất
+
+Từ số liệu này, tôi có được đồ thị tần số như sau:
+
+<p>Tần số tương đối = tần số/n. Trong đó $n$ là tổng số quan sát
+</p>
+
+Nếu ta có tần số là số lần một giá trị xuất hiện trong mẫu thì ta cũng thường quan
+   tâm đến tần suất = số lần một giá trị xuất hiện trong mẫu chia cho cỡ mẫu. Nếu
+   anh là người chuyên nghiệp thì anh sẽ quan tâm tới tần suất, tỉ lệ hơn.
+   Chuyện này cũng dễ hiểu thôi! Người ta hẹn hò 5 lần/tuần là nhiều nhưng so với anh
+   thì không là gì! Quảng cáo là
+   mì khoai lang không sợ nóng nhưng thực ra trong thành phần gói mì ghi chỉ có vài gam
+   khoai trong 1 kg bột mì.<br>
+
+   Nếu chúng ta có đồ thị tần số thì chúng ta cũng có đồ thị tần suất.
+Đồ thị tần suất cho ta biết khả năng biến ngẫu nhiên nhận giá trị này so với
+   những giá trị khác trong dữ liệu. Đối với biến ngẫu nhiên liên tục, ở trên đồ thị
+   tần suất người ta thường vẽ một đường cong, gọi là đường mật độ (chính xác hơn thì đây là đường
+   cong để xấp xỉ đường mật độ).
+ <i> Chúng ta không vẽ đường mật độ (density function) trên đồ thị
+   tần số mà vẽ trên đồ thị tần suất.
+</i>
+Ví dụ:
+
+Đồ thị không bắt đầu từ 0 nhiều khi rất dễ gây nhầm lẫn. Đôi khi điều này khiến bàn dân thiên hạ
+   phấn khích. Chẳng hạn như có bài báo đăng đồ thị về số phù thủy đến Lahey du lịch như sau,<br>
+   <img src="img/num_visit.jpeg" class="center"><br>
+   Bài báo này khiến ai đọc cũng hài lòng vì tưởng Lahey bắt khách lắm,
+   nhưng nếu nhìn kỹ thì lượng người đến mỗi năm chỉ tăng thêm 100!!! <br>
+
+   Tuy nhiên, đôi khi cũng có một số người cố tình tạo đồ thị dễ hiểu nhầm để làm lợi cho mình.
+   Chẳng hạn, CEO của một công ty đưa ra đồ thị này 
+   <img src="img/sale_cutted.png" class="center"><br>
+   và tuyên bố số lượng hàng bán được dưới thời anh ta là CEO là rất cao
+   Nhưng đây là đồ thị khi không bị cắt mất một đoạn
+   <img src="img/sale.png" class="center">
+   
+
+đường mật độ thể hiện sự phân bố xác suất của một biến ngẫu nhiên.
+   Diện tích của phần dưới đường mật độ luôn bằng 1.
+   Diện tích dưới đường cong nằm giữa hai giá trị $a$ và $b$
+ là xác suất mà một quan trắc ngẫu nhiên sẽ có giá trị nằm giữa $a$ và $b$.
+
+   <br>
+   Code trong R: chú ý <i>chúng ta không vẽ đường mật độ (density function) trên đồ thị
+   tần số mà vẽ trên đồ thị tần suất.</i>
+   <pre>
+        u = rnorm(100, 3,1) # tạo mẫu ngẫu nhiên
+        # vẽ đồ thị tần số:
+        hist(u,main = "bán kính cây", xlab="cm")
+        # vẽ đồ thị tần suất:
+        hist(u, probability = TRUE,main = "bán kính cây")
+        # vẽ đường mật độ:
+        lines(density(u))
+</pre>
+</body>
+</html>

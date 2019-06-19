@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4cf67aca-df15-438f-bc78-46358e50d65b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="tinhvan" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2 sample problem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>header</find>
+      <find>ta sẽ</find>
+      <find>box</find>
+      <find>color: var(--colab-primary-text-color);</find>
+      <find>h2</find>
+      <find>\cdot</find>
+      <find>{Cov}</find>
+      <find>$$</find>
+      <find>H0</find>
+      <find>h1</find>
+      <find>conta</find>
+      <find>footer</find>
+      <find>&lt;div class=&quot;MsoNormal&quot;&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;/br&gt;</replace>
+      <replace>$</replace>
+      <replace>.</replace>
+      <replace>Cov</replace>
+      <replace>$H_0$</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mai day thong ke/1b_quantiles.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/bernoulli.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/2e.bernoulli.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/2f.density_histogram.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/1d.stratified sampling.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/3a.expectation.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/3b.sd_variance.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/3c.Covariance_correlation.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/3d. independent var.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/4b. normal distribution.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/4c. CI for the mean_t distribution.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/4d. CLT.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/whole.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/5a. MLEs.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/4a.LLN.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/5c. evolution theory.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/5b. milk tea testing.html" />
+        <option value="$PROJECT_DIR$/mai day thong ke/index.html" />
+        <option value="$PROJECT_DIR$/programming/R/things we should be careful about when using R.html" />
+        <option value="$PROJECT_DIR$/en/ML and stat/data science resource.html" />
+        <option value="$PROJECT_DIR$/en/index_en.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/1b_quantiles.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/4d. CLT.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/5a. MLEs.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/sample_mean_parameters.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/sur.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/whole.html" />
+        <option value="$PROJECT_DIR$/en/programming/R/things we should be careful about when using R.html" />
+        <option value="$PROJECT_DIR$/en/programming/R/R tricks.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/3b.sd_variance.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/3d. independent var.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/3c.Covariance_correlation.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/4b. normal distribution.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/2d''.Baltimore parable.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/1d.stratified sampling.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/4a.LLN.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/2f.density_histogram.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/5c. evolution theory.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/2e.bernoulli.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/Poisson distribution.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/5b. milk tea testing.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/2 sample problem.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/4c. CI for the mean_t distribution.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/4a. confident interval.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/index.html" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/3a.expectation.html" />
+        <option value="$PROJECT_DIR$/vnm/Na Na di day/word detective.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/subscribe.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/vnm/goc du hoc/Tai lieu on GRE.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="863" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="ML and stat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="programming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="R" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="vnm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="vnm" type="462c0819:PsiDirectoryNode" />
+              <item name="cuoc song o My" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="vnm" type="462c0819:PsiDirectoryNode" />
+              <item name="goc du hoc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mai day thong ke" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\tinhvan\mai day thong ke" />
+      <recent name="D:\PycharmProjects\tinhvan\img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cf67aca-df15-438f-bc78-46358e50d65b" name="Default Changelist" comment="" />
+      <created>1558833267121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558833267121</updated>
+      <workItem from="1558833281139" duration="298000" />
+      <workItem from="1558967615018" duration="1735000" />
+      <workItem from="1558980160933" duration="2638000" />
+      <workItem from="1559144931630" duration="2512000" />
+      <workItem from="1559438355557" duration="705000" />
+      <workItem from="1559499052602" duration="7198000" />
+      <workItem from="1559846056003" duration="14293000" />
+      <workItem from="1560002071657" duration="25031000" />
+      <workItem from="1560118296014" duration="1680000" />
+      <workItem from="1560200783511" duration="3357000" />
+      <workItem from="1560362297307" duration="8560000" />
+      <workItem from="1560458546615" duration="1154000" />
+      <workItem from="1560562351271" duration="1024000" />
+      <workItem from="1560623856819" duration="8887000" />
+      <workItem from="1560719588386" duration="9597000" />
+      <workItem from="1560812726925" duration="6381000" />
+      <workItem from="1560870126977" duration="4955000" />
+      <workItem from="1560953462443" duration="12437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="112442000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21558245" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.19742814" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32829046" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/1d.stratified sampling.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/sample_mean_parameters.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/2f.density_histogram.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/3b.sd_variance.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/3d. independent var.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/4b. normal distribution.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/3a.expectation.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/3c.Covariance_correlation.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/4c. CI for the mean_t distribution.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/4a.LLN.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/4d. CLT.html" />
+    <entry file="file://$PROJECT_DIR$/programming/R/things we should be careful about when using R.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/whole.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/5c. evolution theory.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/5b. milk tea testing.html" />
+    <entry file="file://$PROJECT_DIR$/en/index_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/5a. MLEs.html" />
+    <entry file="file://$PROJECT_DIR$/egl/programming/R/R tricks.html" />
+    <entry file="file://$PROJECT_DIR$/mai day thong ke/index.html" />
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/1b_quantiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/whole.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/sur.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/sample_mean_parameters.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/5a. MLEs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4d. CLT.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/en/programming/R/things we should be careful about when using R.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/en/programming/R/R tricks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3d. independent var.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4b. normal distribution.html" />
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3b.sd_variance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2d''.Baltimore parable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/1d.stratified sampling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4a.LLN.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/5c. evolution theory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2f.density_histogram.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3c.Covariance_correlation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/Poisson distribution.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4c. CI for the mean_t distribution.html" />
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4a. confident interval.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2e.bernoulli.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3a.expectation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="26" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/5b. milk tea testing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/Na Na di day/word detective.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/csscrashcourse/mywebsite/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="112" column="8" lean-forward="true" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/en/ML and stat/data science resource.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="e#162#185#0" expanded="true" />
+            <element signature="e#186#192#0" expanded="true" />
+            <element signature="e#682#688#0" expanded="true" />
+            <element signature="e#755#780#0" expanded="true" />
+            <element signature="e#798#823#0" expanded="true" />
+            <element signature="e#842#867#0" expanded="true" />
+            <element signature="e#887#912#0" expanded="true" />
+            <element signature="e#944#950#0" expanded="true" />
+            <element signature="e#1309#1315#0" expanded="true" />
+            <element signature="e#2722#2728#0" expanded="true" />
+            <element signature="e#3373#3379#0" expanded="true" />
+            <element signature="e#3479#3485#0" expanded="true" />
+            <element signature="e#4179#4306#0" expanded="true" />
+            <element signature="e#4337#4478#0" expanded="true" />
+            <element signature="e#4489#4534#0" expanded="true" />
+            <element signature="e#4720#4765#0" expanded="true" />
+            <element signature="e#4925#5052#0" expanded="true" />
+            <element signature="e#5086#5227#0" expanded="true" />
+            <element signature="e#5363#5369#0" expanded="true" />
+            <element signature="e#5514#5655#0" expanded="true" />
+            <element signature="e#5949#6090#0" expanded="true" />
+            <element signature="e#6101#6146#0" expanded="true" />
+            <element signature="e#6279#6285#0" expanded="true" />
+            <element signature="e#6285#6291#0" expanded="true" />
+            <element signature="e#6437#6482#0" expanded="true" />
+            <element signature="e#6637#6643#1" expanded="true" />
+            <element signature="e#6665#6710#0" expanded="true" />
+            <element signature="e#6859#6865#0" expanded="true" />
+            <element signature="e#6906#6912#0" expanded="true" />
+            <element signature="e#6912#6918#0" expanded="true" />
+            <element signature="e#7074#7215#0" expanded="true" />
+            <element signature="e#7228#7369#0" expanded="true" />
+            <element signature="e#7573#7680#0" expanded="true" />
+            <element signature="e#7762#7903#0" expanded="true" />
+            <element signature="e#7926#7932#0" expanded="true" />
+            <element signature="e#8080#8086#0" expanded="true" />
+            <element signature="e#8190#8297#0" expanded="true" />
+            <element signature="e#8361#8502#0" expanded="true" />
+            <element signature="e#8513#8558#0" expanded="true" />
+            <element signature="e#8662#8668#0" expanded="true" />
+            <element signature="e#8840#8885#0" expanded="true" />
+            <element signature="e#8937#8943#0" expanded="true" />
+            <element signature="e#9098#9143#0" expanded="true" />
+            <element signature="e#9354#9461#0" expanded="true" />
+            <element signature="e#9532#9673#0" expanded="true" />
+            <element signature="e#9684#9729#0" expanded="true" />
+            <element signature="e#9862#9868#1" expanded="true" />
+            <element signature="e#9890#9935#0" expanded="true" />
+            <element signature="e#10069#10075#0" expanded="true" />
+            <element signature="e#10097#10142#0" expanded="true" />
+            <element signature="e#10155#10161#0" expanded="true" />
+            <element signature="e#10322#10429#0" expanded="true" />
+            <element signature="e#10457#10598#0" expanded="true" />
+            <element signature="e#10609#10654#0" expanded="true" />
+            <element signature="e#10833#10839#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subscribe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/goc du hoc/Tai lieu on GRE.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="e#1590#1596#0" expanded="true" />
+            <element signature="e#1705#1711#0" expanded="true" />
+            <element signature="e#1865#1871#0" expanded="true" />
+            <element signature="e#2924#2930#0" expanded="true" />
+            <element signature="e#3407#3413#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4949#4955#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#span#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#span#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#div#0;n#span#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#6093#6099#0" expanded="true" />
+            <element signature="e#6154#6160#0" expanded="true" />
+            <element signature="e#6229#6235#0" expanded="true" />
+            <element signature="e#6302#6308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2 sample problem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

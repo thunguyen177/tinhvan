@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expectation</title>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script type="text/javascript" src="../../js/latexit.js"></script>
+    <script type="text/javascript">
+    LatexIT.add('p',true);
+    </script>
+</head>
+<body>
+<h2>Kỳ vọng</h2>
+
+<p>
+    Trong khi chờ Parker về, Mai không biết làm gì nên lôi đồng tiền cổ ra mân mê
+    rồi thảy xem nó có cân bằng hay không.
+    Một lúc sau, Parker đi vào, thấy Mai vẫn đang thảy đồng xu thì liền kiếm chuyện để
+    câu giờ, đỡ phải học:<br>
+    - Sao người ta luôn cho rằng là xác suất nhận được mặt sấp và
+    mặt ngửa khi thảy đồng xu là $1/2$ nhỉ? Tôi thấy hai mặt của một đồng xu thường đâu có
+    giống nhau đâu?<br>
+    Mai chỉnh lại: <br>
+    - Thì người ta đâu có giả thuyết vậy đâu! Họ giả thuyết là <font color="#ff8c00">xác suất nhận được mặt sấp và
+    mặt ngửa khi thảy <b>một đồng xu cân bằng </b> là $1/2!$ </font><br>
+    Parker đơ một tẹo, xong rồi lại lặn ra được thứ khác để hỏi:<br>
+    - Vậy đồng xu trong tay cô thì sao? Cân bằng không? Hay là mình thảy để
+ước lượng thử đi!<br>
+    Mai thừa biết Parker muốn câu giờ. Nó lườm: <br>
+    - Tôi chờ anh nãy giờ, thảy được 50 lần rồi! Ước lượng được là xác suất mặt ngửa là 0.7!<br>
+
+
+    Nếu $X$ là một biến ngẫu nhiên rời rạc với các giá trị $x_1,x_2,...$  và các xác suất tương ứng
+là $p_1,p_2,...$ với tổng bằng 1, thì$ \mathrm {E} [X]$ có thể được tính bằng tổng của chuỗi
+<br>
+<br>$ \mathrm {E} [X]=\sum _{i}p_{i}x_{i}\,$
+<br>cũng như trong ví dụ đánh bạc nêu trên.
+<br>
+<br>Nếu phân bố xác suất của $X$ chấp nhận một hàm mật độ xác suất $f(x)$, thì giá trị kỳ vọng có thể được tính như sau
+<br>
+<br>$ \mathrm {E} [X]=\int _{-\infty }^{\infty }xf(x)\,\mathrm {d} x.$
+<br>
+<br>Giá trị kỳ vọng của một hàm g(x) tùy ý của x, với hàm mật độ xác suất f(x) có công thức
+<br>
+<br>$ \mathrm {E} [g(X)]=\int _{-\infty }^{\infty }g(x)f(x)\,\mathrm {d} x.$
+<br>
+<br>risk and betting
+<br>
+<br>Measure of center:
+<br>
+<br>The sample mean of a set of measurement $x_1,x_2,…,x_n$, denoted by $\bar{x}$, is simply the sum of all the measurements in the sample divided by n, that is $\bar{x}=\frac{x_1+x_2+...+x_n}{n}$
+<br>
+<br>an unbiased estimate of the population mean. Intuitively, it just means, if we collect more and more data randomly, the sample mean that we got from the collected sample will come closer and closer to the population mean.
+<br>
+
+<br>Khi chúng ta lặp đi lặp lại thí nghiệm nhiều lần thì trung bình sẽ tiến đến kỳ vọng.
+<br>
+<br>Ví dụ như ở trần gian,
+<br>
+<br>Normal distribution has only two parameters, the mean and the standard deviation. If we know these two parameters, then everything else is known. We estimate the mean by the sample mean, and the standard deviation by sample standard deviation. Fisher called this parameters “sufficient”. The contain all the information in the data. There’s no need to keep the data once we have these two statistics. If we have enough data to allow reasonable estimates of these parameters then no more measurement are needed. For example, to estimate two parameters of a normal distribution within two significant figures, we only need to collect about fifty measurements.
+<br>
+<br>$ \mathrm {E} [aX+bY]=a\mathrm {E} [X]+b\mathrm {E} [Y]\,$
+<br>với hai biến ngẫu nhiên $X$ và $Y$ bất kỳ (được định nghĩa trên cùng một không gian xác suất) và hai số thực bất kỳ $a,b$.
+<br>
+<br>$ \mathrm {E} [X]=\mathrm {E} \left(\mathrm {E} [X|Y]\right).$
+<br>
+<br>$ |\mathrm {E} [X]|\leq \mathrm {E} [|X|]$
+</p>
+<br>
+<br>
+</body>
+</html>

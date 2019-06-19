@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 sample problems</title>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script type="text/javascript" src="../../js/latexit.js"></script>
+    <script type="text/javascript">
+    LatexIT.add('p',true);
+    </script>
+</head>
+<body>
+<p>
+    Giả sử tôi có hai mẫu <br>
+    $X_1,..., X_m\;\;\underset{\sim}{i.i.d}\;\;N(\mu_1,\sigma ^2) $ <br>
+    và <br>
+    $Y_1,...,Y_m \;\underset{\sim}{i.i.d} \;\;N(\mu_2,\sigma^2)$.<br>
+    thì <br>
+    $\bar{X}=\frac{\sum_iX_i}{m}\sim \;\;N\left(\mu_1,\frac{\sigma ^2}{m}\right)$
+    <br>độc lập với<br>
+    $\bar{Y}=\frac{\sum_iY_i}{n}\sim \;\;N\left(\mu_2,\frac{\sigma ^2}{n}\right)$.<br>
+    Áp dụng tính chất trong hộp màu hồng lần nữa ta được:<br>
+     $\bar{X}-\bar{Y}\sim \;\;N\left(\mu_1-\mu_2,\frac{\sigma ^2}{m}+\frac{\sigma ^2}{n}\right)$
+    <br>
+Ta viết lại được thành
+    <br>
+    $\bar{X}-\bar{Y}\sim \;\;N\left(\mu_1-\mu_2,\sigma ^2\left(\frac{1}{m}+\frac{1}{n}\right)\right)$
+
+    Như vậy, ta suy ra được <br>
+    $\frac{\bar{X}-\bar{Y}-(\mu_1-\mu_2)}{\sigma ^2\left(\frac{1}{m}+\frac{1}{n}\right)}\sim N(0,1)$
+<br>
+    $\Rightarrow \Phi_{-\alpha/2}\le\frac{\bar{X}-\bar{Y}-(\mu_1-\mu_2)}{\sigma ^2\left(\frac{1}{m}+\frac{1}{n}\right)}\le\Phi_{\alpha/2}$
+    <br>
+    $\Rightarrow \bar{X}-\bar{Y}- \Phi_{\alpha/2}\sigma ^2\left(\frac{1}{m}+\frac{1}{n}\right)\le \mu_1-\mu_2\le \bar{X}-\bar{Y}+\Phi_{\alpha/2}\sigma^2\left(\frac{1}{m}+\frac{1}{n}\right)$
+<br>
+    Do đó, khoảng tin cậy $1-\alpha$ cho $\mu_1-\mu_2$ là
+    <br>
+
+    nếu muốn kiểm định giả thuyết
+</p>
+</body>
+</html>

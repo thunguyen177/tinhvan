@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bernoulli distribution </title>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script type="text/javascript" src="../../js/latexit.js"></script>
+    <script type="text/javascript">
+    LatexIT.add('p',true);
+    </script>
+
+</head>
+<body>
+<br />
+
+Mai đố Parker:
+
+<br />
+
+- Giả sử mèo nhà anh chuẩn bị sinh bốn con thì liệu khả năng
+sinh hai đực hai cái là cao nhất hay ba đực một cái, hay ba cái một đực?
+
+<br />
+
+Parker đoán mò:
+
+<br />
+
+- Chắc không phải hai đực hai cái!
+
+<br />
+
+- Tại sao?
+
+<br />
+
+- Đực và cái nghe có vẻ có vai trò ngang nhau nhưng nếu là
+hai đực hai cái thì chắc cô đã không đố!
+
+<br />
+
+Mai cười:
+
+<br />
+
+- Chắc không?
+
+<br />
+
+Nhìn mặt Mai lúc này, Parker lại nghĩ lại "Có khi nào
+cô ta tương kế tựu kế để lỡm mình không? Có khi nào hai đực hai cái không nhỉ?".
+Trước khi Parker kịp nói gì, Mai châm chọc:
+
+<br />
+
+- Đoán mò mà cũng nói! Sao anh không đặt bút xuống tính xem
+xác suất của cái nào cao hơn?
+
+<br />
+
+Parker bắt đầu viết:
+
+<br />
+
+- Có bốn con thì thứ tự giới tính có thể xảy ra là đực đực đực
+đực, đực đực đực cái, đực đực cái cái, đực đực cái đực,...
+
+<br />
+
+Chưa gì Mai đã càu nhàu:
+
+<br />
+
+- Đực đực cái cái như thế thì đến khi nào mới xong? Sao anh
+không kí hiệu con đực là 1, con cái là 0, như vậy có phải nhanh hơn không?
+
+<br />
+
+- Ừ nhỉ! Như vậy thì những khả năng có thể xảy ra là:
+
+<p>$1111; 0000$<br />
+<br />
+$1110; 1101; 1011; 0111$ (một cái 3 đực)<br />
+<br />
+$1100; 0011; 1001; 0101; 1010; 0110$ (2 cái 2 đực)<br />
+<br />
+$0001; 0010; 0100; 1000$ (3 cái 1 đực)</p>
+
+
+
+<p> Như vậy xác suất 3 đực một cái hoặc 3 cái một đực là
+$\frac{4}{16}+\frac{4}{16}=\frac{1}{2}$ nhưng xác suất 2 đực 2 cái là
+$\frac{6}{16}=\frac{3}{8}$. Như vậy khả năng 3 đực một cái hoặc 3 cái một đực
+cao hơn so với 2 đực 2 cái.</p>
+
+<br />
+
+Mai không nói gì, chỉ đằng hắng, kiểu đồng ý nhưng không muốn
+nói là đồng ý. Xong cô nàng nói:
+
+<br />
+
+<p> - Trong thực tế có rất nhiều biến ngẫu nhiên nhận hai giá trị
+kiểu này. Chẳng hạn như thi đấu có thể thắng hoặc thua, trăng lên hay không lên
+vào buổi tối,...Khi đó, ta mô hình nó bằng mô hình phân phối Bernoulli. Để hiểu
+điều này, trước tiên, anh cần hiểu về phân phối xác suất. Đối với biến ngẫu
+nhiên rời rạc, người ta quan tâm đến xác suất để biến ngẫu nhiên đó nhận tương ứng
+từng giá trị $ x\in D$, hay $\mathbf {P} (X=x)$. Giả sử $ X:\Omega \to D$. Người
+ta đặt tên cho tương ứng xác suất này là <font color="red">hàm khối xác suất</font> , kí hiệu
+    $ p_{X}(x)=\mathbf {P} (X=x) \forall x\in D$. </p>
+Vì hàm khối xác
+suất cũng là một xác suất, nó phải thỏa mãn
+
+<p>$0\le p_{X}(x)\le 1 \;\forall    x\in D$ và $\sum _{x\in D}{p_{X}}(x)=1$</p>
+
+<p>
+
+Quay lại với mô hình Bernoulli.<span style="color: #00b050;">Phân phối Bernoulli</span>, kí hiệu <span style="color: #00b050;">$\text{Bernoulli}(p)$ </span>là một phân phối xác suất rời
+rạc của biến ngẫu nhiên <font color="blue">chỉ nhận hai giá trị 0 hoặc 1</font> trong
+đó giá trị 1 đạt được với xác suất $p$ (ta thường xem như xác suất thành công)
+và giá trị 0 đạt được với xác suất $q=1-p$ (thường được xem là xác suất
+thất bại). Kí hiệu: $X\sim \text{Bernoulli}(p)$ (X có phân phối $\text{Bernoulli}(p)$) , và ta sẽ có:
+    $\mathbf{P} (X=1)=1-\mathbf{P} (X=0)=1-q=p.$</p>
+
+<br />
+
+<p>Nhưng mèo nhà anh đẻ những bốn con, cứ không phải một con.
+Giới tính của mỗi mèo con có thể được xem như độc lập với nhau. Do đó, ta sử dụng
+<span style="color: red;">mô hình nhị thức (binomial distribution) </span>thay
+cho mô hình Bernoulli. Phân phối nhị thức <span style="color: red;">$Binom(n,p)$</span>có hàm phân phối xác suất
+<br>
+
+$\mathbf{P} (X=k)={n \choose k}p^{k}(1-p)^{n-k}\quad {\mbox{với}}\ k=0,1,2,\dots ,n$
+</p>
+<br />
+
+<p>Trong đó,${n \choose k}=\frac {n!}{k!(n-k)!}$ và $k$ là số lần
+thành công trong $n$ lượt thử.
+
+Công thức trên có thể được hiểu như sau: xác suất xảy ra $k$
+lượt thử thành công là$ p^{k}$ và xác suất xảy ra $(n-k)$ lượt thử không thành
+công là$ (1-p)^{n-k}$. Ngoài ra, vì $k$ lượt thử thành công có thể được phân bố
+bất kỳ trong $n$ lượt thử nên số cách phân bố $k$ lượt thử thành công trong $n$
+lượt thử liên tiếp là $\binom {n}{k}$.</p>
+
+<br />
+
+<p>Để hiểu ý nghĩa của phân phối nhị
+thức, ta có thể liên tưởng đến việc thảy một đồng xu $n$, tức là thực hiện một
+phép thử $n$ lần, mỗi lần thử là độc lập với nhau. Xác suất nhận được mặt ngửa
+trong mỗi lần thảy là $p$. Như vậy thì tổng số lần được mặt ngửa trong $n$ lần thảy là
+
+<span style="color: magenta;">$\mathbf{P} (X=k)={n \choose k}p^{k}(1-p)^{n-k}\quad {\mbox{voi}}\ k=0,1,2,\dots ,n$</span></p>
+
+<br />
+
+<p>- Nghe giống như lặp lại mô hình Bernoulli $n$ lần?</p>
+<br />
+
+ <p>-Đúng vậy! Nếu ta có $X_1,...,X_n\sim \text{Bernoulli}(p)$
+thì $\sum_{i=1}^{n}X_i\sim Binom(n,p)$
+</p>
+<br />
+
+Đối với câu đố tôi vừa hỏi anh thì có bao nhiêu lượt thử?
+
+<br />
+
+- 4
+
+<br />
+
+- Như vậy n = 4. Xác suất thành công là bao nhiêu?
+
+<br />
+
+<p>
+    - $p=\frac{1}{2}$ vì khả năng sinh con đực hay con cái là
+như nhau!
+
+<br />
+    - Không hoàn toàn đúng nhưng tạm coi như vậy đi, vì chúng ta
+không xem xét các yếu tô di truyền nên có thể xem như khả năng sinh đực và cái
+là bằng nhau và bằng $\frac{1}{2}$.<br>
+    - Như vậy thì khả năng sinh 2 đực 2 cái có thể được tính trực
+tiếp qua hàm phân phối xác suất:
+
+<br />
+$P(X = 2) = {n\choose k}p^{k}(1-p)^{n-k} = {4 \choose 2}\left(\frac{1}{2} \right )^{2}(1-\frac{1}{2})^{4-2} = \frac{3}{8}$<br />
+
+Xác suất sinh 1 đực 3 cái:
+
+$P(X = 1) = {n \choose k}p^{k}(1-p)^{n-k} = {4 \choose 1}\left(\frac{1}{2} \right )^{1}(1-\frac{1}{2})^{4-1} = \frac{1}{4}$
+<br />
+Xác suất sinh 3 đực 1 cái:
+
+
+<br />
+$P(X = 3) = {n \choose k}p^{k}(1-p)^{n-k} = {4 \choose 3}\left(\frac{1}{2} \right )^{3}(1-\frac{1}{2})^{4-3} =  \frac{1}{4}$<br />
+
+</p>
+
+- Vậy xác suất sinh nhiều nhất 2 đực là:
+<p>$P(X\le 2)=P(X=0)+P(X=1)+P(X=2)=\frac{1}{16}+\frac{3}{8}+\frac{1}{4}?$</p>
+
+- Đúng rồi! Nhưng chúng ta cũng  có thể tính trực tiếp xác suất này bằng cách
+sử dụng <font color="green"><b>hàm phân phối tích lũy (Cumulative distribution function, viết tắt: CDF)</b></font> .
+Với mỗi số thực x, hàm phân phối tích lũy được định nghĩa là
+<font color="green">xác suất mà biến ngẫu nhiên X lấy giá trị nhỏ hơn hay bằng x</font>, tức là:
+
+<div class="math">
+    <p>$F_X(x)=P(X\leq x)$</p>
+</div>
+
+Người ta chứng minh được phân phối nhị thức có hàm phân phối tích lũy là
+<div class="math">
+ <p>$F_X(k)=P(X\leq k)=\sum _{i=0}^k{\binom {n}{i}}p^{i}(1-p)^{n-i}}$</p>
+</div>
+
+Vậy xác suất sinh nhiều nhất 2 đực là:
+<p>$F_X(2)=P(X\leq 2)=\sum _{i=0}^2{\binom {4}{i}}\left(\frac{1}{2} \right )^{i}\left(1-\frac{1}{2} \right )^{4-i}=\frac{5}{8}$</p>
+
+- Nhưng nếu tôi muốn biết xác suất sinh được từ 2 đến 3 con đực thì sao?
+
+<p>- $P(2\le X\le 3)= P(X\le 3)-P(X<2)$ đúng không? Tại vì $\{2\le X\le 3\}$ và $\{X<2\}$ là 2
+biến cố rời nhau, mà điều này có nghĩa là $P(2\le X\le 3)+P(X<2)=P(\{2\le X\le 3\}\cup\{X<2\})=P(X\le 3)$!
+    Như vậy,
+<br>
+$P(2\le X\le 3)= F_X(3)-F_X(1)$
+mà $F_X(1)= P(X=0)+P(X=1)= \frac{1}{16}+\frac{3}{8}=\frac{7}{16}$</p>
+<p>$F_X(3)=\sum _{i=0}^3{\binom {4}{i}}\left(\frac{1}{2} \right )^{i}\left(1-\frac{1}{2} \right )^{4-i}=\frac{15}{16}$</p>
+Do đó,xác suất sinh được từ 2 đến 3 con đực là
+<p> $P(2\le X\le 3)= F_X(3)-F_X(1)=\frac{15}{16}-\frac{7}{16}=\frac{8}{16}=\frac{1}{2}.$</p>
+
+Thấy Mai viết thẳng liên tiếp như không cần dừng, Parker hỏi:<br>
+- Cô đọc bài này trước khi đi dạy hả? <br>
+Mai: <br>
+-Không! Não tôi đâu có chậm như anh! <br>
+<p>Parker: <br>
+    - Xạo! Vậy sao cô tính được
+$\sum _{i=0}^3{\binom {4}{i}}\left(\frac{1}{2} \right )^{i}\left(1-\frac{1}{2} \right )^{4-i}=\frac{15}{16}$
+nhanh như vậy?</p>
+Mai:<br>
+<p>- Tôi đâu có tính! Chả qua $F_X(3)=P(X\le 3)=1-P(X>3)=1-P(X=4)=1-\frac{1}{16}=\frac{15}{16}$,
+nhẩm cho lẹ, tính làm gì?</p>
+Xem tiếp: <a href="2f.density_histogram.html">2f.Hàm mật độ và đồ thị tần số</a>
+</body>
+</html>
