@@ -150,6 +150,13 @@ a:visited{
   list-style: square;
 }
 
+.searchbar{
+	width:auto;
+    text-align: left;
+	/*margin:auto;*/
+	overflow:hidden;
+}
+
 .container{
 	width:auto;
     text-align: left;

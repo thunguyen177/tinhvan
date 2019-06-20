@@ -10,8 +10,55 @@
     </script>
 </head>
 <body>
-<br />
-<br />
+   <header>
+        <div class="container">
+            <h1> Ellie Nguyen </h1>
+        </div>
+    </header>
+
+  <nav id="navbar">
+      <div class="containerblue">
+        <ul>
+          <li><a href="../../index.html"> Home</a> </li>
+          <li> <a href="../../en/ML%20and%20stat/index.html"> Statistical Learning</a> </li>
+          <li> <a href="../../en/programming/index.html">Programming corner</a> </li>
+          <li> <a href="../../en/vnm%20cul_his/index.html"> Vietnamese culture and history</a> </li>
+        </ul>
+      </div>
+      <div class="containerpink">
+        <ul>
+          <li><a href="../../index.html">Trang ch?</a>
+          <li><a href="../../vnm/mai%20day%20thong%20ke/index.html">Mai d?y th?ng kê </a>
+          <li><a href="../../vnm/sinh%20vien%20cao%20hoc/index.html">Sinh viên cao h?c</a> </li>
+          <li><a href="../../vnm/anh%20em%20nha%20Tun/index.html">Anh em nhà Tun</a> </li>
+          <li><a href="../../vnm/Hoang%20tu%20ham%20choi/index.html">Hoàng t? ham choi</a>
+        </ul>
+      </div>
+      <div class="containerlightblue">
+        <ul>
+          <li><a href="../../vnm/Toi%20sang%20tac/index.html">Tôi sáng tác</a> </li>
+          <li><a href="../../vnm/hoc%20tieng%20Anh/index.html">Vui h?c ti?ng Anh</a>
+          <li><a href="../../vnm/goc%20du%20hoc/index.html">Góc du h?c  </a>
+          <li><a href="../../vnm/cuoc%20song%20o%20My/index.html">Cu?c s?ng ? M?</a></li>
+        </ul>
+      </div>
+  </nav>
+    <div class = "searchbar">
+        <script>
+              (function() {
+                var cx = '000342376851758299742:vxnvik3_5yc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+
+
 
 Mai e hèm:
 
@@ -77,7 +124,7 @@ Mai:
 <br />
 
 - Ha…ha…ha! Sao ngốc quá vậy! Khi ta sắp xếp số liệu theo thứ
-tự từ bé đến lớn thì <b style="mso-bidi-font-weight: normal;"><span style="color: red;">trung vị</b><span style="color: red;"> <span style="color: #548235; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-color: #548235; mso-style-textfill-fill-colortransforms: lumm=75000; mso-style-textfill-fill-themecolor: accent6; mso-themecolor: accent6; mso-themeshade: 191;">(trung là ở giữa, vị
+tự từ bé đến lớn thì <b ><span style="color: red;">trung vị</b> (trung là ở giữa, vị
 là vị trí) là điểm chính giữa, chia bộ dữ liệu thành hai phần với kích cỡ bằng
 nhau. Trong đó, một phần có tất cả các giá trị bé hơn hoặc bằng trung vị, một
 phần có tất cả các giá trị lớn hơn hoặc bằng trung vị.
@@ -131,11 +178,11 @@ chính giữa. Do đó, người ta lấy 2 điểm ở giữa cộng lại chia
 
 Nhưng dĩ nhiên, đối với nhiều người, trong đó có cậu thì tìm
 hiểu về median là không đủ hoặc không cần thiết! Do đó, người ta đưa ra khái niệm
-<span style="mso-bidi-font-weight: normal;"><span style="color: red;">tứ phân vị</span> (quantiles). Nếu trung vị chẻ đôi dữ liệu thành 2 phần
+   <font color="red">tứ phân vị (quantiles)</font>. Nếu trung vị chẻ đôi dữ liệu thành 2 phần
 với kích cỡ bằng nhau; một phần có tất cả các giá trị bé hơn hoặc bằng trung vị,
 một phần có tất cả các giá trị lớn hơn hoặc bằng trung vị; thì với mỗi phần nhỏ
 trong hai phần đó, nếu ta tiếp tục chẻ đôi theo kiểu như vậy thì lần lượt sẽ được
-    <font color="red">phân vị thứ nhất</font> (1st quantile) và < style="mso-bidi-font-weight: normal;"><span style="color: red;">phân vị thứ ba(3rd quantile)</span>.
+   <font color="red">phân vị thứ nhất</font> (1st quantile) và<font color="red"> phân vị thứ ba(3rd quantile)</font>.
         Còn trung vị thì còn được gọi là <font color="red">phân vị thứ hai</font> (2nd quantile).
 
 <br />
@@ -220,9 +267,9 @@ Mai:
 - Lương của giám đốc, CEO và một số nhân vật chủ chốt khác
 thường cao đến bất bình thường! Ví dụ, lương kỹ sư thông thường là $\$75 000$,
 nhưng lương của tổng giám đốc có thể là 1 triệu đô! Từ góc nhìn thống kê, ta
-xem mức lương 1 triệu đô đó là <b style="mso-bidi-font-weight: normal;"><span style="color: red;">outlier</b><span style="color: #ffc000;">, tức là một
-quan trắc khác hẳn so với những phần còn lại của dữ liệu,<span style="mso-spacerun: yes;">&nbsp; như thể chúng không thuộc về tổng thể này!
-<span style="color: #00b0f0;">Trong một mẫu dữ liệu như vậy, nếu có outlier thì
+   xem mức lương 1 triệu đô đó là <font color="red">outlier</font>, tức là một
+quan trắc khác hẳn so với những phần còn lại của dữ liệu, như thể chúng không thuộc về tổng thể này!
+Trong một mẫu dữ liệu như vậy, nếu có outlier thì
 chúng ta nên sử dụng trung vị (median) thay cho trung bình mẫu nếu muốn ước lượng
 điểm trung tâm. Nếu cậu xin vào Mico mà vòi mức lương bằng trung bình của
 tất cả của những người trong công ty thì đó là $\$350 000$. Trong khi đó, lương
@@ -236,5 +283,15 @@ Parker:
 
 - Ờ, ha…ha…!
 
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
+<div class="addthis_inline_share_toolbox"></div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+<div class="fb-comments" data-href="https://ellienguyen.style/" data-width="" data-numposts="5"></div>
+    <footer id="main-footer">
+        <hr color = "black" width="400px">
+            		Copyright &copy; 2019 Ellie Nguyen. All rights reserved.
+	</footer>
 </body>
 </html>
