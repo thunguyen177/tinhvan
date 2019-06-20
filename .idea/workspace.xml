@@ -27,11 +27,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2 sample problem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="392">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="42" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -69,6 +87,9 @@
       <replace>Cov</replace>
       <replace>$H_0$</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -114,16 +135,16 @@
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/2e.bernoulli.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/Poisson distribution.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/5b. milk tea testing.html" />
-        <option value="$PROJECT_DIR$/vnm/mai day thong ke/2 sample problem.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/4c. CI for the mean_t distribution.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/4a. confident interval.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/index.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/3a.expectation.html" />
         <option value="$PROJECT_DIR$/vnm/Na Na di day/word detective.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/subscribe.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/vnm/goc du hoc/Tai lieu on GRE.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/vnm/mai day thong ke/2 sample problem.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -133,12 +154,12 @@
     <option name="width" value="863" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,57 +175,34 @@
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
-              <item name="ML and stat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="R" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
               <item name="vnm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
               <item name="vnm" type="462c0819:PsiDirectoryNode" />
-              <item name="cuoc song o My" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="vnm" type="462c0819:PsiDirectoryNode" />
-              <item name="goc du hoc" type="462c0819:PsiDirectoryNode" />
+              <item name="anh em nha Tun" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mai day thong ke" />
@@ -214,7 +212,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -261,12 +259,13 @@
       <workItem from="1560719588386" duration="9597000" />
       <workItem from="1560812726925" duration="6381000" />
       <workItem from="1560870126977" duration="4955000" />
-      <workItem from="1560953462443" duration="12437000" />
+      <workItem from="1560953462443" duration="12439000" />
+      <workItem from="1560987557707" duration="3304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112442000" />
+    <option name="totallyTimeSpent" value="115748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -281,7 +280,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21558245" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21860817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.19742814" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -294,7 +293,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3289689" />
@@ -309,7 +308,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mai day thong ke/1d.stratified sampling.html" />
     <entry file="file://$PROJECT_DIR$/mai day thong ke/sample_mean_parameters.html" />
     <entry file="file://$PROJECT_DIR$/mai day thong ke/2f.density_histogram.html" />
     <entry file="file://$PROJECT_DIR$/mai day thong ke/3b.sd_variance.html" />
@@ -324,13 +322,7 @@
     <entry file="file://$PROJECT_DIR$/mai day thong ke/whole.html" />
     <entry file="file://$PROJECT_DIR$/mai day thong ke/5c. evolution theory.html" />
     <entry file="file://$PROJECT_DIR$/mai day thong ke/5b. milk tea testing.html" />
-    <entry file="file://$PROJECT_DIR$/en/index_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/en/index_en.html" />
     <entry file="file://$PROJECT_DIR$/mai day thong ke/5a. MLEs.html" />
     <entry file="file://$PROJECT_DIR$/egl/programming/R/R tricks.html" />
     <entry file="file://$PROJECT_DIR$/mai day thong ke/index.html" />
@@ -483,31 +475,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vnm/Na Na di day/word detective.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/Na Na di day/word detective.html" />
     <entry file="file://$USER_HOME$/Downloads/csscrashcourse/mywebsite/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -582,13 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subscribe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/subscribe.html" />
     <entry file="file://$PROJECT_DIR$/vnm/goc du hoc/Tai lieu on GRE.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -614,10 +580,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vnm/anh em nha Tun/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2 sample problem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="392">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
         </state>
       </provider>
     </entry>

@@ -8,10 +8,10 @@ body{
 }
 
 
-#main-header{
+/*#main-header{
 	background-color:coral;
 	color:#fff;
-}
+}*/
 
 #navbar{
 	background-color:#333;
@@ -35,19 +35,18 @@ body{
 }
 
 #showcase{
-	background-image:url('../img/star.png');
 	background-position:center right;
 	min-height:300px;
 	margin-bottom:30px;
 	text-align: center;
 }
 
-#showcase h1{
+/*#showcase h1{
 	color:#fff;
 	font-size:50px;
 	line-height: 1.6em;
 	padding-top:30px;
-}
+}*/
 
 #main{
 	float:left;
@@ -68,6 +67,7 @@ body{
 #main-footer{
 	color:black;
 	text-align: center;
+    align-content: center;
 	padding:20px;
 	margin-top:40px;
 }
@@ -87,6 +87,7 @@ body{
 h1{
   font-family:  Simplifica,Zefani, Elianto, Linotte, Bitner, Tahoma;
   font-weight: 900;
+    font-size: xx-large;
   text-transform: uppercase;
   letter-spacing: .3em;
   word-spacing: 1em;
@@ -151,15 +152,15 @@ a:visited{
 
 .container{
 	width:auto;
-    text-align: center;
-	margin:auto;
+    text-align: left;
+	/*margin:auto;*/
 	overflow:hidden;
 }
 
 
 .containerblue{
   background-color: #F4DCD3;
-  color: white;
+  color: black;
   text-align: center;
   padding: 2px 3px 2px 10px;
   width: auto;
@@ -169,7 +170,7 @@ a:visited{
 
 .containerpink{
   background-color: #FDBCCF;
-  color: white;
+  color: black;
   text-align: center;
   padding: 2px 3px 2px 10px;
   width: auto;
