@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf67aca-df15-438f-bc78-46358e50d65b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Toi sang tac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,17 +45,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="44" column="10" lean-forward="true" selection-start-line="14" selection-end-line="44" selection-end-column="10" />
+            <state relative-caret-position="303">
+              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+            <state relative-caret-position="347">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -68,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>khi thảy một đồng xu</find>
       <find>một đồng xu</find>
       <find>chấp nhận một hàm mật độ</find>
       <find>khoảng tin cậy cho phương sai</find>
@@ -97,6 +109,7 @@
       <find>../vnm/</find>
       <find>Một biến ngẫu nhiên</find>
       <find>Tại sao lại</find>
+      <find>../</find>
       <find>body</find>
     </findStrings>
     <replaceStrings>
@@ -110,10 +123,10 @@
       <replace>\$</replace>
       <replace>\lambda$$\)</replace>
       <replace>\(</replace>
-      <replace>../../</replace>
       <replace>../../../</replace>
       <replace>z</replace>
       <replace>../</replace>
+      <replace>../../</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -123,10 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vnm/goc du hoc/viet sop the nao.html" />
-        <option value="$PROJECT_DIR$/vnm/goc du hoc/so luoc ve viec nop hoc bong du hoc.html" />
-        <option value="$PROJECT_DIR$/vnm/goc du hoc/VISA.html" />
-        <option value="$PROJECT_DIR$/vnm/goc du hoc/index.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/bayes theorem_reliability of testing.html" />
         <option value="$PROJECT_DIR$/vnm/hoc tieng Anh/tu goc.html" />
         <option value="$PROJECT_DIR$/en/programming/Web/youtube.html" />
@@ -172,8 +181,12 @@
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1 - in.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" />
-        <option value="$PROJECT_DIR$/Toi sang tac/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap1.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/index.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap2.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap3.html" />
       </list>
     </option>
   </component>
@@ -198,6 +211,23 @@
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
+              <item name="anh em nha Tun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
+              <item name="mai day thong ke" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,12 +321,12 @@
       <workItem from="1563302077361" duration="3021000" />
       <workItem from="1563398684815" duration="6128000" />
       <workItem from="1563459338702" duration="13977000" />
-      <workItem from="1563545973613" duration="3373000" />
+      <workItem from="1563545973613" duration="5896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291750000" />
+    <option name="totallyTimeSpent" value="294273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,10 +369,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2d''.Baltimore parable.html" />
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/sample_mean_parameters.html" />
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/1c. outlier.html" />
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/1d.stratified sampling.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2a. r.v..html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2e.bernoulli.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3a.expectation.html" />
@@ -508,17 +534,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="44" column="10" lean-forward="true" selection-start-line="14" selection-end-line="44" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2557">
+          <caret line="118" column="21" lean-forward="true" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
         </state>
       </provider>
     </entry>
