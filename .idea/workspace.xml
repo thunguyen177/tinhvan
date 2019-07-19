@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf67aca-df15-438f-bc78-46358e50d65b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toi sang tac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/programming/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="127">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -44,17 +41,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="445">
+              <caret line="44" column="10" lean-forward="true" selection-start-line="14" selection-end-line="44" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1 - in.html">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="1270" column="36" lean-forward="true" selection-start-line="1270" selection-start-column="36" selection-end-line="1270" selection-end-column="36" />
+            <state relative-caret-position="345">
+              <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -99,8 +96,8 @@
       <find>bar</find>
       <find>../vnm/</find>
       <find>Một biến ngẫu nhiên</find>
-      <find>body</find>
       <find>Tại sao lại</find>
+      <find>body</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;/br&gt;</replace>
@@ -126,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/en/Fantistics/index.html" />
         <option value="$PROJECT_DIR$/vnm/goc du hoc/viet sop the nao.html" />
         <option value="$PROJECT_DIR$/vnm/goc du hoc/so luoc ve viec nop hoc bong du hoc.html" />
         <option value="$PROJECT_DIR$/vnm/goc du hoc/VISA.html" />
@@ -174,9 +170,10 @@
         <option value="$PROJECT_DIR$/programming/index.html" />
         <option value="$PROJECT_DIR$/vnm cul_his/index.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole.html" />
-        <option value="$PROJECT_DIR$/Toi sang tac/index.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1 - in.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -201,17 +198,6 @@
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
-              <item name="mai day thong ke" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,12 +291,12 @@
       <workItem from="1563302077361" duration="3021000" />
       <workItem from="1563398684815" duration="6128000" />
       <workItem from="1563459338702" duration="13977000" />
-      <workItem from="1563545973613" duration="2999000" />
+      <workItem from="1563545973613" duration="3373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291376000" />
+    <option name="totallyTimeSpent" value="291750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,7 +308,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.1785174" />
@@ -383,13 +369,6 @@
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/1b_quantiles.html" />
     <entry file="file://$PROJECT_DIR$/en/programming/R/non0_exist_status.html" />
     <entry file="file://$PROJECT_DIR$/en/programming/R/things we should be careful about when using R.html" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/en/programming/R/R tricks.html" />
     <entry file="file://$PROJECT_DIR$/en/programming/index.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/partII_ANOVA_Regression.html" />
@@ -511,14 +490,7 @@
     <entry file="file://$PROJECT_DIR$/programming/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -532,7 +504,21 @@
     <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1 - in.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
-          <caret line="1270" column="36" lean-forward="true" selection-start-line="1270" selection-start-column="36" selection-end-line="1270" selection-end-column="36" />
+          <caret line="1270" column="36" selection-start-line="1270" selection-start-column="36" selection-end-line="1270" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="44" column="10" lean-forward="true" selection-start-line="14" selection-end-line="44" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
         </state>
       </provider>
     </entry>
