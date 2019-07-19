@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>Normal distribution has only two parameters, the mean and the standard deviation.
+    If we know these two parameters, then everything else is known.
+    We estimate the mean by the sample mean, and the standard deviation by sample
+    standard deviation. Fisher called this parameters “sufficient”. The contain all
+    the information in the data. There’s no need to keep the data once we have these
+    two statistics. If we have enough data to allow reasonable estimates of these
+    parameters then no more measurement are needed. For example, to estimate two
+    parameters of a normal distribution within two significant figures, we only need
+    to collect about fifty measurements.
+<br>
+Khi 3 nhà toán học lớn cùng chết trong một năm, khi ba người đàn ông nước ngoài mặc áo hoa
+khác nhau cùng xuất hiện độc lập ở một con phố,... thì ta nghĩ đến phân phối  Poisson.
+Phân phối này có thể dùng để để mô tả những sự kiện hiếm xảy ra và xảy ra độc lập với nhau.
+
+<br>người ta muốn tìm hiểu giữa hai loại phân bón thì loại nào tốt hơn.
+Tuy nhiên, trên cùng một cánh đồng, lúa lại không đều nhau. ở một số góc thì lúa cao và
+trĩu hạt, trong khi ở một số góc khác thì Lúa lại gầy và xộc xệch không đề.
+Điều này có thể do loại đất, có một số chất dinh dưỡng nào không biết  ở một số góc nhất
+định,  đồng không bằng phẳng dẫn đến nước không đều, hoặc một số hiệu ứng khác.
+Như vậy thì làm sao chúng ta có thể phân biệt được ảnh hưởng  của phân bón và ảnh hưởng
+của các yếu tố khác? Nếu chúng ta thực hiện nghiên cứu trên cùng những cánh đồng qua nhiều
+năm khác nhau thì khí hậu mỗi năm mỗi khác nên ảnh hưởng của những yếu tố này lại  càng khó
+phân biệt.
+<br>để tránh cho yếu tố trùng lặp lại với nhau dẫn đến khó phân biệt giữa các yếu tố thì
+chúng ta có thể:
+<br>-	làm thí nghiệm trong cùng một năm  để giảm bớt ảnh hưởng của yếu tố khí hậu
+<br>-	 bón 2 loại phân ở thửa đất gần nhau để so sánh nhằm giảm ảnh hưởng của yếu tố chất đất
+<br>Giả sử chúng ta muốn làm thí nghiệm trên một thửa ruộng thì chúng ta có thể chia thửa
+ruộng đó thành những mảnh đất nhỏ.    Giả sử tôi chia chiều rộng làm tư chiều dài làm tư
+thì tôi sẽ có 16 mảnh đất nhỏ.
+
+
+<br>Categorical data: Simpson paradox
+<br>
+<br>Medel uniform model 125
+<br>
+<br>Random sampling from a finite population 159
+
+<h2>Ước lượng hợp lý cực đại</h2>
+<br>[Understanding The Central Limit Theorem (toward data science)](https://towardsdatascience.com/understanding-the-central-limit-theorem-642473c63ad8)
+<br>
+<br>Trong thống kê cũng tương tự, ta tìm cách lấy dữ liệu sao cho các quan sát ở trong mẫu đại
+diện cho tất cả mọi thứ trong tổng thể. Nhưng ta không biết được giá trị của tất cả các quan sát
+trong tổng thể nên ta lấy mỗi ngẫu nhiên và hy vọng nó sẽ phản ánh toàn bộ tổng thể!
+<br>MLE  dựa trên ý tưởng là những gì nhìn thấy là những thứ có xác suất xảy ra cao nhất!
+Do đó, người ta nhân các hàm mật độ tại các quan trắc lại  và tìm các tham số sao cho hàm
+likelihood đạt giá trị cực đại!
+<br>Ví dụ: ta có các quan sát  tuân theo phân phối chuẩn
+<br>Hàm mật độ của phân phối chuẩn
+<br>Do đó hàm likelihood là
+<br>Dựa trên ý tưởng đã nói ở phần đầu ai đi tìm cực đại của hàm likelihood này.  Chúng ta dùng đạo hàm ( nhớ lại rằng nếu thì hàm đạt cực đại
+<br>Trong thực tế Không phải lúc nào chúng ta cũng có thể tìm được cực đại dễ dàng như vậy nhiều khi chúng ta sẽ phải dùng các phương pháp xấp xỉ (numerical methods).  Khi đó chúng ta cần cẩn thận với vấn đề liên tục,  cực đại địa phương, và biên (boundary values).
+<br>
+</body>
+</html>

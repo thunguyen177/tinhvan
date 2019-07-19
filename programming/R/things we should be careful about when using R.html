@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Things we should be careful about when using R</title>
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <h1> Ellie Nguyen </h1>
+        </div>
+    </header>
+
+  <nav id="navbar">
+      <div class="containerblue">
+        <ul>
+          <li><a href="../index.html"> Home</a> </li>
+          <li> <a href="../../ML%20and%20stat/index.html"> Statistics and Machine Learning</a> </li>
+          <li> <a href="../../programming/index.html">Programming</a> </li>
+          <li> <a href="../../vnm%20cul_his/index.html"> Vietnamese culture and history</a> </li>
+        </ul>
+      </div>
+      <div class="containerpink">
+        <ul>
+          <li><a href="../index.html">Trang chủ</a>
+          <li><a href="../../Toi%20sang%20tac/index.html">Tác phẩm</a>
+          <li><a href="../../goc%20du%20hoc/index.html">Du học và ngoại ngữ</a> </li>
+        </ul>
+      </div>
+  </nav>
+    <div class = "searchbar">
+        <script>
+              (function() {
+                var cx = '000342376851758299742:vxnvik3_5yc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+<h2>Things we should be careful about when using R</h2>
+<ul>
+    <li> Understanding the command</li>
+    <li><i>Is the packages works well together?</i> If not, we should detach one package before loading
+another. For example, "nlme" does not work really well with "lmer". Therefore, before loading lmer,
+we should enter "detach(nlme)" to detach package nlme.<br></li>
+    <li>Different packages have functions of the same name</li>
+    <li>Not using factor: The function factor is used to encode a vector as a category.
+        If we forgot to factor the ones that we need then R will analyze these variables as
+        if they are continous variables, which can results in wrong analysis.
+        If the input of one column are characters then R can automatically reallize that's factor.
+        But this may not happen if the categorical input is encoded by number. <br>
+        To check if a column has been factored yet, use <pre>is.factor()</pre>.<br>
+        To factorize, use <pre>as.factor() </pre>
+        In general, one can check the structure of a data set by using <pre>str()</pre></li>
+
+</ul>
+</body>
+</html>

@@ -111,13 +111,9 @@ pre{
 	color: darkorange;
 }
 
-.math{
-	text-align: center;
-}
-
 a{
   text-decoration: none;
-  color: blue;
+  color: dodgerblue;
 }
 a:hover{
   color: red;
@@ -193,7 +189,15 @@ a:visited{
 	height: auto;
 	margin: auto;
 }
-
+.containeryellow{
+  background-color: lightgoldenrodyellow;
+  color: darkred;
+  text-align: justify;
+  padding: 10px ;
+  width: auto;
+	height: auto;
+	margin: auto;
+}
 .button{
   background-color: black;
   color: white;
@@ -220,9 +224,12 @@ a:visited{
   padding: 20px;
 }
 
-.box{
-  background:paleturquoise;
-  color: #38761d;
+
+
+.boxpink{
+    background: lightgoldenrodyellow;
+  color: deeppink;
+  border-left: 5px purple solid;
 /*  border: 2px deeppink dot-dot-dash;
   border-top-style: dotted;*/
   padding: 20px;
