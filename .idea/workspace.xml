@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf67aca-df15-438f-bc78-46358e50d65b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goc du hoc/word detective.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/word detective.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,10 +49,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+        <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="126" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="106">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goc du hoc/word detective.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -59,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="880">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
@@ -171,7 +181,6 @@
         <option value="$PROJECT_DIR$/vnm cul_his/index.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1 - in.html" />
-        <option value="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" />
         <option value="$PROJECT_DIR$/ML and stat/data science resource.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap1.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap2.html" />
@@ -180,13 +189,14 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/index.html" />
         <option value="$PROJECT_DIR$/goc du hoc/index.html" />
-        <option value="$PROJECT_DIR$/goc du hoc/word detective.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/goc du hoc/word detective.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="863" />
@@ -200,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,10 +242,17 @@
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
               <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
+              <item name="am nhac" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,11 +345,12 @@
       <workItem from="1563556278516" duration="3869000" />
       <workItem from="1563583834203" duration="1678000" />
       <workItem from="1563632114872" duration="748000" />
+      <workItem from="1563993700507" duration="1306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301011000" />
+    <option name="totallyTimeSpent" value="302317000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,7 +365,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.1860817" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.18910742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.19742814" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -492,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML and stat/data science resource.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -572,17 +582,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goc du hoc/word detective.html">
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="880">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="324">
+          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goc du hoc/word detective.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -593,10 +610,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="106">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
