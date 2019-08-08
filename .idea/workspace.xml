@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf67aca-df15-438f-bc78-46358e50d65b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goc du hoc/word detective.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/word detective.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fantistics/sleeping in class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fantistics/whole.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fantistics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Fantistics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,17 +45,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="1122">
+              <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fantistics/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="154">
+              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fantistics/sleeping in class.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -60,17 +72,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goc du hoc/word detective.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="516">
               <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="418">
+              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -98,7 +110,6 @@
       <find>đã công bố</find>
       <find>Kiểm định giả thuyết cho trung bình</find>
       <find>../../../</find>
-      <find>../../</find>
       <find>cổ điển</find>
       <find>Giá đỡ chổi bay</find>
       <find>Ở mức tin cậy 0.05</find>
@@ -117,6 +128,7 @@
       <find>../</find>
       <find>body</find>
       <find>&lt;/li&gt;</find>
+      <find>../../</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;/br&gt;</replace>
@@ -131,8 +143,8 @@
       <replace>\(</replace>
       <replace>../../../</replace>
       <replace>z</replace>
-      <replace>../</replace>
       <replace>../../</replace>
+      <replace>../</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -142,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vnm/hoc tieng Anh/tu goc.html" />
-        <option value="$PROJECT_DIR$/en/programming/Web/youtube.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/5b. milk tea testing.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/4a. confident interval.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/1c. outlier.html" />
@@ -167,7 +177,6 @@
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/partII_ANOVA_Regression.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/index.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/whole.html" />
-        <option value="$PROJECT_DIR$/Fantistics/index.html" />
         <option value="$PROJECT_DIR$/programming/R/non0_exist_status.html" />
         <option value="$PROJECT_DIR$/ML and stat/index.html" />
         <option value="$PROJECT_DIR$/goc du hoc/VISA.html" />
@@ -189,10 +198,13 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/index.html" />
         <option value="$PROJECT_DIR$/goc du hoc/index.html" />
-        <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/goc du hoc/word detective.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" />
+        <option value="$PROJECT_DIR$/Fantistics/whole.html" />
+        <option value="$PROJECT_DIR$/Fantistics/sleeping in class.html" />
+        <option value="$PROJECT_DIR$/Fantistics/index.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" />
       </list>
     </option>
   </component>
@@ -225,6 +237,11 @@
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="Fantistics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
               <item name="goc du hoc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,6 +264,12 @@
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
               <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
               <item name="am nhac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
+              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
+              <item name="mai day thong ke" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,11 +369,13 @@
       <workItem from="1563583834203" duration="1678000" />
       <workItem from="1563632114872" duration="748000" />
       <workItem from="1563993700507" duration="1306000" />
+      <workItem from="1564238643093" duration="1664000" />
+      <workItem from="1565222690481" duration="1060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302317000" />
+    <option name="totallyTimeSpent" value="305041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,10 +387,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.18910742" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.19515885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.19742814" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -393,8 +418,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2e.bernoulli.html" />
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3a.expectation.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3c.Covariance_correlation.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3b.sd_variance.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/2f.density_histogram.html" />
@@ -431,24 +454,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Fantistics/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/goc du hoc/Tai lieu on GRE.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goc du hoc/tu goc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -575,20 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -596,24 +591,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goc du hoc/word detective.html">
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+        <state relative-caret-position="106">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Toi sang tac/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="1122">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
+    <entry file="file://$PROJECT_DIR$/goc du hoc/word detective.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="516">
+          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fantistics/whole.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goc du hoc/tu goc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="72" lean-forward="true" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fantistics/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fantistics/sleeping in class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
         </state>
       </provider>
     </entry>
