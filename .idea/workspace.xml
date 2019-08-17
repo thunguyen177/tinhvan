@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf67aca-df15-438f-bc78-46358e50d65b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/thong ke/khoa hoc du lieu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thong ke/so sanh thu tuc trong data mining.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goc du hoc/Nature.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goc du hoc/cam nang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fantistics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Fantistics/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fantistics/sleeping in class.html" beforeDir="false" afterPath="$PROJECT_DIR$/Fantistics/sleeping in class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML and stat/Fantistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/ML and stat/Fantistics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ML and stat/data science resource.html" beforeDir="false" afterPath="$PROJECT_DIR$/ML and stat/data science resource.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ML and stat/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ML and stat/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toi sang tac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goc du hoc/Tai lieu on GRE.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/Tai lieu on GRE.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goc du hoc/VISA.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/VISA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goc du hoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goc du hoc/so luoc ve viec nop hoc bong du hoc.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/so luoc ve viec nop hoc bong du hoc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goc du hoc/tu goc.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/tu goc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goc du hoc/viet sop the nao.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/viet sop the nao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goc du hoc/word detective.html" beforeDir="false" afterPath="$PROJECT_DIR$/goc du hoc/word detective.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programming/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/programming/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +35,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goc du hoc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="48" column="52" lean-forward="true" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+            <state relative-caret-position="166">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML and stat/data science resource.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="171" column="18" lean-forward="true" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goc du hoc/Nature.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML and stat/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/goc du hoc/cam nang.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="63" column="70" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML and stat/Fantistics.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="8" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -59,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/programming/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="374">
               <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
@@ -132,8 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vnm/mai day thong ke/bayes.html" />
-        <option value="$PROJECT_DIR$/vnm/mai day thong ke/2e.bernoulli.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/3c.Covariance_correlation.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/2d''.Baltimore parable.html" />
         <option value="$PROJECT_DIR$/vnm/mai day thong ke/1b_quantiles.html" />
@@ -163,14 +203,11 @@
         <option value="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap3.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/anh em nha Tun/tap4.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" />
         <option value="$PROJECT_DIR$/Fantistics/whole.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Toi sang tac/index.html" />
         <option value="$PROJECT_DIR$/programming/index.html" />
-        <option value="$PROJECT_DIR$/ML and stat/index.html" />
-        <option value="$PROJECT_DIR$/ML and stat/data science resource.html" />
         <option value="$PROJECT_DIR$/ML and stat/Fantistics.html" />
         <option value="$PROJECT_DIR$/goc du hoc/word detective.html" />
         <option value="$PROJECT_DIR$/goc du hoc/VISA.html" />
@@ -178,15 +215,20 @@
         <option value="$PROJECT_DIR$/goc du hoc/tu goc.html" />
         <option value="$PROJECT_DIR$/goc du hoc/Tai lieu on GRE.html" />
         <option value="$PROJECT_DIR$/goc du hoc/so luoc ve viec nop hoc bong du hoc.html" />
-        <option value="$PROJECT_DIR$/goc du hoc/index.html" />
         <option value="$PROJECT_DIR$/Fantistics/sleeping in class.html" />
         <option value="$PROJECT_DIR$/Fantistics/index.html" />
         <option value="$PROJECT_DIR$/thong ke/so sanh thu tuc trong data mining.html" />
         <option value="$PROJECT_DIR$/thong ke/khoa hoc du lieu.html" />
+        <option value="$PROJECT_DIR$/ML and stat/data science resource.html" />
+        <option value="$PROJECT_DIR$/goc du hoc/Nature.html" />
+        <option value="$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html" />
+        <option value="$PROJECT_DIR$/ML and stat/index.html" />
+        <option value="$PROJECT_DIR$/goc du hoc/index.html" />
+        <option value="$PROJECT_DIR$/goc du hoc/cam nang.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="863" />
@@ -200,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,14 +294,12 @@
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
-              <item name="mai day thong ke" type="462c0819:PsiDirectoryNode" />
+              <item name="vnm cul_his" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,11 +398,12 @@
       <workItem from="1565279000249" duration="4668000" />
       <workItem from="1565792600266" duration="2045000" />
       <workItem from="1565987025127" duration="4399000" />
+      <workItem from="1566062125417" duration="3571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316581000" />
+    <option name="totallyTimeSpent" value="320152000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,7 +418,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.204236" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.19742814" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -404,8 +446,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/3d. independent var.html" />
-    <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4a.LLN.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4d. CLT.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/4a. confident interval.html" />
     <entry file="file://$PROJECT_DIR$/vnm/mai day thong ke/5b. milk tea testing.html" />
@@ -521,20 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML and stat/data science resource.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML and stat/Fantistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/goc du hoc/word detective.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -570,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/partII_ANOVA_Regression.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -608,20 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/programming/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML and stat/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="27" column="26" selection-end-line="62" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thong ke/khoa hoc du lieu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
@@ -636,10 +641,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/programming/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML and stat/data science resource.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="171" column="18" lean-forward="true" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goc du hoc/Nature.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML and stat/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/goc du hoc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="48" column="52" lean-forward="true" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+        <state relative-caret-position="166">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML and stat/Fantistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goc du hoc/cam nang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="63" column="70" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
         </state>
       </provider>
     </entry>
