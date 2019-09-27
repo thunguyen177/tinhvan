@@ -36,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ML and stat/data science resource.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-835">
-              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            <state relative-caret-position="355">
+              <caret line="212" column="37" selection-start-line="212" selection-start-column="37" selection-end-line="212" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ML and stat/artiles list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+            <state relative-caret-position="458">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -54,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
+            <state relative-caret-position="13200">
               <caret line="600" column="7" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
             </state>
           </provider>
@@ -63,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fantistics/sleeping in class.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="3036">
               <caret line="138" selection-start-line="138" selection-end-line="149" selection-end-column="7" />
             </state>
           </provider>
@@ -72,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goc du hoc/Nature.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
+            <state relative-caret-position="1188">
               <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
             </state>
           </provider>
@@ -258,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,53 +268,13 @@
             <path>
               <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="Fantistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="goc du hoc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="ML and stat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
               <item name="thong ke" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="Toi sang tac" type="462c0819:PsiDirectoryNode" />
-              <item name="mai day thong ke" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinhvan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinhvan" type="462c0819:PsiDirectoryNode" />
-              <item name="vnm cul_his" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,11 +381,12 @@
       <workItem from="1567566472397" duration="408000" />
       <workItem from="1567713357238" duration="733000" />
       <workItem from="1568567068124" duration="679000" />
+      <workItem from="1569542009646" duration="445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326810000" />
+    <option name="totallyTimeSpent" value="327255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,7 +401,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.13993949" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.14220877" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.19742814" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -656,6 +616,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13200">
+          <caret line="600" column="7" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fantistics/sleeping in class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3036">
+          <caret line="138" selection-start-line="138" selection-end-line="149" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goc du hoc/Nature.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Toi sang tac/am nhac/goi tuoi tho ve lyrics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -691,38 +672,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toi sang tac/mai day thong ke/whole_v1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="600" column="7" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goc du hoc/Nature.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fantistics/sleeping in class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="138" selection-start-line="138" selection-end-line="149" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML and stat/data science resource.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-835">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        <state relative-caret-position="355">
+          <caret line="212" column="37" selection-start-line="212" selection-start-column="37" selection-end-line="212" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ML and stat/artiles list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        <state relative-caret-position="458">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
         </state>
       </provider>
     </entry>
