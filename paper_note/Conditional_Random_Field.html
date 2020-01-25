@@ -13103,14 +13103,15 @@ GraphCRF module</a> allows us to use on arbitrary graph for classification.
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In this post, we consider Conditional Random Field for image post-processing.</p>
-<p>Consider a random field $X$, which ranges over possible pixel labelings, and is defined over a set of variables $\{X_1,...,X_n\}$ where $n$ is the size of the input images. 
-A common Conditional Random Field model is where the energy is of the form:</p>
-$$E(x)=\sum_i\psi_u(x_i)+\sum_{i&lt;j}\psi_p(x_i,x_j)$$<p>where $i,j$ range from $1$ to $n$.</p>
+<p>Consider a random field $X$, which ranges over possible pixel labelings $\mathcal{L} = \{l_1,l_2,...,l_L\}$, and is defined over a set of variables $\{X_1,...,X_n\}$ where $n$ is the size of the input images. Then $X_j$ is the label assigned to the $jth$ pixel. Let D be the observed data sequence, and $P_i, I_i$ denote the position and color vector of the $ith$ pixel, respectively.</p>
+<p>A common Conditional Random Field model is where the energy is of the form:</p>
+$$E(x|D)=\sum_i\psi_u(x_i)+\sum_{i&lt;j}\psi_p(x_i,x_j)$$<p>where $i,j$ range from $1$ to $n$.</p>
 <p>The unary potentials are of the form
 $$\psi_u(x_i) = -\log P(X_i=x_i)$$</p>
 <p>For post-processing, the unary potential $\psi_u(x_i)$ can the softmax output of a neural network.</p>
 <p>Our pairwise potential for pixels is of the form</p>
-$$\psi_p(x_i,x_j) = w^{(1)}\exp\left( -\frac{|P_i-P_j|^2}{2\theta_\alpha^2}-\frac{|I_i-I_j|^2}{2\theta^2_\beta} \right)+w^{(2)}\exp\left(-\frac{|P_i-P_j|^2}{2\theta_\gamma^2}\right) $$<p>The first exponential term is the appearance kernel. Its is inspired by the heuristic that pixels in the same class tend to have similar in color and in nearby position. The degree of nearness and color similarity are controlled by parameters $\theta_\alpha, \theta_\beta$, respectively.</p>
+$$\psi_p(x_i,x_j) = w^{(1)}\exp\left( -\frac{|P_i-P_j|^2}{2\theta_\alpha^2}-\frac{|I_i-I_j|^2}{2\theta^2_\beta} \right)+w^{(2)}\exp\left(-\frac{|P_i-P_j|^2}{2\theta_\gamma^2}\right) $$<p>where $\mu(x_i,x_j)$ is the label compabitility function. A common choice is to use the Potts model $\mu(x_i,x_j)=[x_i\neq x_j]$ that captures the compatibility between different pairs of labels, and $w$ is the weight.</p>
+<p>The first exponential term is the appearance kernel. Its is inspired by the heuristic that pixels in the same class tend to have similar in color and in nearby position. The degree of nearness and color similarity are controlled by parameters $\theta_\alpha, \theta_\beta$, respectively.</p>
 <p>The second exponential term is the smoothness kernel that helps removing small isolated regions. (see Textonboost by Shotton)</p>
 <p>For the model above, only 1st and 2nd order are considered. However, higher potentials is possible (see <em>Higher-order models in Computer Vision</em> by Pushmeet Kohli and Carsten Rother, or <em>Robust Higher Order Potentials for Enforcing Label Consistency</em>)</p>
 
@@ -13126,7 +13127,7 @@ pyimagesearch</a>. Note that the parameter sigma in <font color="#00bfff"> segme
 control the smoothness of the superpixel. When using super pixel enhanced CRF, we should tune sigma according to the image nature.
 In some medical image, the boundary maybe very rough. In such a case, lower sigma should be used.</p>
 <p>The corresponding Gibbs energy of the model is</p>
-$$E(x)=\sum_i\psi_u(x_i)+\sum_{i&lt;j}\psi_p(x_i,x_j) + \sum_{i&lt;j}\psi_{sp}(x_i,x_j)$$<p>where $i,j$ range from $1$ to $n$.</p>
+$$E(x|D)=\sum_i\psi_u(x_i)+\sum_{i&lt;j}\psi_p(x_i,x_j) + \sum_{i&lt;j}\psi_{sp}(x_i,x_j)$$<p>where $i,j$ range from $1$ to $n$.</p>
 <p>where the unary potential $\psi_u(x_i)$, pairwise potential $\psi_p(x_i,x_j)$ are similarly defined as before, and $\psi_{sp}(x_i,x_j)$ is a super pixel pairwise potential.</p>
 <p>In this case, we pre-process the original images with some unsupervised segmentation and denote by $s_i$ the segment index of pixel i. From this, we can create a segmented image where each pixel i takes the average RGB value $C_{s_i}$ of the superpixel that it belongs.  The super pixel pairwise potential can be defined as in <em>super pixel-enhanced pairwise Conditional Random Field for semantic segmentation</em> by Li Sulimowicz, Ishfaq Ahmadc, Alexander Aved:</p>
 $$\psi_{sp}(x_i,x_j)=\mu(x_i, x_j)(\theta_p+\theta_v\exp(-\theta_\beta |C_{s_i}-C_{s_j}|^2))$$<p>where $\mu(x_i, x_j)=[x_i\neq x_j]$ as before.</p>
