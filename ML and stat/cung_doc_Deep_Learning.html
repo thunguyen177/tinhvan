@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Quadratic_Relative_Error_Cost_Function</title>
+<title>cung_doc_Deep_Learning</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,34 +13077,70 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Quadratic-Relative-Error-Cost-Function-for-neural-networks">Quadratic Relative Error Cost Function for neural networks<a class="anchor-link" href="#Quadratic-Relative-Error-Cost-Function-for-neural-networks">&#182;</a></h1><p>Summary of the paper:
-<a href='https://ieeexplore.ieee.org/abstract/document/8769865/'>Investigation on Performance of Neural Networks Using Quadratic Relative Error Cost Function </a></p>
-<p>In this paper, the authors investigate the performance of neural networks when Quadratic Relative Error Cost Function is used vs when mean square error (MSE) is used.</p>
-<p>According to the paper, the MSE is defined as $$C = \frac{1}{m}\sum_i^m(y_{oi}-y_i)^2/2,$$ where $M$ is the number of samples, $y_{oi}$ is the output of the $i^{th}$ sample from the neural network, $y_i$ is the target value of the $i^{th}$ samples.</p>
-<p>The Quadratic Relative Error Cost Function (REMSE) is defined as $$C = \frac{1}{m}\sum_i^m(\frac{y_{oi}-y_i}{y_i})^2/2,$$</p>
-<p>Some important points from the paper:</p>
-<p>"A neural network
-using the REMSE cost function generally gains acceleration
-that is A (A is larger than 1) times that gained by a network
-using the MSE cost function in the beginning. At each iteration, the weight adjustment to the $i^
-{th}$ sample of REMSE would gain $1/y^2_i$
-times that gained by the weight adjustment
-to the same sample of MSE. This is why a neural network
-with the REMSE cost function is much faster than that with
-the MSE cost function."</p>
-<p>"For the REMSE cost function, the range of y should be from
-0 to 1. When y = 0, the reciprocal of y tends to infinity. Two
-possible methods are provided when using the REMSE cost
-function if y = 0. One method is to replace zero with a small
-value, such as $1 \times 10^{−3}$ or less, and the other method is to
-locally apply the MSE cost function at the point y = 0."</p>
-<p>"If the target dataset contains
-larger magnitude data, neural networks using the REMSE
-cost function would reduce the precision of output data and seems worse than that using MSE cost function. However,
-when the dataset contains more small magnitude data or
-small magnitude data attracts more attention, neural networks
-using REMSE cost function would work better and should get
-preferential recommendation"</p>
+<h1 id="C&#249;ng-&#273;&#7885;c-s&#225;ch-Deep-Learning-c&#7911;a-Ian-Goodfellow,-Yoshua-Bengio,-Aaron-Courville">C&#249;ng &#273;&#7885;c s&#225;ch Deep Learning c&#7911;a Ian Goodfellow, Yoshua Bengio, Aaron Courville<a class="anchor-link" href="#C&#249;ng-&#273;&#7885;c-s&#225;ch-Deep-Learning-c&#7911;a-Ian-Goodfellow,-Yoshua-Bengio,-Aaron-Courville">&#182;</a></h1><p>Những câu tiếng Anh là được trích trực tiếp từ trong sách.</p>
+<h3> Mục lục </h3>
+    <a href="#ch8">chương 8: OPTIMIZATION FOR TRAINING DEEP MODELS</a><br>
+
+<h3 id="ch8">chương 8: OPTIMIZATION FOR TRAINING DEEP MODELS</h3><p>Về vấn đề minibatch sizes:</p>
+<ul>
+<li><code>Larger batches provide a more accurate estimate of the gradient, but with less than linear returns.</code></li>
+</ul>
+<ul>
+<li><font color="blue"> Small batches can offer a regularizing effect (Wilson and Martinez, 2003), perhaps due to the noise they add to the learning process. Generalization error is often best for a batch size of 1. Training with such a small batch size might require a small learning rate to maintain stability due to the high variance in the estimate of the gradient. The total runtime can be very high due to the need to make more steps, both because of the reduced learning rate and because it takes more steps to observe the entire training set. </font>  Cái này giống như trong truyện Thầy Bói Xem Voi vậy. Nếu chúng ta xem mỗi ông thầy bói là một batch thì nhận định của mỗi ông khác nhau rất nhiều (nhiều noise), nhưng chúng ta tiếp thu ý kiến của mỗi người từ từ từ từ thì cuối cùng cũng biết được hình dáng của con voi là như thế nào. Nhưng trong những trường hợp này thì chúng ta nên sử dụng tốc độ học nhỏ (small learning rate), chứ đừng tưởng tượng quá xa xôi khi mỗi lần tiếp thu ý kiến từ một ông thầy bói mới Lại giống như Phi từ Sao Hỏa đến Sao Kim (do high variance).</li>
+</ul>
+<ul>
+<li><font color="#00bfff"> Some algorithms are more sensitive to sampling error than
+others, either because they use information that is difficult to estimate accurately
+with few samples, or because they use information in ways that amplify sampling
+errors more. Methods that compute updates based only on the gradient g are
+usually relatively robust and can handle smaller batch sizes like 100. Second-order
+methods, which use also the Hessian matrix H and compute updates such as
+$H^{-1}g$, typically require much larger batch sizes like 10,000. These large batch
+sizes are required to minimize fluctuations in the estimates of $H^{-1}g$ </font> </li>
+</ul>
+<h3 id="Basic-Algorithms">Basic Algorithms<a class="anchor-link" href="#Basic-Algorithms">&#182;</a></h3><ul>
+<li><strong>SGD</strong>: <font color="#00bfff"> Generalization error is often best for a batch size of 1</font>. Tuy nhiên, <font color="#00bfff"> SGD gradient estimator introduces a source of noise (the
+random sampling of m training examples) that does not vanish even when we arrive
+at a minimum </font>. Hơn nữa, train từng cái một nên SGD nhiều khi rất chậm. Phương pháp <strong>momentum</strong> giúp cải thiện điều này, <font color="#00bfff"> especially in the face of high curvature, small but
+consistent gradients, or noisy gradients. The momentum algorithm accumulates
+an exponentially decaying moving average of past gradients and continues to move
+in their direction. </font> </li>
+</ul>
+<p>Nếu update rule cho SGD là 
+$$\hat{g} \leftarrow +\frac{1}{m}\bigtriangledown _\theta \sum_i L(f(x^{(i)}; \theta), y^{(i)})$$
+$$\theta \leftarrow \theta-\epsilon \hat{g}$$</p>
+<p>thì momentum có thêm một biến velocity $v$ và tham số $\alpha\in [0,1)$. Update rule trong momentum là</p>
+$$v \leftarrow \alpha v -\epsilon \bigtriangledown_\theta  \left(\frac{1}{m}\Delta_\theta \sum_i L(f(x^{(i)}; \theta), y^{(i)})\right)$$$$\theta \leftarrow \theta+v$$<p><font color="#00bfff"> The velocity $v$ accumulates the gradient elements $\bigtriangledown \left(\frac{1}{m}\Delta_\theta \sum_i L(f(x^{(i)}; \theta), y^{(i)})\right)$. The larger $\alpha$ is relative to $\epsilon$, the more previous gradients affect the current direction.</font></p>
+<p>SGD with momentum có update rule:
+$$g \leftarrow \frac{1}{m}\bigtriangledown _\theta \sum_i L(f(x^{(i)}; \theta), y^{(i)})$$
+$$v \leftarrow \alpha v-\epsilon g$$
+$$\theta \leftarrow \theta +v$$</p>
+<p><strong>Nesterov momentum</strong> là một thuật toán mà <font color="#ff1493"> the gradient is evaluated
+after the current velocity is applied. Thus one can interpret Nesterov momentum
+as attempting to add a correction factor to the standard method of momentum. </font>Luật update:</p>
+$$v \leftarrow \alpha v -\epsilon \bigtriangledown_\theta  \left(\frac{1}{m}\Delta_\theta \sum_i L(f(x^{(i)}; \theta +  \alpha v  ), y^{(i)})\right)$$$$\theta \leftarrow \theta+v$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Thu&#7853;t-to&#225;n-v&#7899;i-Adaptive-Learning-Rates">Thu&#7853;t to&#225;n v&#7899;i Adaptive Learning Rates<a class="anchor-link" href="#Thu&#7853;t-to&#225;n-v&#7899;i-Adaptive-Learning-Rates">&#182;</a></h2><p><strong>AdaGrad</strong> <font color="#ff1493"> individually adapts the learning
+rates of all model parameters by scaling them inversely proportional to the square
+root of the sum of all of their historical squared values (Duchi et al., 2011). The
+parameters with the largest partial derivative of the loss have a correspondingly
+rapid decrease in their learning rate, while parameters with small partial derivatives
+have a relatively small decrease in their learning rate. The net effect is greater
+progress in the more gently sloped directions of parameter space. </font> AdaGrad hội tụ nhanh đối với hàm lồi. Tuy nhiên, <font color="#00bfff"> —the accumulation of squared gradients from
+the beginning of training can result in a premature and excessive decrease in the
+effective learning rate </font>.</p>
+<p><strong>RMSPRop</strong> modifies AdaGrad to perform better in
+the non-convex setting by changing the gradient accumulation into an exponentially
+weighted moving average. Cái này giống như trong chứng khoán, giá chứng khoán hiện thời thường không phụ thuộc vào giá của nó cách đây 5-7 năm hoặc lâu hơn nên quyết định mua bán của ta hiện thời không phụ thuộc vào giá của cổ phiếu vào những thời điểm đó. Tương tự, RMSProp uses an exponentially decaying average to discard history from the
+extreme past so that it can converge rapidly after finding a convex bowl.</p>
+<p><strong>Adam</strong> là một sự kết hợp với chút cải tiến của RMSProp và momentum. Adam is generally regarded as being fairly robust to the choice
+of hyperparameters, though the learning rate sometimes needs to be changed from
+the suggested default</p>
 
 </div>
 </div>
