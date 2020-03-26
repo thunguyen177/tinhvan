@@ -1,18 +1,21 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Programming tags</title>
-    <link rel="stylesheet" href="../css/style.css"/>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+    <meta name="description" content="Ellie Nguyen: Trang chủ">
+<meta name="keywords" content="Ellie Nguyễn, Ellie, Mai dạy thống kê, anh em nhà Tũn">
 </head>
+
 <body>
-   <header>
+    <header>
         <div class="container">
             <h1> Ellie Nguyen </h1>
         </div>
     </header>
-
-   <nav id="navbar">
+  <nav id="navbar">
       <div class="containerblue">
         <ul>
           <li><a href="../index.html"> Home</a> </li>
@@ -28,6 +31,7 @@
           <li><a href="../Toi%20sang%20tac/index.html">Tác phẩm</a>
 	  <li><a href="../thong_ke_vui/index.html">Vui học thống kê</a>
           <li><a href="../goc%20du%20hoc/index.html">Du học và ngoại ngữ</a> </li>
+
         </ul>
       </div>
   </nav>
@@ -45,24 +49,19 @@
         </script>
         <gcse:search></gcse:search>
     </div>
-<h3> Python debugging </h3>
-<ul>
-<li><a href='Python_debugging.html'>Python debugging</a> 
-</ul>
 
-   <h3>R bugs fixes:</h3>
-<l>
-<li><a href="R/non0_exist_status.html">Fixed: installation of a package had non-zero exit status</a>
-<li><a href='R/state_not_found.html'>Fixed: Error in get("state", pos_state) : object 'state' not found
-</a> 
-</l>   
+<h3>template matching</h3>
 
-<hr color = "#F333FF" width="400px"> 
-	<h3>Other R things:</h3>
-<a href="R/R%20tricks.html">R tricks</a> <br>
-<a href="R/things%20we%20should%20be%20careful%20about%20when%20using%20R.html">
-    Things we should be careful about when using R</a>
-
+<b> template matching in linear classifier </b> <br> 
+<img src = 'img/template_matching.PNG' alt = 'template_matching' style="width:500px;height:250px;"> <br> source: Lecture 2, Stanford's cs231n<br> 
+<br> 
+When we stretch pixels into column, the cat's score is equal to the sum of the dot products of each line of the weight matrix times the pixels of the image plus a bias term
+term. Hence, linear classification can be seen as a template matching approach, where each of the row in the weight matrix corresponds to some template of the image, computing 
+the dot product  between each line of the weight matrix and the pixels gives us some kind of similarity this template for the class and the pixels of the image.
+<br> <br> 
+<img src = 'img/visual_template_matching.JPG' style="width:500px;height:250px;"> <br> source: Lecture 2, Stanford's cs231n<br> 
+Therefore, we can do the above computation to see what the neural networks extract from the image
+ 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
 <div class="addthis_inline_share_toolbox"></div>
