@@ -1,6 +1,7 @@
 body{
 /*	background-image: url("../img/star.png");
-  color: black;*/
+  color: black;
+  background-image: url("sunflower.PNG");*/
   font: normal 16px Arial, Helvetica, sans-serif;
   line-height: 1.6em;
   margin: 70px;
@@ -9,8 +10,9 @@ body{
 
 
 /*#main-header{
-	background-color:coral;
-	color:#fff;
+	background-image: url("sunflower.PNG");
+	/*background-color:coral;
+	color:#fff;*/
 }*/
 
 #navbar{
@@ -42,7 +44,7 @@ body{
 }
 
 /*#showcase h1{
-	color:#fff;
+	color:#FFA500;
 	font-size:50px;
 	line-height: 1.6em;
 	padding-top:30px;
@@ -86,6 +88,7 @@ body{
 
 h1{
   font-family:  Simplifica,Zefani, Elianto, Linotte, Bitner, Tahoma;
+  color: green;
   font-weight: 900;
     font-size: xx-large;
   text-transform: uppercase;
