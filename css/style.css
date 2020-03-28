@@ -160,6 +160,9 @@ a:visited{
 	overflow:hidden;
 }
 
+.container img {
+   width: 100%;
+}
 
 .containerblue{
   background-color: #F4DCD3;
