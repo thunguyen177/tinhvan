@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Unicode character not set up</title>
+    <link rel="stylesheet" href="../../../../../../css/style.css"/>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <h1> Ellie Nguyen </h1>
+        </div>
+    </header>
+
+   <nav id="navbar">
+      <div class="containerblue">
+        <ul>
+          <li><a href="../../index.html"> Home</a> </li>
+          <li> <a href="../../ML%20and%20stat/index.html"> Data science</a> </li>
+	  <li> <a href="../../paper_note/index.html"> Deep learning paper notes</a> </li>
+          <li> <a href="../../Fantistics/index.html">Statistics is fun</a> </li>
+          <li> <a href="../../programming/index.html">Programming</a> </li>
+        </ul>
+      </div>
+      <div class="containerpink">
+        <ul>
+	  <li> <a href="../../vnm%20cul_his/index.html"> Vietnamese culture</a> </li>
+          <li><a href="../../Toi%20sang%20tac/index.html">Tác phẩm</a>
+	  <li><a href="../../thong_ke_vui/index.html">Vui học thống kê</a>
+          <li><a href="../../goc%20du%20hoc/index.html">Du học và ngoại ngữ</a> </li>
+        </ul>
+      </div>
+  </nav>
+    <div class = "searchbar">
+        <script>
+              (function() {
+                var cx = '000342376851758299742:vxnvik3_5yc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+<h2>Fixed: Unicode character not set up for use with LaTeX when compiling RMarkdown</h2>
+Error showed:
+<pre>
+output file: Skew-normal.knit.md
+
+! Package inputenc Error: Unicode character âˆ€ (U+2200)
+(inputenc)                not set up for use with LaTeX.
+
+Try other LaTeX engines instead (e.g., xelatex) if you are using pdflatex. For R Markdown users, see https://bookdown.org/yihui/rmarkdown/pdf-document.html
+Error: Failed to compile Skew-normal.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Skew-normal.log for more info.
+Execution halted
+</pre>
+
+When this error is shown, we can not see the output file. However, there is a latex file with 
+relevant name in the same directory. When I open the latex file to compile it in TexStudio instead, 
+I found out the error: I copy and paste from some other page, and forgot to rewrite the notation \(\forall\)
+into math formula that latex can render. I fixed it by changing from "\(\forall\)" to "$\forall$" and 
+then it works. 
+
+   <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
+<div class="addthis_inline_share_toolbox"></div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+<div class="fb-comments" data-href="https://ellienguyen.style/" data-width="" data-numposts="5"></div>
+    <footer id="main-footer">
+        <hr color = "black" width="400px">
+            		Copyright &copy; 2019 Ellie Nguyen. All rights reserved.
+	</footer>
+
+</body>
+
+</html>

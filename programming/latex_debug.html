@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Latex debugging</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <h1> Ellie Nguyen </h1>
+        </div>
+    </header>
+
+   <nav id="navbar">
+      <div class="containerblue">
+        <ul>
+          <li><a href="../index.html"> Home</a> </li>
+          <li> <a href="../ML%20and%20stat/index.html"> Data science</a> </li>
+	  <li> <a href="../paper_note/index.html"> Deep learning paper notes</a> </li>
+          <li> <a href="../Fantistics/index.html">Statistics is fun</a> </li>
+          <li> <a href="../programming/index.html">Programming</a> </li>
+        </ul>
+      </div>
+      <div class="containerpink">
+        <ul>
+	  <li> <a href="../vnm%20cul_his/index.html"> Vietnamese culture</a> </li>
+          <li><a href="../Toi%20sang%20tac/index.html">Tác phẩm</a>
+	  <li><a href="../thong_ke_vui/index.html">Vui học thống kê</a>
+          <li><a href="../goc%20du%20hoc/index.html">Du học và ngoại ngữ</a> </li>
+        </ul>
+      </div>
+  </nav>
+    <div class = "searchbar">
+        <script>
+              (function() {
+                var cx = '000342376851758299742:vxnvik3_5yc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+
+<h3> Multiline equation with amsmath library </h3>
+Use 
+<pre>
+\begin{eqnarray}
+x &=&y\\
+z &=&k
+\end{eqnarray}
+</pre>
+Note that for a better look, in the above equation, I used "&=&" instead of "&=" for this eqnarray
+environment
+
+<hr color = "#F333FF" width="400px"> 
+
+<h3> \small, \scalebox does not work while I'm trying to reduce the size of the equation?</h3>
+Add the followings
+<pre>
+\setlength{\arraycolsep}{0.0em}
+\setlength{\arraycolsep}{5pt}
+</pre>
+above and below the equation, respectively. For example, change
+<pre>
+\begin{eqnarray}
+a &=&b
+c&=&d+e+f+g+h+i+k+j+l+m+g^2
+\end{eqnarray}
+</pre>
+into 
+<pre>
+\setlength{\arraycolsep}{0.0em}
+\begin{eqnarray}
+a &=&b
+c&=&d+e+f+g+h+i+k+j+l+m+g^2
+\end{eqnarray}
+\setlength{\arraycolsep}{5pt}
+</pre>
+Note that the values 0.0em, 5pt are suitable for some 2 columns journal style.
+
+<hr color = "#F333FF" width="400px"> 
+<h3> '\left., \right.' does not work </h3>
+You may have done sth like this
+<pre>
+\left(a+b &= c \right.\\
+\left. & x^2=y \right)
+</pre>
+or
+<pre>
+\left(a+b &= c \right.\\
+& \left.  x^2=y \right)
+</pre>
+Change the above to 
+<pre>
+\left(a+b &= c \right.\\
+ & x^2 \left. =y \right)
+</pre>
+i.e., change '\left.' to somewhere away from the beginning of a new line.
+
+<hr color = "#F333FF" width="400px"> 
+<h3> Symbol issues </h3>
+<pre> \mathbb, \mathbf </pre> does not produce \(\boldsymbol{\mu}\) or  \(\boldsymbol{x}\), etc.
+Instead, use <pre>\boldsymbol</pre>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
+<div class="addthis_inline_share_toolbox"></div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+<div class="fb-comments" data-href="https://ellienguyen.style/" data-width="" data-numposts="5"></div>
+    <footer id="main-footer">
+        <hr color = "black" width="400px">
+            		Copyright &copy; 2019 Ellie Nguyen. All rights reserved.
+	</footer>
+
+</body>
+
+</html>
