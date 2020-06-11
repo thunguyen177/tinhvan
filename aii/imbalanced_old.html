@@ -1,0 +1,219 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>imbalanced data</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <meta name="description" content="The AI institute ">
+<meta name="keywords" content="the AI institute, Deep learning, Machine learning, statistics, data science">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1> Ellie Nguyen </h1>
+        </div>
+    </header>
+  <nav id="navbar">
+      <div class="containerblue">
+        <ul>
+          <li><a href="../index.html"> Home</a> </li>
+          <li> <a href="../ML%20and%20stat/index.html"> Data science</a> </li>
+	  <li> <a href="../paper_note/index.html"> Deep learning paper notes</a> </li>
+          <li> <a href="../Fantistics/index.html">Statistics is fun</a> </li>
+          <li> <a href="../programming/index.html">Programming</a> </li>
+        </ul>
+      </div>
+      <div class="containerpink">
+        <ul>
+	  <li> <a href="../vnm%20cul_his/index.html"> Vietnamese culture</a> </li>
+          <li><a href="../Toi%20sang%20tac/index.html">Tác phẩm</a>
+	  <li><a href="../thong_ke_vui/index.html">Vui học thống kê</a>
+          <li><a href="../goc%20du%20hoc/index.html">Du học và ngoại ngữ</a> </li>
+
+        </ul>
+      </div>
+  </nav>
+    <div class = "searchbar">
+        <script>
+              (function() {
+                var cx = '000342376851758299742:vxnvik3_5yc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+
+<h3> The imbalanced data problem </h3>
+<font color="#00bfff"> 
+The AI Institute's research campus' apartment resident site...
+<br> 
+All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner.
+<br>
+<br> 
+<img src = 'img/imbalanced_en.png'>
+<br>  
+Duong blushed, "Why should we care about such an <b>extreme event</b> instead of the things that lie at the <b>center region of normal distribution</b>? For example, who are gonna clear the table and wash the dishes?" &#128580
+<br> 
+"Well,  extreme events are usually interesting, and have many applications," Quang, the postdoc researcher said, as serious as if he was giving a lecture.
+<br> 
+"For example?" asked Duong.
+<br> 
+"Like the bank can freeze a user's account when detecting irregular transactions, predicting storms, avalanches, tsunamis, epidemic, etc.," Quang said again.
+<br> 
+Before Duong could open her mouth again, Duy teased her, adding some words, "And how some people can help us getting a girlfriend or boyfriend quickly."
+<br> 
+"You're good at speaking, so I think that's easy for you. Just pick one and pursuit her!" Thanh said.
+<br> 
+"What if she runs away? Having a girlfriend is an optimization problem, 
+of which the maximum of the loss function is a broken heart." Duy replied.
+<br> 
+"Well, you should minimize the loss, not to maximize it," Duong said,
+<br> 
+"In the past, I trained neural networks, and the loss exploded many times. 
+So, I guess similar things may happen when I try to pursue a girl." Quang said, 
+with a lot of honesty &#128580
+<br> 
+Everyone laughed again. &#128514
+<br> 
+"Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.
+<br> 
+"I wonder, which loss function should we use for this problem?" Duy asked.
+<br> 
+"Binary cross-entropy, of course!" Tuan smiled. "Suppose the output from a girl \(z\) is 1 if she likes you and 0 if she doesn't, and the probability that she likes you is \(p\). Then the <b> binary cross-entropy </b> is defined as
+$$z\log p + (1-z)\log (1-p),$$
+which implies that if she likes you, then \(z=1\) and loss is \(log p\). If she doesn't, then \(z=0\) and loss is \(log (1-p)\).
+<br> 
+That's for one girl. If you decide to pursuit \(n\) girls at the same time, then the loss is
+
+$$\sum_{i=1}^n (z_i\log p + (1-z_i)\log (1-p)),"$$
+<br> 
+"Oh my god! Now I see who you really are. You pursuit \(n\) girls at the same time!" Quynh went ha ha ha ...
+<br> 
+"Oh, no! For me, \(n=1\) for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing \(n\) girls at the same time." 
+<br> 
+"Who is older?" Duy rolled his eyes. &#128548
+<br> 
+"Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
+"Let's talk about how to tackle this problem."
+<br> 
+"Isn't this an imbalanced data problem?" Quynh grinned.
+<br> 
+"Yes, of course, I mostly succeeded in pursuing girls. 
+So this is really a very imbalanced data issue." Tuan quickly replied before Quynh could 
+continue by saying that he failed to pursuit girls most of the time &#128518.
+<br>
+Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
+ten years older than you?"
+<br>
+"No"&#128548
+<br> 
+"Maybe there is, but he already deleted it in his preprocessing step," Duy said. &#128518
+<br> 
+Everyone bursted into laughs again. <br>
+"This is a very small data problem. So, perhaps you should not drop a data point like that," Quynh said.
+<br>
+"Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
+his words itselves is another tease. </font> 
+<br>
+<font color="#ff1493"> Dropout: <i>At each training stage, individual nodes are either "dropped out" of the net with probability
+ \(1-p\) or kept with probability \(p\), so that a reduced network is left; incoming and outgoing 
+edges to a dropped-out node are also removed. Only the reduced network is trained on the data in
+ that stage. The removed nodes are then reinserted into the network with their original weights.</i>
+(Wikipedia)
+<br> 
+In the training stages, the probability that a hidden node will be dropped is usually 0.5; 
+for input nodes, this should be much lower, intuitively because information is directly lost 
+when input nodes are ignored.</font> 
+<br>
+<font color="#ff1493"> <b>DropConnect</b> DropConnect is the generalization of dropout in which
+ each connection, rather than each output unit, can be dropped with probability \(1-p\). 
+Each unit thus receives input from a random subset of units in the previous layer.<br>
+</font>
+<br> <font color="#00bfff"> 
+"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some 
+synthetic girlfriends?" asked Quynh &#128527. </font> 
+<br> 
+
+<ul>
+
+<li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
+(Synthetic Minority Over-sampling Technique):</b> rather than creating new ra
+ndom minority samples from existing minority classes, we over-sample the minorit
+y class by creating “synthetic” samples.
+
+<li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
+distribution for different minority class examples according to
+their level of difficulty in learning, where more synthetic data
+is generated for minority class examples that are harder to
+learn compared to those minority examples that are easier to
+learn. As a result, the ADASYN approach improves learning
+with respect to the data distributions in two ways: (1) reducing
+the bias introduced by the class imbalance, and (2) adaptively
+shifting the classification decision boundary toward the difficult
+examples.(source: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.942&rep=rep1&type=pdf'>ADASYN: 
+Adaptive Synthetic Sampling Approach for Imbalanced
+Learning</a> <br> 
+
+<li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
+It's based on k-nearest neighbor clustering. <br>
+See more in <a href='https://arxiv.org/pdf/1608.06048.pdf'>Survey of resampling techniques for improving
+classification performance in unbalanced datasets</a> 
+</ul>
+</font>
+<br> 
+<font color="#00bfff"> 
+Tuan understood what Quynh really means by <b><i>synthetic girlfriend</b>. Yet, he ignored it and continued. "Those techniques are
+yesterday. I'll use customized loss function, "a specialist for imbalanced data" instead!"
+<br>
+"What is that?" Duy asked.
+<br>
+"Not gonna tell you!" Tuan asked and then walked up stair.
+<br>
+Several other started to leave as well. Only three people left: two boys that washed the dish, and one girl who was looking at them.
+<br> 
+One boy asked, "Is it look that interesting to you about the way we wash the dishes?"
+<br> 
+"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!"<br> 
+</font> 
+
+<br> 
+<br> 
+
+You may interest in:
+<br> 
+<ul>
+<li><a href='https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?fbclid=IwAR2GYZmJ6aBWpoFxQkSi7zlUULUjB1mkPY_-uFDbtBjN0wRFiEr4po79ixY'>
+Classification on imbalanced data (tutorial on tensorflow.org)
+<li> Cost-Sensitive Learning of Deep Feature
+Representations from Imbalanced Data: a paper by S. H. Khan, M. Hayat, M. Bennamoun, F. Sohel and R. Togne
+<li>	Training Deep Neural Networks on Imbalanced Data Sets:  a paper that concentrate on <b> binary classification </b> by Shoujin Wang 
+, Wei Liu
+, Jia Wu 
+, Longbing Cao 
+, Qinxue Meng 
+, Paul J. Kennedy 
+</a> 
+
+</ul>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
+<div class="addthis_inline_share_toolbox"></div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+<div class="fb-comments" data-href="https://ellienguyen.style/aii/imbalanced.html" data-width="" data-numposts="5"></div>
+    <footer id="main-footer">
+        <hr color = "black" width="400px">
+            		Copyright &copy; 2019 Ellie Nguyen. All rights reserved.
+	</footer>
+
+</body>
+
+</html>
