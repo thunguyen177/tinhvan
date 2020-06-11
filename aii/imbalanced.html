@@ -13080,7 +13080,7 @@ div#notebook {
 <p><h3> The imbalanced data problem </h3>
 <font color="#00bfff"> 
 The AI Institute's research campus' apartment resident site...</p>
-<p>All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner.</p>
+<p>All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner. &lt;/font&gt;</p>
 <p><img src = 'img/imbalanced_en.png'>
   <font color="#00bfff"> 
 Duong blushed, "Why should we care about such an <b>extreme event</b> instead of the things that lie at the <b>center region of normal distribution</b>? For example, who are gonna clear the table and wash the dishes?" &amp;#128580</p>
@@ -13091,34 +13091,35 @@ Duong blushed, "Why should we care about such an <b>extreme event</b> instead of
 <p>"You're good at speaking, so I think that's easy for you. Just pick one and pursuit her!" Thanh said.</p>
 <p>"What if she runs away? Having a girlfriend is an optimization problem, 
 of which the maximum of the loss function is a broken heart." Duy replied.</p>
-<p>"Well, you should minimize the loss, not to maximize it," Duong said,</p>
+<p>"Well, you should minimize the loss, not to maximize it," Duong said,
+ &lt;/font&gt;</p>
 <p><font color="#00bfff"> "In the past, I trained neural networks, and the loss exploded many times. 
 So, I guess similar things may happen when I try to pursue a girl." Quang said, 
-with a lot of honesty &amp;#128580</p>
-<p><font color="#00bfff"> Everyone laughed again. &amp;#128514</p>
-<p>"Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.</p>
+with a lot of honesty &#128580 </font></p>
+<p><font color="#00bfff"> Everyone laughed again. &#128514 </font></p>
+<p><font color="#00bfff"> "Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.</p>
 <p>"I wonder, which loss function should we use for this problem?" Duy asked.</p>
 <p>"Binary cross-entropy, of course!" Tuan smiled. "Suppose the output from a girl $z$ is 1 if she likes you and 0 if she doesn't, and the probability that she likes you is $p$. Then the <b> binary cross-entropy </b> is defined as
 $$z\log p + (1-z)\log (1-p),$$
 which implies that if she likes you, then $z=1$ and loss is $log p$. If she doesn't, then $z=0$ and loss is $log (1-p)$.</p>
 <p>That's for one girl. If you decide to pursuit $n$ girls at the same time, then the loss is</p>
 $$\sum_{i=1}^n (z_i\log p + (1-z_i)\log (1-p)),"$$<p>"Oh my god! Now I see who you really are. You pursuit $n$ girls at the same time!" Quynh went ha ha ha ...</p>
-<p>"Oh, no! For me, $n=1$ for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing $n$ girls at the same time."</p>
-<p><font color="#00bfff"> "Who is older?" Duy rolled his eyes. &amp;#128548</p>
-<p>"Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
+<p>"Oh, no! For me, $n=1$ for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing $n$ girls at the same time." &lt;/font&gt;</p>
+<p><font color="#00bfff"> "Who is older?" Duy rolled his eyes. &#128548</font></p>
+<p><font color="#00bfff"> "Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
 "Let's talk about how to tackle this problem."</p>
-<p>"Isn't this an imbalanced data problem?" Quynh grinned.</p>
+<p>"Isn't this an imbalanced data problem?" Quynh grinned.&lt;/font&gt;</p>
 <p><font color="#00bfff"> "Yes, of course, I mostly succeeded in pursuing girls. 
 So this is really a very imbalanced data issue." Tuan quickly replied before Quynh could 
-continue by saying that he failed to pursuit girls most of the time &amp;#128518.</p>
-<p>Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
-ten years older than you?"</p>
-<p><font color="#00bfff"> "No"&amp;#128548</p>
-<p><font color="#00bfff"> "Maybe there is, but he already deleted it in his preprocessing step," Duy said. &amp;#128518</p>
+continue by saying that he failed to pursuit girls most of the time &#128518. </font></p>
+<p><font color="#00bfff"> Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
+ten years older than you?"</font></p>
+<p><font color="#00bfff"> "No"&#128548 </font></p>
+<p><font color="#00bfff"> "Maybe there is, but he already deleted it in his preprocessing step," Duy said. &#128518</font></p>
 <p>Everyone bursted into laughs again. 
 "This is a very small data problem. So, perhaps you should not drop a data point like that," Quynh said.</p>
-<p>"Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
-his words itselves is another tease.</p>
+<p><font color="#00bfff"> "Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
+his words itselves is another tease. </font></p>
 <p><font color="#ff1493"> Dropout: <i>At each training stage, individual nodes are either "dropped out" of the net with probability
  $1-p$ or kept with probability $p$, so that a reduced network is left; incoming and outgoing 
 edges to a dropped-out node are also removed. Only the reduced network is trained on the data in
@@ -13126,21 +13127,20 @@ edges to a dropped-out node are also removed. Only the reduced network is traine
 (Wikipedia)</p>
 <p>In the training stages, the probability that a hidden node will be dropped is usually 0.5; 
 for input nodes, this should be much lower, intuitively because information is directly lost 
-when input nodes are ignored.</p>
+when input nodes are ignored.&lt;/font&gt;</p>
 <p><font color="#ff1493"> <b>DropConnect</b> DropConnect is the generalization of dropout in which
  each connection, rather than each output unit, can be dropped with probability $1-p$. 
-Each unit thus receives input from a random subset of units in the previous layer.</p>
+Each unit thus receives input from a random subset of units in the previous layer.
+</font></p>
 <p><font color="#00bfff"> 
-"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some 
-synthetic girlfriends?" asked Quynh &amp;#128527.</p>
+"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some synthetic girlfriends?" asked Quynh &#128527. </font></p>
 <ul>
 
-<li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
+<p><li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
 (Synthetic Minority Over-sampling Technique):</b> rather than creating new ra
 ndom minority samples from existing minority classes, we over-sample the minorit
-y class by creating “synthetic” samples.
-
-<li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
+y class by creating “synthetic” samples.</p>
+<p><li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
 distribution for different minority class examples according to
 their level of difficulty in learning, where more synthetic data
 is generated for minority class examples that are harder to
@@ -13151,20 +13151,22 @@ the bias introduced by the class imbalance, and (2) adaptively
 shifting the classification decision boundary toward the difficult
 examples.(source: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.942&rep=rep1&type=pdf'>ADASYN: 
 Adaptive Synthetic Sampling Approach for Imbalanced
-Learning</a>  
-
-<li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
+Learning</a></p>
+<p><li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
 It's based on k-nearest neighbor clustering. 
 See more in <a href='https://arxiv.org/pdf/1608.06048.pdf'>Survey of resampling techniques for improving
 classification performance in unbalanced datasets</a> 
-</ul><p><font color="#00bfff"> 
+&lt;/ul&gt;
+&lt;/font&gt;</p>
+<p><font color="#00bfff"> 
     Tuan understood what Quynh really means by <b><i>synthetic girlfriend</i></b>. Yet, he ignored it and continued. "Those techniques are
 yesterday. I'll use customized loss function, "a specialist for imbalanced data" instead!"</p>
 <p>"What is that?" Duy asked.</p>
 <p>"Not gonna tell you!" Tuan asked and then walked up stair.</p>
 <p>Several other started to leave as well. Only three people left: two boys that washed the dish, and one girl who was looking at them.</p>
 <p>One boy asked, "Is it look that interesting to you about the way we wash the dishes?"</p>
-<p>"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!"</p>
+<p>"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!" 
+&lt;/font&gt;</p>
 <p>You may interest in:</p>
 <p><ul></p>
 <p><li><a href='https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?fbclid=IwAR2GYZmJ6aBWpoFxQkSi7zlUULUjB1mkPY_-uFDbtBjN0wRFiEr4po79ixY'>
