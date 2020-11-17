@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>imbalanced</title>
+<title>stat_rand_var_VI</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,125 +13077,125 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h3> The imbalanced data problem </h3>
-<font color="#00bfff"> 
-The AI Institute's research campus' apartment resident site...</p>
-<p>All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner. &lt;/font&gt;</p>
-<p><img src = 'img/imbalanced_en.png'>
-  <font color="#00bfff"> 
-Duong blushed, "Why should we care about such an <b>extreme event</b> instead of the things that lie at the <b>center region of normal distribution</b>? For example, who are gonna clear the table and wash the dishes?" &amp;#128580</p>
-<p>"Well,  extreme events are usually interesting, and have many applications," Quang, the postdoc researcher said, as serious as if he was giving a lecture.</p>
-<p>"For example?" asked Duong.</p>
-<p>"Like the bank can freeze a user's account when detecting irregular transactions, predicting storms, avalanches, tsunamis, epidemic, etc.," Quang said again.</p>
-<p>Before Duong could open her mouth again, Duy teased her, adding some words, "And how some people can help us getting a girlfriend or boyfriend quickly."</p>
-<p>"You're good at speaking, so I think that's easy for you. Just pick one and pursuit her!" Thanh said.</p>
-<p>"What if she runs away? Having a girlfriend is an optimization problem, 
-of which the maximum of the loss function is a broken heart." Duy replied.</p>
-<p>"Well, you should minimize the loss, not to maximize it," Duong said,
- &lt;/font&gt;</p>
-<p><font color="#00bfff"> "In the past, I trained neural networks, and the loss exploded many times. 
-So, I guess similar things may happen when I try to pursue a girl." Quang said, 
-with a lot of honesty &#128580 </font></p>
-<p><font color="#00bfff"> Everyone laughed again. &#128514 </font></p>
-<p><font color="#00bfff"> "Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.</p>
-<p>"I wonder, which loss function should we use for this problem?" Duy asked.</p>
-<p>"Binary cross-entropy, of course!" Tuan smiled. "Suppose the output from a girl $z$ is 1 if she likes you and 0 if she doesn't, and the probability that she likes you is $p$. Then the <b> binary cross-entropy </b> is defined as
-$$z\log p + (1-z)\log (1-p),$$
-which implies that if she likes you, then $z=1$ and loss is $log p$. If she doesn't, then $z=0$ and loss is $log (1-p)$.</p>
-<p>That's for one girl. If you decide to pursuit $n$ girls at the same time, then the loss is</p>
-$$\sum_{i=1}^n (z_i\log p + (1-z_i)\log (1-p)),"$$<p>"Oh my god! Now I see who you really are. You pursuit $n$ girls at the same time!" Quynh went ha ha ha ...</p>
-<p>"Oh, no! For me, $n=1$ for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing $n$ girls at the same time." &lt;/font&gt;</p>
-<p><font color="#00bfff"> "Who is older?" Duy rolled his eyes. &#128548</font></p>
-<p><font color="#00bfff"> "Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
-"Let's talk about how to tackle this problem."</p>
-<p>"Isn't this an imbalanced data problem?" Quynh grinned.&lt;/font&gt;</p>
-<p><font color="#00bfff"> "Yes, of course, I mostly succeeded in pursuing girls. 
-So this is really a very imbalanced data issue." Tuan quickly replied before Quynh could 
-continue by saying that he failed to pursuit girls most of the time &#128518. </font></p>
-<p><font color="#00bfff"> Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
-ten years older than you?"</font></p>
-<p><font color="#00bfff"> "No"&#128548 </font></p>
-<p><font color="#00bfff"> "Maybe there is, but he already deleted it in his preprocessing step," Duy said. &#128518</font></p>
-<p>Everyone bursted into laughs again. 
-"This is a very small data problem. So, perhaps you should not drop a data point like that," Quynh said.</p>
-<p><font color="#00bfff"> "Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
-his words itselves is another tease. </font></p>
-<p><font color="#ff1493"> Dropout: <i>At each training stage, individual nodes are either "dropped out" of the net with probability
- $1-p$ or kept with probability $p$, so that a reduced network is left; incoming and outgoing 
-edges to a dropped-out node are also removed. Only the reduced network is trained on the data in
- that stage. The removed nodes are then reinserted into the network with their original weights.</i>
-(Wikipedia)</p>
-<p>In the training stages, the probability that a hidden node will be dropped is usually 0.5; 
-for input nodes, this should be much lower, intuitively because information is directly lost 
-when input nodes are ignored.&lt;/font&gt;</p>
-<p><font color="#ff1493"> <b>DropConnect</b> DropConnect is the generalization of dropout in which
- each connection, rather than each output unit, can be dropped with probability $1-p$. 
-Each unit thus receives input from a random subset of units in the previous layer.
-</font></p>
-<p><font color="#00bfff"> 
-"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some synthetic girlfriends?" asked Quynh &#128527. </font></p>
+<p><a href='https://ellienguyen.style/'><font color="green"> <b> <center> Ellie V  </center> </b></font> </a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color="green"> <b> <center> Biến ngẫu nhiên và định nghĩa cổ điển của xác suất</center> </b></font><br>
+Vẫn phải đi dạy, dù vẫn bực, Mai nhìn Parker hầm hầm như sắp xử trảm tên ấy. Cô nàng đanh giọng nói:</p>
 <ul>
+<li>Hôm nay chúng ta nói về biến ngẫu nhiên. "Biến" là biến đổi, "ngẫu nhiên" là không có ...không ngẫu nhiên!!! </li>
+</ul>
+<p><font color="red">Một biến ngẫu nhiên, thường được kí hiệu là X là một biến có giá trị là kết quả của một hiện tượng
+ngẫu nhiên.</font> Ví dụ như giới tính người yêu anh có thể là nữ, nam, hoặc đồng giới! Biến này gọi là
+biến phân loại (categorical variable) vì nó có thể là một trong 3 loại: nữ, nam, hoặc đồng giới!
+Số lần người đó đi chơi với anh có thể được xem như biến rời rạc (discrete random variable) 
+vì ta có thể liệt kê tất cả các giá trị của nó! Nhưng chiều cao, cân nặng của họ thì là biến
+liên tục.</p>
+<ul>
+<li>Giới tính người yêu tôi có thể là nữ, nam, hoặc đồng giới? Ý cô là tôi lưỡng tính hả?</li>
+</ul>
+<p>Mai gờm gờm:</p>
+<ul>
+<li>Tôi chỉ đoán thôi!</li>
+</ul>
+<p>Để xoa dịu cơn giận của Mai, Parker cười đùa:</p>
+<ul>
+<li>Không sao! Nếu vậy thật thì càng có nhiều lựa chọn!</li>
+</ul>
+<p>Mai buột miệng cười, nhưng mau chóng ghìm lại, vì cô nàng vẫn chưa hết cáu về vụ mấy con sâu bữa trước. Parker nhớ lại chuyện hôm trước, nhưng cũng không lấy gì làm nhọ, vì Mai không biết rằng anh chàng cũng chạy mất dép, mấy tiếng sau mới quay lại. Về chuyện chạy mất khi con sâu cố bò lên, lão tự bào chữa với lòng rằng mình không sợ con sâu, mà chỉ là ... sợ nó bò lên người!!!
+Mai:</p>
+<ul>
+<li>Lấy ví dụ khác: lượng hàng bán được của "Baker Boy" qua các tháng là biến rời rạc. Đó có thể là một triệu sản phẩm, 1 triệu hai trăm sản phẩm, hoặc hai triệu sản phẩm, tức là đếm được. Nhưng doanh thu của họ qua mỗi tháng là biến ngẫu nhiên liên tục.</li>
+<li>Ô kê! - Parker cười, giống như là đi học vui lắm!!</li>
+</ul>
+<p>Mai lườm nó:</p>
+<ul>
+<li>Giờ tôi hỏi anh, giới tính của cá là biến phân loại hay biến liên tục?</li>
+</ul>
+<p>Parker thản nhiên đáp:</p>
+<ul>
+<li>Dĩ nhiên là liên tục!</li>
+</ul>
+<p>Mai mặt hầm hầm, chuẩn bị tuôn cơn giận. Nhưng Parker biết rẽ lái tức thì:</p>
+<ul>
+<li>Đùa thôi! Biến phân loại! Cô vừa nói giới tính người yêu tôi là biến phân loại xong! Giới tính của cá làm sao liên tục được!</li>
+</ul>
+<p>Mai kiềm lại lửa trên đầu, hỏi tiếp:</p>
+<ul>
+<li>Vậy chiều dài con cá là biến ngẫu nhiên liên tục hay rời rạc!</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Liên tục!</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Số lông trên tay anh là biến ngẫu nhiên liên tục hay rời rạc?</li>
+</ul>
+<p>Biết cô nàng chê mình lắm lông, Parker đổi mặt sang hơi hầm hầm:</p>
+<ul>
+<li>Đếm được, nên rời rạc!</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Mà nhân tiện, anh có biết hiện tượng người mọc nhiều lông có tên khoa học là gì không?</li>
+</ul>
+<p>Parker bắt đầu gờm gờm:</p>
+<ul>
+<li>Không!</li>
+</ul>
+<p>Mai thản nhiên nói, không nhìn mặt nó, không cười (nhưng thực ra là đang nhịn cười):</p>
+<ul>
+<li>Hiện tượng ... lại tổ!</li>
+</ul>
 
-<p><li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
-(Synthetic Minority Over-sampling Technique):</b> rather than creating new ra
-ndom minority samples from existing minority classes, we over-sample the minorit
-y class by creating “synthetic” samples.</p>
-<p><li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
-distribution for different minority class examples according to
-their level of difficulty in learning, where more synthetic data
-is generated for minority class examples that are harder to
-learn compared to those minority examples that are easier to
-learn. As a result, the ADASYN approach improves learning
-with respect to the data distributions in two ways: (1) reducing
-the bias introduced by the class imbalance, and (2) adaptively
-shifting the classification decision boundary toward the difficult
-examples.(source: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.942&rep=rep1&type=pdf'>ADASYN: 
-Adaptive Synthetic Sampling Approach for Imbalanced
-Learning</a></p>
-<p><li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
-It's based on k-nearest neighbor clustering. 
-See more in <a href='https://arxiv.org/pdf/1608.06048.pdf'>Survey of resampling techniques for improving
-classification performance in unbalanced datasets</a> 
-&lt;/ul&gt;
-&lt;/font&gt;</p>
-<p><font color="#00bfff"> 
-    Tuan understood what Quynh really means by <b><i>synthetic girlfriend</i></b>. Yet, he ignored it and continued. "Those techniques are
-yesterday. I'll use customized loss function, "a specialist for imbalanced data" instead!"</p>
-<p>"What is that?" Duy asked.</p>
-<p>"Not gonna tell you!" Tuan asked and then walked up stair.</p>
-<p>Several other started to leave as well. Only three people left: two boys that washed the dish, and one girl who was looking at them.</p>
-<p>One boy asked, "Is it look that interesting to you about the way we wash the dishes?"</p>
-<p>"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!" 
-&lt;/font&gt;</p>
-<p>You may interest in:</p>
-<p><ul></p>
-<p><li><a href='https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?fbclid=IwAR2GYZmJ6aBWpoFxQkSi7zlUULUjB1mkPY_-uFDbtBjN0wRFiEr4po79ixY'>
-Classification on imbalanced data (tutorial on tensorflow.org)</p>
-<p><li> Cost-Sensitive Learning of Deep Feature
-Representations from Imbalanced Data: a paper by S. H. Khan, M. Hayat, M. Bennamoun, F. Sohel and R. Togne</p>
-<p><li>    Training Deep Neural Networks on Imbalanced Data Sets:  a paper that concentrate on <b> binary classification </b> by Shoujin Wang 
-, Wei Liu
-, Jia Wu 
-, Longbing Cao 
-, Qinxue Meng 
-, Paul J. Kennedy 
-&lt;/a&gt;</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mai e hèm một cái rồi tiếp:</p>
+<ul>
+<li>Không gian mẫu hay không gian mẫu toàn thể, thường được ký hiệu là $\Omega$, của một thí nghiệm hay thử ngẫu nhiên là tập hợp tất cả các kết quả có thể xảy ra. Ví dụ, trong thí nghiệm tung một đồng xu, 
+  không gian mẫu sẽ là {ngửa, sấp}. Còn đối với thí nghiệm tung một con xúc xắc thì không gian mẫu 
+  là $\{1, 2, 3, 4, 5, 6\}$. Bất kì tập hợp con nào của không gian mẫu đều thường được gọi là một biến cố. Như vậy, một <font color="red">biến cố (event)</font> là một tập các kết quả đầu ra (outcomes). Chẳng hạn,khi tung một con xúc xắc thì $\{1\}, \{2\},\{1,2\}, \{1, 2, 3, 4, 5, 6\}$ đều là biến cố.
+Theo định nghĩa cổ điển của lý thuyết xác suất thì xác suất $P(E)$ của một biến cố $E$ được định nghĩa là $P(E)=\frac{n}{N}$. Trong đó, n là tổng số outcome có khả năng xảy ra như nhau, n là số lần biến cố 
+  E xảy ra. Nói cách khác, người ta định nghĩa xác suất xảy ra của một biến cố bằng tần suất nó xảy ra. Như vậy thì rõ ràng xác suất của một biến cố luôn nằm giữa 0 và 1 
+  $(0\le P(E)\le 1\forall \Omega)$. Ví dụ khi thảy một đồng xu cân bằng thì xác suất mặt ngửa
+  là $P(\text{ngửa})=\frac{1}{2}$.</li>
+</ul>
+<p>Rồi Mai lại tiếp tục giở một cái giọng rất ... Mai:</p>
+<ul>
+<li>Một ví dụ khác gần gũi hơn như nếu xác suất anh bắn tên trúng bia tâm bia đỡ là 0.2 thì về lâu về dài, khi anh bắn càng nhiều tên thì trung bình cứ mười lần chỉ trúng có hai lần! Khi anh đi săn tập thể, muông thú sẽ rất biết ơn anh vì thay vì để người thạo săn bắn hạ gục con thú, anh sẽ giành cơ hội để thể hiện mình nhưng cuối cùng bắn không trúng và để cho con thú nó chạy mất!</li>
+</ul>
+<p>Parker biết là Mai đã đã nhìn thấy mình tập bắn tên. Mặt nó hầm hầm, vừa tức vừa xấu hổ. Mai mặc kệ:</p>
+<ul>
+<li>Nếu điều gì có xác suất nó xảy ra bằng 1 thì chắc chắn điều đó sẽ xảy ra. Ví dụ: Để ước đoán khả năng anh sẽ thay bạn gái trong vòng một tháng tới, tôi sẽ ước tính xác suất của biến cố 
+  E: "anh thay bạn gái trong vòng một tháng". Nhưng nghe đâu, anh chưa có mối tình nào kéo dài quá một tháng nên biến cố E
+  này dĩ nhiên có xác suất bằng 1. Nếu điều gì có xác suất nó xảy ra bằng 0  thì  chắc chắn 
+  điều đó sẽ không xảy ra. Ví dụ, anh thông minh hơn tôi là một điều có xác suất xảy ra bằng 0, 
+  tức là đây là điều không thể xảy ra!</li>
+</ul>
+<p>Parker nghe rất tức nhưng không làm được gì vì những điều Mai nói không có cái gì là sai!!!</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<footer id="main-footer">
+        <hr color = "black" width="400px">
+    <center> Copyright &copy; 2019 Ellie Nguyen. All rights reserved.</center>
+</footer>
 </div>
 </div>
-
 </div>
     </div>
   </div>

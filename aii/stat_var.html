@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>imbalanced</title>
+<title>stat_var</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,125 +13077,186 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h3> The imbalanced data problem </h3>
-<font color="#00bfff"> 
-The AI Institute's research campus' apartment resident site...</p>
-<p>All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner. &lt;/font&gt;</p>
-<p><img src = 'img/imbalanced_en.png'>
-  <font color="#00bfff"> 
-Duong blushed, "Why should we care about such an <b>extreme event</b> instead of the things that lie at the <b>center region of normal distribution</b>? For example, who are gonna clear the table and wash the dishes?" &amp;#128580</p>
-<p>"Well,  extreme events are usually interesting, and have many applications," Quang, the postdoc researcher said, as serious as if he was giving a lecture.</p>
-<p>"For example?" asked Duong.</p>
-<p>"Like the bank can freeze a user's account when detecting irregular transactions, predicting storms, avalanches, tsunamis, epidemic, etc.," Quang said again.</p>
-<p>Before Duong could open her mouth again, Duy teased her, adding some words, "And how some people can help us getting a girlfriend or boyfriend quickly."</p>
-<p>"You're good at speaking, so I think that's easy for you. Just pick one and pursuit her!" Thanh said.</p>
-<p>"What if she runs away? Having a girlfriend is an optimization problem, 
-of which the maximum of the loss function is a broken heart." Duy replied.</p>
-<p>"Well, you should minimize the loss, not to maximize it," Duong said,
- &lt;/font&gt;</p>
-<p><font color="#00bfff"> "In the past, I trained neural networks, and the loss exploded many times. 
-So, I guess similar things may happen when I try to pursue a girl." Quang said, 
-with a lot of honesty &#128580 </font></p>
-<p><font color="#00bfff"> Everyone laughed again. &#128514 </font></p>
-<p><font color="#00bfff"> "Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.</p>
-<p>"I wonder, which loss function should we use for this problem?" Duy asked.</p>
-<p>"Binary cross-entropy, of course!" Tuan smiled. "Suppose the output from a girl $z$ is 1 if she likes you and 0 if she doesn't, and the probability that she likes you is $p$. Then the <b> binary cross-entropy </b> is defined as
-$$z\log p + (1-z)\log (1-p),$$
-which implies that if she likes you, then $z=1$ and loss is $log p$. If she doesn't, then $z=0$ and loss is $log (1-p)$.</p>
-<p>That's for one girl. If you decide to pursuit $n$ girls at the same time, then the loss is</p>
-$$\sum_{i=1}^n (z_i\log p + (1-z_i)\log (1-p)),"$$<p>"Oh my god! Now I see who you really are. You pursuit $n$ girls at the same time!" Quynh went ha ha ha ...</p>
-<p>"Oh, no! For me, $n=1$ for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing $n$ girls at the same time." &lt;/font&gt;</p>
-<p><font color="#00bfff"> "Who is older?" Duy rolled his eyes. &#128548</font></p>
-<p><font color="#00bfff"> "Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
-"Let's talk about how to tackle this problem."</p>
-<p>"Isn't this an imbalanced data problem?" Quynh grinned.&lt;/font&gt;</p>
-<p><font color="#00bfff"> "Yes, of course, I mostly succeeded in pursuing girls. 
-So this is really a very imbalanced data issue." Tuan quickly replied before Quynh could 
-continue by saying that he failed to pursuit girls most of the time &#128518. </font></p>
-<p><font color="#00bfff"> Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
-ten years older than you?"</font></p>
-<p><font color="#00bfff"> "No"&#128548 </font></p>
-<p><font color="#00bfff"> "Maybe there is, but he already deleted it in his preprocessing step," Duy said. &#128518</font></p>
-<p>Everyone bursted into laughs again. 
-"This is a very small data problem. So, perhaps you should not drop a data point like that," Quynh said.</p>
-<p><font color="#00bfff"> "Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
-his words itselves is another tease. </font></p>
-<p><font color="#ff1493"> Dropout: <i>At each training stage, individual nodes are either "dropped out" of the net with probability
- $1-p$ or kept with probability $p$, so that a reduced network is left; incoming and outgoing 
-edges to a dropped-out node are also removed. Only the reduced network is trained on the data in
- that stage. The removed nodes are then reinserted into the network with their original weights.</i>
-(Wikipedia)</p>
-<p>In the training stages, the probability that a hidden node will be dropped is usually 0.5; 
-for input nodes, this should be much lower, intuitively because information is directly lost 
-when input nodes are ignored.&lt;/font&gt;</p>
-<p><font color="#ff1493"> <b>DropConnect</b> DropConnect is the generalization of dropout in which
- each connection, rather than each output unit, can be dropped with probability $1-p$. 
-Each unit thus receives input from a random subset of units in the previous layer.
-</font></p>
-<p><font color="#00bfff"> 
-"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some synthetic girlfriends?" asked Quynh &#128527. </font></p>
+<p><a href='https://ellienguyen.style/'><font color="green"> <b> <center> Ellie V  </center> </b></font> </a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color="green"> <b> <center> Phương sai, độ lệch chuẩn </center> </b></font><br>
+Giả sử tôi có dữ liệu về độ bền của bánh xe (tính theo nghìn km) như sau:</p>
+$$64\;\; 70\;\;  75 \;\; 78 \;\; 80 \;\; 90 \;\; 101$$<p>Khi đó, trung bình mẫu $\overline{x}$ cho ta biết trọng tâm của dữ liệu nằm ở đâu.
+    Nhưng để biết được dữ liệu dao động thế nào quanh trung bình mẫu thì anh làm gì?</p>
+<p>Parker:</p>
 <ul>
-
-<p><li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
-(Synthetic Minority Over-sampling Technique):</b> rather than creating new ra
-ndom minority samples from existing minority classes, we over-sample the minorit
-y class by creating “synthetic” samples.</p>
-<p><li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
-distribution for different minority class examples according to
-their level of difficulty in learning, where more synthetic data
-is generated for minority class examples that are harder to
-learn compared to those minority examples that are easier to
-learn. As a result, the ADASYN approach improves learning
-with respect to the data distributions in two ways: (1) reducing
-the bias introduced by the class imbalance, and (2) adaptively
-shifting the classification decision boundary toward the difficult
-examples.(source: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.942&rep=rep1&type=pdf'>ADASYN: 
-Adaptive Synthetic Sampling Approach for Imbalanced
-Learning</a></p>
-<p><li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
-It's based on k-nearest neighbor clustering. 
-See more in <a href='https://arxiv.org/pdf/1608.06048.pdf'>Survey of resampling techniques for improving
-classification performance in unbalanced datasets</a> 
-&lt;/ul&gt;
-&lt;/font&gt;</p>
-<p><font color="#00bfff"> 
-    Tuan understood what Quynh really means by <b><i>synthetic girlfriend</i></b>. Yet, he ignored it and continued. "Those techniques are
-yesterday. I'll use customized loss function, "a specialist for imbalanced data" instead!"</p>
-<p>"What is that?" Duy asked.</p>
-<p>"Not gonna tell you!" Tuan asked and then walked up stair.</p>
-<p>Several other started to leave as well. Only three people left: two boys that washed the dish, and one girl who was looking at them.</p>
-<p>One boy asked, "Is it look that interesting to you about the way we wash the dishes?"</p>
-<p>"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!" 
-&lt;/font&gt;</p>
-<p>You may interest in:</p>
-<p><ul></p>
-<p><li><a href='https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?fbclid=IwAR2GYZmJ6aBWpoFxQkSi7zlUULUjB1mkPY_-uFDbtBjN0wRFiEr4po79ixY'>
-Classification on imbalanced data (tutorial on tensorflow.org)</p>
-<p><li> Cost-Sensitive Learning of Deep Feature
-Representations from Imbalanced Data: a paper by S. H. Khan, M. Hayat, M. Bennamoun, F. Sohel and R. Togne</p>
-<p><li>    Training Deep Neural Networks on Imbalanced Data Sets:  a paper that concentrate on <b> binary classification </b> by Shoujin Wang 
-, Wei Liu
-, Jia Wu 
-, Longbing Cao 
-, Qinxue Meng 
-, Paul J. Kennedy 
-&lt;/a&gt;</p>
+<li>Tính hiệu giữa điểm chúng ta đang quan tâm và trung bình mẫu.</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Có lý, nhưng nếu nói như anh thì để biết $x_i$ lệch đi bao nhiêu so
+  với trung bình mẫu, chúng ta tính $x_i-\overline{x}$, phải không?</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Đúng rồi!</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Nhưng mà như vậy thì tổng của tất cả những độ lệch này là $\Sigma_i(x_i-\overline{x})=0!!$  <!--As $\overline{x}$$ give us a sense of where the center is,
+to get a sense of how much the data point vary around the mean,
+we use deviation = observation – sample mean $$=x-\overline{x}$$.
+Then, the sum of all deviations is $$\Sigma(x_i-\overline{x})=0$$.--></li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Vô đối quá vậy! Vậy tôi lấy giá trị tuyệt đối, dùng $|x_i-\overline{x}|$
+  thay cho $x_i-\overline{x}!$</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Ý cũng được đấy! Nhưng giá trị tuyệt đối thì không lấy đạo hàm được, mà để
+giảm độ dao động của các điểm xung quanh trung bình, chúng ta lại muốn dùng đạo hàm!</li>
+</ul>
+<p>Parker thở dài:</p>
+<ul>
+<li>Chứ cô muốn sao?</li>
+</ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mai:</p>
+<ul>
+<li>Lấy bình phương độ lệch! Cụ thể hơn, chúng ta dùng khái niệm
+<font color="red"> phương sai mẫu</font> (phương giống trong "bình phương",
+  sai giống trong "độ sai lệch"), kí hiệu là $s^2$. Phương sai của mẫu  $ (x_{1},\dots ,x_{n})$ chính là tổng các bình phương độ chệch
+chia cho $n-1$:     $$s^2=\frac{\sum_{i=1}^n(x_i-\overline{x})^2}{n-1}$$</li>
+<li>Sao không chia cho n mà lại chia cho $n-1$?</li>
+<li>Chia cho $n-1$ vì người ta chứng minh được $s^2=\frac{\sum_{i=1}^n(x_i-\overline{x})^2}{n-1}$
+là một ước lượng không chệch (unbiased) của phương sai quần thể,
+tức là $E(s^2)=\sigma^2$. $n-1$ là bậc tự do (degree of freedom).
+Lý do nó có cái tên này là vì tổng các độ chệch (deviation) $x-\overline{x}$ luôn bằng 0.
+Do đó, nếu ta biết $n-1$ cái deviation thì ta có thể tính được cái độ chệch (deviation) còn lại.</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Như vậy thì phải gọi là bậc tù túng mới đúng chứ!</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Để tính toán nhanh phương sai mẫu thì người ta thường dùng công thức sau:
+$$s^2= \frac{\sum_{i=1}^n(x_i-\overline{x})^2}{n-1} $$
+$$= \frac{\sum_{i=1}^n x_i^2-n\overline{x}^2}{n-1}  $$
+$$= \frac{1}{n-1}\left(\sum_{i=1}^nx_i^2-\frac{(\sum_{i=1}^nx_i)^2}{n}\right)$$
+Giờ anh tính thử phương sai của mẫu dữ liệu tuổi thọ bánh xe trên xem!</li>
+</ul>
+<p>Parker:
+$$\overline{x}=\frac{64 + 70 +75+ 78+ 80+ 90+ 101}{7}=79.71429$$</p>
 
-    </div>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mai:</p>
+<ul>
+<li>Trong ví dụ này, nếu ta gọi X là biến ngẫu nhiên biểu thị độ tuổi của
+bánh xe thì $\sigma^{2}$ là một ước lượng cho Variance của X. Chúng ta kí hiệu phương sai     của nó là
+${var} (X), \sigma_{X}^{2}$, hoặc <font color="red">  $ \sigma ^{2}$</font>, và
+  ta định nghĩa <font color="green"> phương sai là giá trị kỳ vọng của bình phương của
+  độ lệch của X so với giá trị kỳ vọng của nó</font>, tức là $$\sigma_{X}^{2}=E(X-\mu_X)^2$$</li>
+</ul>
+<hr color = "#F333FF" width="400px">
 
+<p>Mai:</p>
+<ul>
+<li>Như vậy, giả sử chúng ta có $X\sim Ber(p)$ thì phương sai của nó là gì?</li>
+</ul>
+<p>Parker: 
+$$\sigma_{X}^{2}=E(X-\mu_X)^2 = 0\times P(X=0)+1\times P(X=1) = p$$</p>
+<hr color = "#F333FF" width="400px">
+
+<p>Mai:</p>
+<ul>
+<li>Có một số tính chất cần phải biết như sau:</li>
+</ul>
+<p>Nếu $a$ và $b$ là các hằng số thực, X là một biến ngẫu nhiên, thì $aX+b$ cũng là biến ngẫu nhiên với phương sai là: $Var(aX+b)=a^{2}Var(X).$ Như vậy, $Var(X+b)=Var(X)$, cũng giống như dao động của con lắc vậy, nếu anh dịch chuyển vị trí của con lắc 1 đoạn $b$
+ thì độ dao động của nó không đổi.</p>
+<p>Khi tính phương sai, để thuận tiện ta thường dùng công thức:
+$$ Var(X)= {E} (X^{2})-\mu_X^2.$$
+$$Var (aX+bY)=a^{2}Var (X)+b^{2}Var (Y)+2ab Cov (X,Y).$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr color = "#F333FF" width="400px"> 
+
+<p>Parker:</p>
+<ul>
+<li>Haizz! Sinh ra mấy cái này làm gì, để cho người ta phải học!
+Mai: </li>
+<li>Dĩ nhiên phải học! Trong sản xuất, đầu ra sản phẩm là một đại lượng biến động.
+Nếu phương sai quá cao thì độ bền của sản phẩm bị dao động rất mạnh.
+Khi một công ty công bố bánh xe của họ có độ bền 80000 km thì không phải cái bánh xe nào
+cũng hư sau khi đi 80000km.
+Nó biến đổi do rất nhiều yếu tố như nguyên liệu đầu vào, máy móc, nhân lực,...
+Về phía người tiêu dùng, nếu nó hư sau khi đi được 100000 km thì họ mừng, khỏi nói!
+Nếu nó hư sau khi đi được 75000km thì họ cũng
+có thể chấp nhận và cho rằng mình đi trên đường gồ ghề,... nên bánh xe mau bị hư hơn.
+Nhưng nếu mới đi được 40 000 km đã hư thì tệ quá!  Cái mà người tiêu dùng trông chờ
+không phải là một sản phẩm hoàn hảo mà là một sản phẩm đáng tin cậy.
+Họ muốn sản phẩm với độ dao động trong chất lượng
+thấp để từ đó họ biết đường kỳ vọng điều gì từ sản phẩm đó. Điều này có nghĩa là
+trong sản xuất, anh muốn tìm cách để giảm Variance!</li>
+</ul>
+<p>Sau này học ANOVA thì anh sẽ thấy ANOVA cho phép  chúng ta chia tách nguồn của những sự dao động
+ này ra làm hai thành phần chính. Cụm thứ nhất gồm những nguyên nhân tự nhiên
+ như con người,
+ nguồn cung,... mà chúng ta không làm gì được. Cụm thứ hai bao gồm những nguyên nhân đặc biệt
+ thì rất dễ xác định.</p>
+<p>Để cải thiện quy trình sản xuất, ta có thể xem dây chuyền sản xuất như
+ là một chuỗi các hoạt động, bắt đầu với nguyên liệu thô và kết thúc với sản phẩm.
+ Mỗi hoạt động này đều có thể đo lường và có độ dao động do những yếu tố tự nhiên mà
+ chúng ta không kiểm soát được, và những yếu tố đặc biệt mà chúng ta có thể đưa ra
+ phương án giải quyết. Thay vì chờ đợi cho những sản phẩm cuối cùng vượt quá giới hạn
+ về độ dao động thì người ta xem xét độ dao động của mỗi hoạt động trong dây
+ chuyền sản xuất. Hoạt động có độ dao động lớn nhất nên được xem xét và cải thiện để
+ có được độ dao động nhỏ hơn. Độ dao động đó được giảm  thì sẽ có một hoạt động khác dao
+ động nhiều nhất. Người ta sẽ xem xét và cải thiện độ dao động lớn tiếp theo này.
+ Như vậy thì kiểm định chất lượng là một quá trình liên tục và khía cạnh có độ dao động
+ lớn nhất của dây chuyền sản xuất thì luôn được xem xét.*</p>
+<p><hr color = "black" width="300px">
+<i>Phương pháp này được đề xuất bởi Edwards Demming, cha đẻ của ngành quản lý chất lượng.
+Ông là người có công rất lớn đối với sự phát triển của Nhật Bản, nơi mà người ta ...
+Ông cũng nhận định rằng có nhiều thứ không rõ ràng trong sản xuất.
+ Một cái pit tông trong xe hơi thì phải tròn. Nhưng điều này không có ý nghĩa gì khi
+ mà người ta không đưa ra phương pháp để đo độ tròn của một cái pit tông.
+ Để cải thiện chất lượng thì chất lượng của sản phẩm phải đo được. Để đo được
+ thì tính chất cần đo phải được xác định rõ ràng. Những tính chất này thì không cố
+ định mà là những đại lượng dao động. Ta cần tìm hiểu về những tham số trong phân phối
+ của những kết quả đo lường này.</i></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<footer id="main-footer">
+        <hr color = "black" width="400px">
+    <center> Copyright &copy; 2019 Ellie Nguyen. All rights reserved.</center>
+</footer>
+</div>
+</div>
 </div>
     </div>
   </div>

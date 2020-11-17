@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>imbalanced</title>
+<title>stat_Student_distribution_HIV_VI</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,174 +13077,107 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h3> The imbalanced data problem </h3>
-<font color="#00bfff"> 
-The AI Institute's research campus' apartment resident site...
-<br> 
-All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner.
-<br>
-<br> 
-<img src = 'img/imbalanced_en.png'>
-<br><br>
-Duong blushed, "Why should we care about such an <b>extreme event</b> instead of the things that lie at the <b>center region of normal distribution</b>? For example, who are gonna clear the table and wash the dishes?" &amp;#128580
-<br> 
-"Well,  extreme events are usually interesting, and have many applications," Quang, the postdoc researcher said, as serious as if he was giving a lecture.
-<br> 
-"For example?" asked Duong.
-<br> 
-"Like the bank can freeze a user's account when detecting irregular transactions, predicting storms, avalanches, tsunamis, epidemic, etc.," Quang said again.
-<br> 
-Before Duong could open her mouth again, Duy teased her, adding some words, "And how some people can help us getting a girlfriend or boyfriend quickly."
-<br> 
-"You're good at speaking, so I think that's easy for you. Just pick one and pursuit her!" Thanh said.
-<br> 
-"What if she runs away? Having a girlfriend is an optimization problem, 
-of which the maximum of the loss function is a broken heart." Duy replied.
-<br> 
-"Well, you should minimize the loss, not to maximize it," Duong said,
-<br> 
-"In the past, I trained neural networks, and the loss exploded many times. 
-So, I guess similar things may happen when I try to pursue a girl." Quang said, 
-with a lot of honesty &amp;#128580
-<br> 
-Everyone laughed again. &amp;#128514
-<br> 
-"Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.
-<br> 
-"I wonder, which loss function should we use for this problem?" Duy asked.
-<br> 
-"Binary cross-entropy, of course!" Tuan smiled. "Suppose the output from a girl $z$ is 1 if she likes you and 0 if she doesn't, and the probability that she likes you is $p$. Then the <b> binary cross-entropy </b> is defined as
-$$z\log p + (1-z)\log (1-p),$$
-which implies that if she likes you, then $z=1$ and loss is $log p$. If she doesn't, then $z=0$ and loss is $log (1-p)$.
-<br> 
-That's for one girl. If you decide to pursuit $n$ girls at the same time, then the loss is</p>
-$$\sum_{i=1}^n (z_i\log p + (1-z_i)\log (1-p)),"$$<p><br> 
-"Oh my god! Now I see who you really are. You pursuit $n$ girls at the same time!" Quynh went ha ha ha ...
-<br> 
-"Oh, no! For me, $n=1$ for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing $n$ girls at the same time." 
-<br> 
-"Who is older?" Duy rolled his eyes. &amp;#128548
-<br> 
-"Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
-"Let's talk about how to tackle this problem."
-<br> 
-"Isn't this an imbalanced data problem?" Quynh grinned.
-<br> 
-"Yes, of course, I mostly succeeded in pursuing girls. 
-So this is really a very imbalanced data issue." Tuan quickly replied before Quynh could 
-continue by saying that he failed to pursuit girls most of the time &amp;#128518.
-<br>
-Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
-ten years older than you?"
-<br>
-"No"&amp;#128548
-<br> 
-"Maybe there is, but he already deleted it in his preprocessing step," Duy said. &amp;#128518
-<br> 
-Everyone bursted into laughs again. <br>
-"This is a very small data problem. So, perhaps you should not drop a data point like that," Quynh said.
-<br>
-"Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
-his words itselves is another tease. &lt;/font&gt; 
-<br>
-<font color="#ff1493"> Dropout: <i>At each training stage, individual nodes are either "dropped out" of the net with probability
- $1-p$ or kept with probability $p$, so that a reduced network is left; incoming and outgoing 
-edges to a dropped-out node are also removed. Only the reduced network is trained on the data in
- that stage. The removed nodes are then reinserted into the network with their original weights.</i>
-(Wikipedia)
-<br> 
-In the training stages, the probability that a hidden node will be dropped is usually 0.5; 
-for input nodes, this should be much lower, intuitively because information is directly lost 
-when input nodes are ignored.</font> 
-<br>
-<font color="#ff1493"> <b>DropConnect</b> DropConnect is the generalization of dropout in which
- each connection, rather than each output unit, can be dropped with probability $1-p$. 
-Each unit thus receives input from a random subset of units in the previous layer.<br>
-</font>
-<br> <font color="#00bfff"> 
-"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some 
-synthetic girlfriends?" asked Quynh &#128527. </font> 
-<br></p>
-<ul>
+<p><a href='https://ellienguyen.style/'><font color="green"> <b> <center> Ellie V  </center> </b></font> </a></p>
 
-<p><li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
-(Synthetic Minority Over-sampling Technique):</b> rather than creating new ra
-ndom minority samples from existing minority classes, we over-sample the minorit
-y class by creating “synthetic” samples.</p>
-<p><li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
-distribution for different minority class examples according to
-their level of difficulty in learning, where more synthetic data
-is generated for minority class examples that are harder to
-learn compared to those minority examples that are easier to
-learn. As a result, the ADASYN approach improves learning
-with respect to the data distributions in two ways: (1) reducing
-the bias introduced by the class imbalance, and (2) adaptively
-shifting the classification decision boundary toward the difficult
-examples.(source: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.942&rep=rep1&type=pdf'>ADASYN: 
-Adaptive Synthetic Sampling Approach for Imbalanced
-Learning</a> <br></p>
-<p><li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
-It's based on k-nearest neighbor clustering. <br>
-See more in <a href='https://arxiv.org/pdf/1608.06048.pdf'>Survey of resampling techniques for improving
-classification performance in unbalanced datasets</a> 
-&lt;/ul&gt;
-&lt;/font&gt;
-<br> 
-<font color="#00bfff"> 
-Tuan understood what Quynh really means by <b><i>synthetic girlfriend</b>. Yet, he ignored it and continued. "Those techniques are
-yesterday. I'll use customized loss function, "a specialist for imbalanced data" instead!"
-<br>
-"What is that?" Duy asked.
-<br>
-"Not gonna tell you!" Tuan asked and then walked up stair.
-<br>
-Several other started to leave as well. Only three people left: two boys that washed the dish, and one girl who was looking at them.
-<br> 
-One boy asked, "Is it look that interesting to you about the way we wash the dishes?"
-<br> 
-"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!"<br> 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Đại dịch HIV và thời gian ủ bệnh trung bình
+Khi lại dịch AIDS xuất hiện vào thập niên 1980 thì người ta cần biết xem có bao nhiêu người
+bị lây nhiễm nhằm chuẩn bị đối phó với nạn dịch này.  Ta thấy rằng khi mà một cá nhân tiếp xúc
+với nguồn bệnh thì trong đó sẽ có một số người bị lây, và sau một thời gian ủ bệnh thì nhiều người
+trong số những người này sẽ có xuất hiện những triệu chứng của bệnh. Khi một người đã bị lây nhiễm
+thì người đó thành nguồn bệnh và có thể khiến người khác bị lây. Chúng ta không thể đoán được rằng
+ai là người sẽ tiếp xúc với nguồn bệnh hay là bị lây nhiễm hay là sẽ làm người khác bị lây.
+Thay vào đó chúng ta sử dụng mô hình xác suất và ước lượng các tham số của những phân phối này.
+Một trong những tham số quan trọng đó là thời gian ủ bệnh trung bình.
+Nếu biết được tham số ngày chúng ta có thể kết hợp với việc đếm những người có bệnh và ước lượng
+số lượng người bị lây. Hơn nữa, nhờ hoàn cảnh đặc biệt nên họ có một nhóm bệnh nhân mà họ biết
+được thời gian bị lây nhiễm và thời gian căn bệnh xuất hiện. Đó là do một số người mắc chứng máu
+loãng khó đông đã tiếp xúc với bệnh HIV qua nguồn máu chứa mầm bệnh.  Từ đó người ta có được dữ
+liệu để ước tính thời gian ủ bệnh trung bình.
+Tuy rằng chúng ta có ước lượng cho tham số nhưng nó chỉ là một con số (5.7 năm, 8 năm,...).
+Chúng ta không thể khẳng định là nó sát với giá trị thực tế của tham số đến mức nào.
+Do đó chúng ta dùng khoảng tin cậy của ước lượng. Đôi khi khoảng tin cậy là quá rộng.
+Như vậy thì chúng ta nên thu thập thêm thông tin để đưa ra quyết định tốt hơn.
+Trong trường hợp này thì chúng ta nên xem xét áp dụng các chính sách bằng cách sử dụng giá trị
+nhỏ nhất thay vì giá trị lớn nhất của tham số “thời gian ủ bệnh trung bình”.</p>
+<p><font color="#00bfff"> Ý nghĩa của khoảng tin cậy: Khi mà chúng ta gặp lại quá trình nhiều lần thì chúng ta sẽ
+thấy rằng khoảng tin cậy 95% sẽ cho ta một khoảng tin cậy mà giá trị thực của tham số nằm
+trong khoảng đã được tính 95% số lần thực hiện. Tuy nhiên xác suất tương ứng với khoảng tin
+cậy không phải xác suất mà chúng ta đúng.  Nó cũng không cho ta biết  ước lượng mà chúng ta có
+chính xác đến cỡ nào.</font> 
+&lt;/i&gt;</p>
+<center> <hr color = "#F333FF" width="400px"></center><p>Trên thực tế thì chúng ta thường không biết $\sigma ^2$ mà phải ước lượng từ dữ liệu. Nếu cỡ mẫu
+n đủ lớn thì ta có thể xấp xỉ $\frac{\overline{X}-\mu}{\sigma ^2/n}$ bằng phân phối chuẩn $N(0,1)$.
+Nhưng nếu cõ mẫu nhỏ thì làm vậy không hiệu quả cho lắm. Bởi vậy, ta có định nghĩa</p>
+<p><font color="#ff1493"> 
+Nếu $X_1,..., X_n\;\;\underset{\sim}{i.i.d}\;\;N(\mu,\sigma ^2)$ thì phân phối của
+$$T=\frac{\overline{X}-\mu}{S/\sqrt{n}}$$ được gọi là phân phối Student, hay phân phối t, với bậc
+tự do n-1.
+Ở đây, $S=\sqrt{\frac{\sum_i(X_i-\overline{X})^2}{n-1}}$.
 </font></p>
-<p><br> 
-<br></p>
-<p>You may interest in:
-<br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Như vậy thì khoảng tin cậy cho $\mu$ khi cỡ mẫu nhỏ là
+$$[\overline{X}-t_{\alpha/2}.\frac{s}{\sqrt{n}}, \overline{X}+t_{\alpha/2}.\frac{s}{\sqrt{n}}].$$
+Ta tìm hiểu thêm một chút về phân phối Student và mối liên hệ của nó với phân phối chuẩn 
+Nhìn vào hình sau ($\nu$ là bậc tự do) 
+<img src="img/stat/student%20distribution.png" width="400" height="320"> 
+(Nguồn: Wikipedia)</p>
+<p>Ta thấy được rằng
+<font color="#ff1493"></p>
 <p><ul></p>
-<p><li><a href='https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?fbclid=IwAR2GYZmJ6aBWpoFxQkSi7zlUULUjB1mkPY_-uFDbtBjN0wRFiEr4po79ixY'>
-Classification on imbalanced data (tutorial on tensorflow.org)</p>
-<p><li> Cost-Sensitive Learning of Deep Feature
-Representations from Imbalanced Data: a paper by S. H. Khan, M. Hayat, M. Bennamoun, F. Sohel and R. Togne</p>
-<p><li>    Training Deep Neural Networks on Imbalanced Data Sets:  a paper that concentrate on <b> binary classification </b> by Shoujin Wang 
-, Wei Liu
-, Jia Wu 
-, Longbing Cao 
-, Qinxue Meng 
-, Paul J. Kennedy 
-&lt;/a&gt;</p>
+<p><li>phân phối Student cũng có hình chuông và đối xứng qua trung bình như phân phối chuẩn  </li></p>
+<p><li>trung bình, trung vị, mode của phân phối Student đều bằng 0</li></p>
+<p><li>Khi bậc tự do càng cao, phân phối Student tiến càng gần đến phân phối chuẩn (do đó,
+khi cỡ mẫu lớn, ta có thể  dùng phân phối chuẩn để xấp xỉ)</li></p>
+<p><li> phân phối Student hội tụ đến phân phối chuẩn</li>
+&lt;/ul&gt;
+&lt;/font&gt;</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center> <hr color = "#F333FF" width="400px"></center><p>Trong những công thức về khoảng tin cậy mà ta rút ra được phía trên thì
+ta thấy độ dài của khoảng tin cậy lần lượt là $2z_{\alpha/2}.\frac{\sigma ^2}{\sqrt{n}}$
+và $2t_{\alpha/2}.\frac{s}{\sqrt{n}}.$ Như vậy, để khoảng tin cậy trở nên ngắn hơn,
+chúng ta có thể tăng cỡ mẫu. Câu hỏi được đặt ra là cần thu thập bao nhiêu
+dữ liệu để thu được một khoảng tin cậy $1-\alpha$ có độ dài cho trước là 2E?</p>
+<p>Để giải quyết vấn đề này, chúng ta giải phương trình
+$2E=2z_{\alpha/2}.\frac{\sigma }{\sqrt{n}}$
+theo n đối với trường hợp chúng ta đã biết $\sigma^2$ hoặc khi cỡ mẫu lớn.
+Khi đó, ta thu được
+   $n =\left(\frac{z_{\alpha/2}\sigma }{E} \right)^2$  (chú ý làm tròn nếu cần).</p>
+<p>Tương tự với trường hợp cỡ mẫu nhỏ, ta giải phương trình
+$$2E=2t_{\alpha/2}.\frac{s }{\sqrt{n}}$$
+theo n.
+Khi đó, ta thu được
+   $n =\left(\frac{t_{\alpha/2}s }{E} \right)^2$  (chú ý làm tròn nếu cần).</p>
 
-    </div>
 </div>
 </div>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
-<div class="addthis_inline_share_toolbox"></div>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-<div class="fb-comments" data-href="https://ellienguyen.style/aii/imbalanced.html" data-width="" data-numposts="5"></div>
-    <footer id="main-footer">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<footer id="main-footer">
         <hr color = "black" width="400px">
-            		Copyright &copy; 2019 Ellie Nguyen. All rights reserved.
-	</footer>
+    <center> Copyright &copy; 2019 Ellie Nguyen. All rights reserved.</center>
+</footer>
+</div>
+</div>
 </div>
     </div>
   </div>

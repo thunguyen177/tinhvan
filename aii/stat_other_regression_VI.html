@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>imbalanced</title>
+<title>stat_other_regression_VI</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,125 +13077,107 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h3> The imbalanced data problem </h3>
-<font color="#00bfff"> 
-The AI Institute's research campus' apartment resident site...</p>
-<p>All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner. &lt;/font&gt;</p>
-<p><img src = 'img/imbalanced_en.png'>
-  <font color="#00bfff"> 
-Duong blushed, "Why should we care about such an <b>extreme event</b> instead of the things that lie at the <b>center region of normal distribution</b>? For example, who are gonna clear the table and wash the dishes?" &amp;#128580</p>
-<p>"Well,  extreme events are usually interesting, and have many applications," Quang, the postdoc researcher said, as serious as if he was giving a lecture.</p>
-<p>"For example?" asked Duong.</p>
-<p>"Like the bank can freeze a user's account when detecting irregular transactions, predicting storms, avalanches, tsunamis, epidemic, etc.," Quang said again.</p>
-<p>Before Duong could open her mouth again, Duy teased her, adding some words, "And how some people can help us getting a girlfriend or boyfriend quickly."</p>
-<p>"You're good at speaking, so I think that's easy for you. Just pick one and pursuit her!" Thanh said.</p>
-<p>"What if she runs away? Having a girlfriend is an optimization problem, 
-of which the maximum of the loss function is a broken heart." Duy replied.</p>
-<p>"Well, you should minimize the loss, not to maximize it," Duong said,
- &lt;/font&gt;</p>
-<p><font color="#00bfff"> "In the past, I trained neural networks, and the loss exploded many times. 
-So, I guess similar things may happen when I try to pursue a girl." Quang said, 
-with a lot of honesty &#128580 </font></p>
-<p><font color="#00bfff"> Everyone laughed again. &#128514 </font></p>
-<p><font color="#00bfff"> "Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.</p>
-<p>"I wonder, which loss function should we use for this problem?" Duy asked.</p>
-<p>"Binary cross-entropy, of course!" Tuan smiled. "Suppose the output from a girl $z$ is 1 if she likes you and 0 if she doesn't, and the probability that she likes you is $p$. Then the <b> binary cross-entropy </b> is defined as
-$$z\log p + (1-z)\log (1-p),$$
-which implies that if she likes you, then $z=1$ and loss is $log p$. If she doesn't, then $z=0$ and loss is $log (1-p)$.</p>
-<p>That's for one girl. If you decide to pursuit $n$ girls at the same time, then the loss is</p>
-$$\sum_{i=1}^n (z_i\log p + (1-z_i)\log (1-p)),"$$<p>"Oh my god! Now I see who you really are. You pursuit $n$ girls at the same time!" Quynh went ha ha ha ...</p>
-<p>"Oh, no! For me, $n=1$ for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing $n$ girls at the same time." &lt;/font&gt;</p>
-<p><font color="#00bfff"> "Who is older?" Duy rolled his eyes. &#128548</font></p>
-<p><font color="#00bfff"> "Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
-"Let's talk about how to tackle this problem."</p>
-<p>"Isn't this an imbalanced data problem?" Quynh grinned.&lt;/font&gt;</p>
-<p><font color="#00bfff"> "Yes, of course, I mostly succeeded in pursuing girls. 
-So this is really a very imbalanced data issue." Tuan quickly replied before Quynh could 
-continue by saying that he failed to pursuit girls most of the time &#128518. </font></p>
-<p><font color="#00bfff"> Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
-ten years older than you?"</font></p>
-<p><font color="#00bfff"> "No"&#128548 </font></p>
-<p><font color="#00bfff"> "Maybe there is, but he already deleted it in his preprocessing step," Duy said. &#128518</font></p>
-<p>Everyone bursted into laughs again. 
-"This is a very small data problem. So, perhaps you should not drop a data point like that," Quynh said.</p>
-<p><font color="#00bfff"> "Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
-his words itselves is another tease. </font></p>
-<p><font color="#ff1493"> Dropout: <i>At each training stage, individual nodes are either "dropped out" of the net with probability
- $1-p$ or kept with probability $p$, so that a reduced network is left; incoming and outgoing 
-edges to a dropped-out node are also removed. Only the reduced network is trained on the data in
- that stage. The removed nodes are then reinserted into the network with their original weights.</i>
-(Wikipedia)</p>
-<p>In the training stages, the probability that a hidden node will be dropped is usually 0.5; 
-for input nodes, this should be much lower, intuitively because information is directly lost 
-when input nodes are ignored.&lt;/font&gt;</p>
-<p><font color="#ff1493"> <b>DropConnect</b> DropConnect is the generalization of dropout in which
- each connection, rather than each output unit, can be dropped with probability $1-p$. 
-Each unit thus receives input from a random subset of units in the previous layer.
-</font></p>
-<p><font color="#00bfff"> 
-"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some synthetic girlfriends?" asked Quynh &#128527. </font></p>
+<p><a href='https://ellienguyen.style/'><font color="green"> <b> <center> Ellie V  </center> </b></font> </a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Một số mô hình hồi quy khác 
+<font color="green"> <b> <center> Hồi quy đa thức (polynomial regression)</center> </b></font></p>
+<p>Nếu ta có mô hình $y=\beta_0+\beta_1 x$  thì ta cũng có thể
+có mô hình $y=\beta_0+\beta_1 x+\beta_2 x^2 $  hay
+$y=\beta_0+\beta_1 x +\beta_2 x^2+\beta_3 x^3$  hay
+phương trình có bậc cao hơn. Tuy nhiên, chúng ta cần chú ý đến việc overfitting, tức là sai số
+trên tập dữ liệu mà chúng ta mô hình hóa (training set) thì thấp nhưng sai số trên dữ liệu ngoài
+tập dữ liệu này lại cao. Thêm vào đó, qua n điểm, ta luôn có thể tìm được một phương trình
+bậc n đi qua n điểm này. Chung quy lại, trước khi quyết định thử mô hình nào, chúng ta nên vẽ
+đồ thị phân tán (scatter plot) trước để có một cái nhìn trực quan về dữ liệu.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><hr color = "#F333FF" width="400px">
+<a id="Least absolute deviation regression"></a></p>
+<h3>Least absolute deviation regression</h3><p>Trong phương pháp hồi quy tuyến tính thông thường, chúng ta
+tìm cực tiểu của $\sum_i(Y_i-a-bX_i)^2$ thay vì dùng $\sum_i|Y_i-a-bX_i|$. Tuy nhiên, trong
+Least absolute deviation regression, ta đi tìm cực tiểu của $\sum_i|Y_i-a-bX_i|$. Chuyện này
+phức tạp hơn và cần phải sử dụng <i>linear programming</i>. Ta có thể thực hiện điều này trong R
+bằng cách sử dụng gói lệnh <b>quantreg</b>. Phương pháp này có những lợi điểm sau:</p>
 <ul>
+<li>Giảm ảnh hưởng của outlier </li>
+<li>(Y|X=x) (là một biến ngẫu nhiên) có đuôi dài </li>
+<li>(Y|X=x) không đối xứng và chúng ta muốn ước lượng median thay cho trung bình. 
+Tuy nhiên, khi sử dụng phương pháp này, chúng ta cần
+để ý xem ước lượng có ổn định (stable) hay không (không ổn định (unstable) có nghĩa là một chút
+thay đổi trong dữ liệu có thể làm cho giá trị của các ước lượng thay đổi nhiều).</li>
+</ul>
+<p><hr color = "#F333FF" width="400px">
+<a id="Quantile regression"></a></p>
+<p><h3>Quantile regression</h3>
+Lưu ý rằng mô hình $Y=\beta_0+\beta_1X+\epsilon$ cho ta $E(Y)=E(\beta_0+\beta_1X+\epsilon)=\beta_0+\beta_1X$
+(vì $\beta_0,\beta_1,X$ là các hằng số và $\epsilon$ có kỳ vọng bằng 0). Như vậy, chúng ta đi ước lượng trung bình.
+Tuy nhiên, nhiều khi chúng ta muốn dự đoán những extreme value hơn. Chẳng hạn, khi ta muốn dự đoán những người có thu
+nhập ở dưới mức nghèo, khi ta muốn ước lượng số loài bị tuyệt chủng trong một vụ tràn dầu trên biển, khi một công ty
+mỹ phẩm muốn cho ra một mặt hàng xa xỉ thì họ muốn biết tỉ lệ người dân có thể quan tâm và có đủ tiền để mua sản phẩm đó,...</p>
+<p>Bạn đọc có thể tìm hiểu thêm trên mạng hoặc/và mục quantile regression trong chương 11 của Common Errors in Statistics
+and how to avoid them.</p>
+<p><hr color = "#F333FF" width="400px">
+<a id="Error-in-variables regression"></a></p>
+<p><h3>Error-in-variables regression</h3>
+ Đây là mô hình cho phép chúng ta xem xét cả sai số trong dự đoán biến phụ thuộc lẫn sai số khi đo lường biến độc lập..
+Mô hình có dạng như sau:
+$$Y_i=\beta_0+\beta_1X_i^*+\epsilon\;\;\; i =1,...,n$$
+Trong đó, $X^*$ là biến độc lập mà chúng ta không quan sát được (unobserved regressor). Thay vào đó,
+cái mà chúng ta quan sát được là
+$$X_i=X_i^*+\eta_i\;\;\; i =1,...,n$$
+Trong đó, ta giả sử sai số $\eta_i$ là độc lập với $X_i^*$.
+Xem thêm trên <a href="https://en.wikipedia.org/wiki/Errors-in-variables_models">Wikipedia.</a></p>
+<p><a id="Piecewise regression"></a></p>
+<p><h3>Piecewise regression</h3>
+ phương pháp này có ý tưởng cơ bản là phân mảnh dữ liệu ra và
+thực hiện hồi quy trên từng phần nhỏ. Xem thêm trên
+<a href="https://newonlinecourses.science.psu.edu/stat501/node/310/">
+psu online course</a></p>
+<p><hr color = "#F333FF" width="400px">
+ <h3>Hồi quy logistic</h3>
+Khi Y chỉ nhận 1 trong 2 giá trị là 0 hoặc 1.
+<a href="https://blogtinhvan.blogspot.com/2016/01/hoi-quy-logistics.html">Xem thêm</a></p>
+<p><hr color = "#F333FF" width="400px">
+ Khi nhắc tới white noise (nhiễu trắng), ta thường nghĩ là chả có gì hay ho, nhưng
+thực ra nó cũng có một ứng dụng khá thú vị được gọi là dội lại ngẫu nhiên
+(Stochastic resonance).. Khi mà tín hiệu quá yếu để có thể được dò ra bởi sensor, ta có thể làm nó lớn hơn
+bằng cách thêm nhiễu (white noise)  gồm một quang phổ có độ rộng lớn với nhiều tần số.
+Những tần số trong nhiễu tương ứng với những tần số trong tín hiệu gốc sẽ va dội vào nhau,
+khiến cho tín hiệu gốc trở nên to hơn mà không làm nhiễu trở nên lớn hơn, và từ đó, tỉ lệ
+giữa tín hiệu gốc và nhiễu trở nên lớn hơn. Thêm vào đó, khi này tín hiệu có thể đủ lớn
+để sensor có thể dò ra được. Sau đó, ta có thể lọc nhiễu để lấy tín hiệu gốc.
+<!--is a phenomenon where a signal that is normally too weak to be detected by a sensor,
+can be boosted by adding white noise to the signal, which contains a wide spectrum of
+frequencies. The frequencies in the white noise corresponding to the original signal's
+frequencies will resonate with each other, amplifying the original signal while not
+amplifying the rest of the white noise (thereby increasing the signal-to-noise ratio
+which makes the original signal more prominent). Further, the added white noise can be
+enough to be detectable by the sensor, which can then filter it out to effectively detect
+the original, previously undetectable signal.--></p>
 
-<p><li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
-(Synthetic Minority Over-sampling Technique):</b> rather than creating new ra
-ndom minority samples from existing minority classes, we over-sample the minorit
-y class by creating “synthetic” samples.</p>
-<p><li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
-distribution for different minority class examples according to
-their level of difficulty in learning, where more synthetic data
-is generated for minority class examples that are harder to
-learn compared to those minority examples that are easier to
-learn. As a result, the ADASYN approach improves learning
-with respect to the data distributions in two ways: (1) reducing
-the bias introduced by the class imbalance, and (2) adaptively
-shifting the classification decision boundary toward the difficult
-examples.(source: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.942&rep=rep1&type=pdf'>ADASYN: 
-Adaptive Synthetic Sampling Approach for Imbalanced
-Learning</a></p>
-<p><li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
-It's based on k-nearest neighbor clustering. 
-See more in <a href='https://arxiv.org/pdf/1608.06048.pdf'>Survey of resampling techniques for improving
-classification performance in unbalanced datasets</a> 
-&lt;/ul&gt;
-&lt;/font&gt;</p>
-<p><font color="#00bfff"> 
-    Tuan understood what Quynh really means by <b><i>synthetic girlfriend</i></b>. Yet, he ignored it and continued. "Those techniques are
-yesterday. I'll use customized loss function, "a specialist for imbalanced data" instead!"</p>
-<p>"What is that?" Duy asked.</p>
-<p>"Not gonna tell you!" Tuan asked and then walked up stair.</p>
-<p>Several other started to leave as well. Only three people left: two boys that washed the dish, and one girl who was looking at them.</p>
-<p>One boy asked, "Is it look that interesting to you about the way we wash the dishes?"</p>
-<p>"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!" 
-&lt;/font&gt;</p>
-<p>You may interest in:</p>
-<p><ul></p>
-<p><li><a href='https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?fbclid=IwAR2GYZmJ6aBWpoFxQkSi7zlUULUjB1mkPY_-uFDbtBjN0wRFiEr4po79ixY'>
-Classification on imbalanced data (tutorial on tensorflow.org)</p>
-<p><li> Cost-Sensitive Learning of Deep Feature
-Representations from Imbalanced Data: a paper by S. H. Khan, M. Hayat, M. Bennamoun, F. Sohel and R. Togne</p>
-<p><li>    Training Deep Neural Networks on Imbalanced Data Sets:  a paper that concentrate on <b> binary classification </b> by Shoujin Wang 
-, Wei Liu
-, Jia Wu 
-, Longbing Cao 
-, Qinxue Meng 
-, Paul J. Kennedy 
-&lt;/a&gt;</p>
-
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<footer id="main-footer">
+        <hr color = "black" width="400px">
+    <center> Copyright &copy; 2019 Ellie Nguyen. All rights reserved.</center>
+</footer>
 </div>
 </div>
-
 </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>imbalanced</title>
+<title>stat_quartiles_VI</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,125 +13077,153 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h3> The imbalanced data problem </h3>
-<font color="#00bfff"> 
-The AI Institute's research campus' apartment resident site...</p>
-<p>All of the foreign students went outside to explore the city, leaving a bunch of Vietnamese here, inside the kitchen, finished their dinner. &lt;/font&gt;</p>
-<p><img src = 'img/imbalanced_en.png'>
-  <font color="#00bfff"> 
-Duong blushed, "Why should we care about such an <b>extreme event</b> instead of the things that lie at the <b>center region of normal distribution</b>? For example, who are gonna clear the table and wash the dishes?" &amp;#128580</p>
-<p>"Well,  extreme events are usually interesting, and have many applications," Quang, the postdoc researcher said, as serious as if he was giving a lecture.</p>
-<p>"For example?" asked Duong.</p>
-<p>"Like the bank can freeze a user's account when detecting irregular transactions, predicting storms, avalanches, tsunamis, epidemic, etc.," Quang said again.</p>
-<p>Before Duong could open her mouth again, Duy teased her, adding some words, "And how some people can help us getting a girlfriend or boyfriend quickly."</p>
-<p>"You're good at speaking, so I think that's easy for you. Just pick one and pursuit her!" Thanh said.</p>
-<p>"What if she runs away? Having a girlfriend is an optimization problem, 
-of which the maximum of the loss function is a broken heart." Duy replied.</p>
-<p>"Well, you should minimize the loss, not to maximize it," Duong said,
- &lt;/font&gt;</p>
-<p><font color="#00bfff"> "In the past, I trained neural networks, and the loss exploded many times. 
-So, I guess similar things may happen when I try to pursue a girl." Quang said, 
-with a lot of honesty &#128580 </font></p>
-<p><font color="#00bfff"> Everyone laughed again. &#128514 </font></p>
-<p><font color="#00bfff"> "Then you use <b>gradient clipping </b>, coddle her, give her gifts when she seems indifferent to you." Duong couldn't hold her laughter. "By the way, it's not my turn to wash the dishes today. So, I'm gonna go back to my room and train my own network." Then, she left.</p>
-<p>"I wonder, which loss function should we use for this problem?" Duy asked.</p>
-<p>"Binary cross-entropy, of course!" Tuan smiled. "Suppose the output from a girl $z$ is 1 if she likes you and 0 if she doesn't, and the probability that she likes you is $p$. Then the <b> binary cross-entropy </b> is defined as
-$$z\log p + (1-z)\log (1-p),$$
-which implies that if she likes you, then $z=1$ and loss is $log p$. If she doesn't, then $z=0$ and loss is $log (1-p)$.</p>
-<p>That's for one girl. If you decide to pursuit $n$ girls at the same time, then the loss is</p>
-$$\sum_{i=1}^n (z_i\log p + (1-z_i)\log (1-p)),"$$<p>"Oh my god! Now I see who you really are. You pursuit $n$ girls at the same time!" Quynh went ha ha ha ...</p>
-<p>"Oh, no! For me, $n=1$ for sure. Yet, I was afraid that he couldn't have a wife when he is too old. So, I thought that he may be interested in pursuing $n$ girls at the same time." &lt;/font&gt;</p>
-<p><font color="#00bfff"> "Who is older?" Duy rolled his eyes. &#128548</font></p>
-<p><font color="#00bfff"> "Of course, me!" Tuan replied. Then, he tried to move on to another problem immediately. 
-"Let's talk about how to tackle this problem."</p>
-<p>"Isn't this an imbalanced data problem?" Quynh grinned.&lt;/font&gt;</p>
-<p><font color="#00bfff"> "Yes, of course, I mostly succeeded in pursuing girls. 
-So this is really a very imbalanced data issue." Tuan quickly replied before Quynh could 
-continue by saying that he failed to pursuit girls most of the time &#128518. </font></p>
-<p><font color="#00bfff"> Still, Quynh did't let go easily, "Is there any outlier, such as a widow or someone who is 
-ten years older than you?"</font></p>
-<p><font color="#00bfff"> "No"&#128548 </font></p>
-<p><font color="#00bfff"> "Maybe there is, but he already deleted it in his preprocessing step," Duy said. &#128518</font></p>
-<p>Everyone bursted into laughs again. 
-"This is a very small data problem. So, perhaps you should not drop a data point like that," Quynh said.</p>
-<p><font color="#00bfff"> "Perhaps we should stop teasing him, before he <b>DropConnect</b> all of us!" Quang said, but 
-his words itselves is another tease. </font></p>
-<p><font color="#ff1493"> Dropout: <i>At each training stage, individual nodes are either "dropped out" of the net with probability
- $1-p$ or kept with probability $p$, so that a reduced network is left; incoming and outgoing 
-edges to a dropped-out node are also removed. Only the reduced network is trained on the data in
- that stage. The removed nodes are then reinserted into the network with their original weights.</i>
-(Wikipedia)</p>
-<p>In the training stages, the probability that a hidden node will be dropped is usually 0.5; 
-for input nodes, this should be much lower, intuitively because information is directly lost 
-when input nodes are ignored.&lt;/font&gt;</p>
-<p><font color="#ff1493"> <b>DropConnect</b> DropConnect is the generalization of dropout in which
- each connection, rather than each output unit, can be dropped with probability $1-p$. 
-Each unit thus receives input from a random subset of units in the previous layer.
-</font></p>
-<p><font color="#00bfff"> 
-"So, are you gonna generate synthesis data using SMOTE or ADASYN, or Nearmiss to generate some synthetic girlfriends?" asked Quynh &#128527. </font></p>
+<p><a href='https://ellienguyen.style/'><font color="green"> <b> <center> Ellie V  </center> </b></font> </a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color="green" size = 10> <b> <center> Tứ phân vị </center> </b></font></p>
+<p><img src="data:image/png;base64,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" alt="image.png"></p>
+<p>Mai e hèm:</p>
 <ul>
+<li>Giả sử tôi có số liệu về mức lương của hai công ty như sau:</li>
+</ul>
+<p>Mico:
+$$\$1 000 000,\$37 000 ,\$48 000 ,\$35 000, \$50 000, \$90 000,$$</p>
+$$ \$45000 ,\$60 000 ,\$42 000 ,\$74000 ,\$72 000 $$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Gogog:</p>
+<p>$$ \$1 500 000 ,\$38 000, \$60 000,\$87 000 ,\$52 000 ,$$
+ $$ \$95 000 ,\$45000 ,\$78 000 ,\$41 000, \$74000 $$</p>
+<p>Nếu sau này cậu đi xin việc thì cậu nghĩ dựa trên năng lực của
+bản thân, cậu nghĩ lương của mình nằm ở mức nào?</p>
+<p>Hắn cười tươi rói:</p>
+<ul>
+<li><i>Khiêm tốn</i> mà nói
+thì tôi nghĩ là mình ở mức trung bình!</li>
+</ul>
+<p>Mai cười:</p>
+<ul>
+<li><p>Người ta thường có xu hướng đánh giá bản thân cao hơn so với
+thực tế. Nên, tôi nghĩ nếu anh đã nói vậy thì anh nên tìm hiểu về phân vị thứ
+nhất của dữ liệu về mức lương!</p>
+</li>
+<li><p>À, đúng rồi! Một người như tôi thì xứng đáng với …những
+cái “nhất”!</p>
+</li>
+<li><p>Ha…ha…Biết phân vị thứ nhất (1st quantile) là cái gì
+không?</p>
+</li>
+<li><p>Là cái gì? Là một trong những người có mức lương cao nhất
+đúng không?</p>
+</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Ha…ha…ha! Sao ngốc quá vậy! Khi ta sắp xếp số liệu theo thứ
+tự từ bé đến lớn thì <b >trung vị</b> (trung là ở giữa, vị
+là vị trí) là điểm chính giữa, chia bộ dữ liệu thành hai phần với kích cỡ bằng
+nhau. Trong đó, một phần có tất cả các giá trị bé hơn hoặc bằng trung vị, một
+phần có tất cả các giá trị lớn hơn hoặc bằng trung vị.</li>
+</ul>
+<p>Ví dụ: Đối với số liệu về mức lương của Mico</p>
+$$\$1 000 000 ,\$37 000 ,\$48 000 ,\$35 000 ,\$50 000$$$$\$90000 ,\$45000 ,\$60 000 ,\$42 000 ,\$74000 ,\$72 000$$<p>Nếu ta sắp số liệu theo thứ tự từ bé đến lớn thì được</p>
+$$\$35 000 , \$37 000 , \$42 000 ,\$ 45 000, \$48 000 ,\$ 50000 ,$$$$\$ 60 000 ,\$72 000 ,\$74 000 , \$90 000 , ,\$1 000 000$$<p>Bộ dữ liệu này có 11 quan sát (observations). Thì quan sát ở
+chính giữa nằm ở vị trí thứ 6 trong bộ dữ liệu đã được sắp xếp, tức là $\$50000$.
+    Như vậy, trung vị bằng $\$50 000$.</p>
+<p>Nhưng đối với số liệu của Gogog:
+$$\$1 500 000 ,\$38 000 ,\$60 000 ,\$87 000 ,\$52 000 ,$$</p>
+$$\$95000 ,\$45000 ,\$78 000 ,\$41 000 ,\$74000$$<p>Thì khi sắp số liệu theo thứ tự từ bé đến lớn ta được
+$$\$38 000 , \$41 000 ,\$ 45 000 , \$52 000 ,\$ 60 000 ,$$</p>
+$$\$ 74 000 ,\$78 000 , \$87 000 , \$95 000 ,\$1 500 000 $$<p>Bộ dữ liệu này có 10 quan sát. Là số lẻ nên không có điểm nằm
+chính giữa. Do đó, người ta lấy 2 điểm ở giữa cộng lại chia đôi. Như vậy</p>
+<p>Trung vị (Median) = $\frac{60 000 + 74 000}{2}= 67000$</p>
+<p>Nhưng dĩ nhiên, đối với nhiều người, trong đó có cậu thì tìm
+hiểu về median là không đủ hoặc không cần thiết! Do đó, người ta đưa ra khái niệm
+   <font color="red">tứ phân vị (quantiles)</font>. Nếu trung vị chẻ đôi dữ liệu thành 2 phần
+với kích cỡ bằng nhau; một phần có tất cả các giá trị bé hơn hoặc bằng trung vị,
+một phần có tất cả các giá trị lớn hơn hoặc bằng trung vị; thì với mỗi phần nhỏ
+trong hai phần đó, nếu ta tiếp tục chẻ đôi theo kiểu như vậy thì lần lượt sẽ được
+   <font color="red">phân vị thứ nhất</font> (1st quantile) và<font color="red"> phân vị thứ ba(3rd quantile)</font>.
+        Còn trung vị thì còn được gọi là <font color="red">phân vị thứ hai</font> (2nd quantile).</p>
+<p>Đến đây thì Mai cười như không nhịn được:</p>
+<ul>
+<li>Như vậy thì phân vị thứ nhất sẽ giúp anh tìm hiểu về những người có mức lương nằm ở… mức thấp nhất trong công ty!</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li><p>Cô xỏ tôi hả?</p>
+</li>
+<li><p>Đâu có! Nếu lương cậu bằng 1st quantile thì anh đã có mức
+lương lớn hơn hoặc bằng 25% những người trong công ty rồi còn gì? Hi…hi…!</p>
+</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Vậy 75% những người còn lại có lương cao hơn tôi còn gì?</li>
+</ul>
+<p>Mai cười nham nhở:</p>
+<ul>
+<li>Đúng rồi!!!</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Vậy cứ xem như là năng lực của anh là ở mức trung bình đi!
+Vậy thì khi đi xin việc anh sẽ nhìn vào trung bình (mean) của mức lương hay
+median?</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Chắc là trung bình! Tôi thấy thiên hạ người ta hay dùng
+cái đó!</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Năng lực của cậu trung bình mà xin mức lương bằng trung
+bình của lương của tất cả mọi người trong công ty thì ai dám nhận cậu?</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Tại sao?</li>
+</ul>
+<p>Mai:</p>
+<ul>
+<li>Lương của giám đốc, CEO và một số nhân vật chủ chốt khác
+thường cao đến bất bình thường! Ví dụ, lương kỹ sư thông thường là \$75 000,
+nhưng lương của tổng giám đốc có thể là 1 triệu đô! Từ góc nhìn thống kê, ta
+ xem mức lương 1 triệu đô đó là &lt;font color="red"&gt;outlier&lt;/font&gt;, tức là một
+quan trắc khác hẳn so với những phần còn lại của dữ liệu, như thể chúng không thuộc về tổng thể này!
+Trong một mẫu dữ liệu như vậy, nếu có outlier thì
+chúng ta nên sử dụng trung vị (median) thay cho trung bình mẫu nếu muốn ước lượng
+điểm trung tâm. Nếu cậu xin vào Mico mà vòi mức lương bằng trung bình của
+tất cả của những người trong công ty thì đó là  $\$350 000$. Trong khi đó, lương
+của một người học tiến sĩ ra mới là  $\$120 000$ thì ai chịu nhận?</li>
+</ul>
+<p>Parker:</p>
+<ul>
+<li>Ờ, ha…ha…!</li>
+</ul>
 
-<p><li> <font color="#ff1493"> <b> <a href='https://arxiv.org/pdf/1106.1813.pdf'>SMOTE</a> 
-(Synthetic Minority Over-sampling Technique):</b> rather than creating new ra
-ndom minority samples from existing minority classes, we over-sample the minorit
-y class by creating “synthetic” samples.</p>
-<p><li>  <b> ADASYN</b>: "The essential idea of ADASYN is to use a weighted
-distribution for different minority class examples according to
-their level of difficulty in learning, where more synthetic data
-is generated for minority class examples that are harder to
-learn compared to those minority examples that are easier to
-learn. As a result, the ADASYN approach improves learning
-with respect to the data distributions in two ways: (1) reducing
-the bias introduced by the class imbalance, and (2) adaptively
-shifting the classification decision boundary toward the difficult
-examples.(source: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.942&rep=rep1&type=pdf'>ADASYN: 
-Adaptive Synthetic Sampling Approach for Imbalanced
-Learning</a></p>
-<p><li>Nearmiss methods aim to under-sample the points from the majority class that is neccessary to distinguish between other classes. 
-It's based on k-nearest neighbor clustering. 
-See more in <a href='https://arxiv.org/pdf/1608.06048.pdf'>Survey of resampling techniques for improving
-classification performance in unbalanced datasets</a> 
-&lt;/ul&gt;
-&lt;/font&gt;</p>
-<p><font color="#00bfff"> 
-    Tuan understood what Quynh really means by <b><i>synthetic girlfriend</i></b>. Yet, he ignored it and continued. "Those techniques are
-yesterday. I'll use customized loss function, "a specialist for imbalanced data" instead!"</p>
-<p>"What is that?" Duy asked.</p>
-<p>"Not gonna tell you!" Tuan asked and then walked up stair.</p>
-<p>Several other started to leave as well. Only three people left: two boys that washed the dish, and one girl who was looking at them.</p>
-<p>One boy asked, "Is it look that interesting to you about the way we wash the dishes?"</p>
-<p>"Nope. I just want to know how many dishes you guys gonna break to report to the manager tommorrow!!!" 
-&lt;/font&gt;</p>
-<p>You may interest in:</p>
-<p><ul></p>
-<p><li><a href='https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?fbclid=IwAR2GYZmJ6aBWpoFxQkSi7zlUULUjB1mkPY_-uFDbtBjN0wRFiEr4po79ixY'>
-Classification on imbalanced data (tutorial on tensorflow.org)</p>
-<p><li> Cost-Sensitive Learning of Deep Feature
-Representations from Imbalanced Data: a paper by S. H. Khan, M. Hayat, M. Bennamoun, F. Sohel and R. Togne</p>
-<p><li>    Training Deep Neural Networks on Imbalanced Data Sets:  a paper that concentrate on <b> binary classification </b> by Shoujin Wang 
-, Wei Liu
-, Jia Wu 
-, Longbing Cao 
-, Qinxue Meng 
-, Paul J. Kennedy 
-&lt;/a&gt;</p>
-
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<footer id="main-footer">
+        <hr color = "black" width="400px">
+    <center> Copyright &copy; 2019 Ellie Nguyen. All rights reserved.</center>
+</footer>
 </div>
 </div>
-
 </div>
     </div>
   </div>

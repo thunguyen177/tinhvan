@@ -23,14 +23,6 @@
           <li> <a href="../programming/index.html">Programming</a> </li>
         </ul>
       </div>
-      <div class="containerpink">
-        <ul>
-	  <li> <a href="../vnm%20cul_his/index.html"> Vietnamese culture</a> </li>
-          <li><a href="../Toi%20sang%20tac/index.html">Tác phẩm</a>
-	  <li><a href="../thong_ke_vui/index.html">Vui học thống kê</a>
-          <li><a href="../goc%20du%20hoc/index.html">Du học và ngoại ngữ</a> </li>
-        </ul>
-      </div>
   </nav>
     <div class = "searchbar">
         <script>
@@ -48,6 +40,8 @@
     </div>
 <h3> convert table from excel to latex </h3>
 Go to <a href='https://www.tablesgenerator.com/'>https://www.tablesgenerator.com/</a> 
+This website also allows you to create tables and generate the corresponding latex
+codes, import table from latex codes to edit,....
 
 <h3>The space between the table and its caption is very small</h3>
 Use:
@@ -59,12 +53,26 @@ Use:
 <h3> Symbol issues </h3>
 <pre> \mathbb, \mathbf </pre> does not produce \(\boldsymbol{\mu}\) or  \(\boldsymbol{x}\), etc.
 Instead, use <pre>\boldsymbol</pre>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
-<div class="addthis_inline_share_toolbox"></div>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-<div class="fb-comments" data-href="https://ellienguyen.style/" data-width="" data-numposts="5"></div>
+
+<hr color = "#F333FF" width="400px">
+
+<h3> Unwanted position of the table </h3>
+<pre>
+\begin{table}[h]
+\end{table}[h]
+</pre>
+Specifying [h] will convert it automatically to [ht], that is, it will place the table [here] if possible, 
+or [at the top of the current/next page] if not. This results in unwanted table position.<br> 
+A table is a float, and when compiling, LaTeX uses a lot of constraints regarding floats. 
+So, if the table appeared at an unwanted position, try using <pre> \begin{table}[!h] </pre> instead.
+This will make LaTeX ignore the constraints as much as it can.
+
+<hr color = "#F333FF" width="400px"> 
+<h3> learn more about latex tables </h3>
+<ul>
+<li><a href='https://texblog.org/2017/12/12/color-table-series-part-1-introduction-colortbl-package/'>Color Table Series at texblog.org</a> 
+</ul>
+
     <footer id="main-footer">
         <hr color = "black" width="400px">
             		Copyright &copy; 2019 Ellie Nguyen. All rights reserved.
