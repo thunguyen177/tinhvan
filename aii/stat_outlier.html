@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>stat_Normal_distribution</title>
+<title>stat_outlier</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13085,7 +13085,19 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color="green"> <b> <center>  Normal distribution </center> </b></font></p>
+<p><font color="green"> <b> <center> Outlier </center> </b></font><br>
+Parker asked, "Ok. Suppose that I would like to apply for a position at Gogog. Then, the salary arranged in ascending order is</p>
+$$\$38 000 , \$41 000 ,\$ 45 000 , \$52 000 ,\$ 60 000 ,$$$$\$ 74 000 ,\$78 000 , \$87 000 , \$95 000 ,\$1 500 000$$<p></p>
+<p>If I drop the value \$1 500 000, then I can use the mean, right?"</p>
+<p>Mai replied, "Yes, but you should provide a reason when dropping a value from a dataset. Like is it because of a typo? Or issue with the measurement device? ...."</p>
+<p>Parker asked again, "Ok. But how large does it take for observation to become an outlier? Like must it be bigger than 100 or 1000?"</p>
+<p>Mai, "Yeah, right, if you define an outlier as a value that is bigger than a certain value," Mai smiled, "Then if I have a dataset of butterfly wingspan like this</p>
+<p>34.5mm   31.6mm    30.1mm    32.3mm    23.9mm     27.7mm    28.8mm     35.9mm     27.3mm    45mm</p>
+<p>then when I change to the micrometer, it will become</p>
+<p>34500000 micrometer      31600000 micrometer     30100000 micrometer     32300000 micrometer     23900 000 micromet</p>
+<p>27700 000 micrometer       28800 000 micrometer     35900 000 micrometer      27300 000 micrometer     45000 000 micrometer</p>
+<p>Then, every observation is an outlier?"</p>
+<p>Parker, "So, if it's not like that, then how do you determine an outlier?"</p>
 
 </div>
 </div>
@@ -13093,14 +13105,21 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>"Today, we're gonna learn about normal distribution," said Mai.</p>
-<p>"Ok. What's normal about that?" asked Parker, while keeping his eyes on the grasshoper in front of him.</p>
-<p>"It's of a bell's shape. So, it's symmetric, i.e., $P(X\le -x)=P(X\ge x)$"</p>
-<p>"Why do you think someone's <em>belly</em> is <em>symmetric</em>?," asked Parker, looked in Mai's eyes.</p>
-<p>"I SAID it has the shape of a BELL, not A BELLY!"</p>
-<p>"Ok. What's normal about that?" laughed Parker.</p>
-<p>"It's normal because it is popular in nature. Moreover, by the Central Limit Theorem, when independent random variables are added, their normalized sum tends toward a normal distribution, as the sample size increases, even if the original variables themselves are not normally distributed:
-$$ \left({\frac {{\bar {X}}_{n}-\mu }{\sigma /\sqrt{n}}}\right)\rightarrow N(0,1) \; as \; n \rightarrow  \infty$$</p>
+<p>Mai said, "In statistics, we don't want our inference to be affected easily by a change in measurement unit. So, determining an outlier should be done by comparing it with the other values in the dataset. No one has defined explicitly what an outlier is. Still, a boxplot is a simple way to detect observations that are too different from the remaining ones. Specifically, the outlier usually is the one with the star or little circle in the boxplot:
+    <img src="img/stat/boxplot.png"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Parker said, "That plot looks like a house with two fences. Why don't we call it a <strong>houseplot</strong> instead of a <strong>boxplot</strong>?"</p>
+<p>Mai doesn't like Parker, and she hates it when Parker tries to be funny. She answered in a cold voice, "I guess you're the only one that thinks of building a house like this, right? Who would ever build a house without a door? So, you gotta get in by flying on a broomstick? Or maybe apparate into the house?" She continued, "Note that the bold line in the middle is the <font color="#00bfff">median, the two lines next to it is the first quartile ($Q_1$), second quartile ($Q_3$), and your two *pretty* fences are the two limits. The lower limit is $= Q_1 - 1.5 IQR$. The upper limits $ = Q_3 + 1.5 IQR$. The interquartile range is the difference between the third quantile and the first quantile, i.e., $IQR = Q_3-Q_1$.</font></p>
+<p>"Don't worry! If I ever build such a house, that would be definitely for you, not for me!" Parker said.</p>
+<p>Mai didn't care about Parker's reply. She continued, "This is the butterfly dataset that I have mentioned,</p>
+<p><img src="img/stat/butterfly_wingspan.png"></p>
+<p>The little circle that doesn't lie between the upper and lower limits can be considered as an outlier. In general, an <font color="green"> outlier </font> is a value that is very different from the remaining ones, as if it is an alien and the others are from the Earth."</p>
 
 </div>
 </div>

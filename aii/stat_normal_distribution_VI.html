@@ -13098,58 +13098,62 @@ Machine learning cơ bản)</a>: trong bài thảo luận đó, mọi người t
 $\mu$ và phương sai $\sigma^{2}$ (hay, độ lệch chuẩn $\sigma$,
 ký hiệu $X \sim N(\mu ,\sigma ^{2})$, là
 $$f(x;\mu ,\sigma )={\frac {1}{\sigma {\sqrt  {2\pi }}}}\exp \left(-{\frac{(x-\mu )^{2}}{2\sigma ^{2}}}\right).$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Hàm mật độ xác suất cho phân phối chuẩn
 với các tham số khác nhau: 
 <img src="img/stat/Normal_Distribution.svg" width="400" height="300"></p>
 <p>Như vậy ta thấy ngay được rằng:</p>
-<ul>
-<li>Hàm mật độ có dạng chuông và đối xứng qua  kỳ vọng (xem hình bên dưới).</li>
-<li>Giá trị trung bình cũng là mode và trung vị của nó. </li>
-</ul>
+<p><ul></p>
+<p><li>Hàm mật độ có dạng chuông và đối xứng qua  kỳ vọng (xem hình bên dưới).</li></p>
+<p><li>Giá trị trung bình cũng là mode và trung vị của nó. </li>
+&lt;/ul&gt;
 Ngoài ra thì nhìn vào hình sau 
 <img src="img/stat/normal_quantile.png" width="400" height="300"> 
 (nguồn: Wikipedia)
  ta thấy được:
 Khoảng  68% của diện tích dưới đường cong là nằm trong khoảng 1 lần độ lệch chuẩn
-tính từ trị trung bình (tức là khoảng $(\mu -\sigma ;\mu +\sigma ))$.
+tính từ trị trung bình (tức là khoảng $(\mu -\sigma ;\mu +\sigma ))$.</p>
+<p>Khoảng 95% của diện tích dưới đường cong là nằm trong khoảng 2 lần độ lệch chuẩn
+(tức là khoảng $(\mu -2\sigma ;\mu +2\sigma)$).</p>
+<p>Khoảng 99.7% của diện tích dưới đường cong là nằm trong khoảng 3 lần độ lệch chuẩn
+( tức là khoảng $ (\mu -3\sigma ;\mu +3\sigma )$).</p>
 
-Khoảng 95% của diện tích dưới đường cong là nằm trong khoảng 2 lần độ lệch chuẩn
-(tức là khoảng $(\mu -2\sigma ;\mu +2\sigma)$).
-
-Khoảng 99.7% của diện tích dưới đường cong là nằm trong khoảng 3 lần độ lệch chuẩn
-( tức là khoảng $ (\mu -3\sigma ;\mu +3\sigma )$).
-
-
-Một số tính chất quan trọng:
-<div class="box">
-
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Một số tính chất quan trọng:</p>
 <ul>
-<li> Nếu $X, Y$ là jointly normal và không tương quan (uncorrelated),
-thì chúng độc lập với nhau.</li>
- <li> Nếu $X\sim N(\beta_1, \eta_1^2),Y\sim N(\beta_2,\eta_2^2)$
-là 2 biến ngẫu nhiên độc lập thì $X+Y\sim N(\beta_1+\beta_2,\eta_1^2+\eta_2^2).$</li>
-</ul><p>&lt;/div&gt;</p>
+<li>Nếu $X, Y$ là jointly normal và không tương quan (uncorrelated),
+thì chúng độc lập với nhau.&lt;/li&gt;</li>
+<li>Nếu $X\sim N(\beta_1, \eta_1^2),Y\sim N(\beta_2,\eta_2^2)$
+là 2 biến ngẫu nhiên độc lập thì $X+Y\sim N(\beta_1+\beta_2,\eta_1^2+\eta_2^2).$&lt;/li&gt;</li>
+</ul>
 <p><hr color = "#F333FF" width="400px"></p>
 <p><h2>Chuẩn hóa phân phối chuẩn</h2>
 Trong phần trước, ta thấy rằng các phân phối chuẩn với các tham số khác nhau đều có điểm
 chung là có dạng chuông. Vậy có cách nào để đưa chúng lại gần nhau hơn? Khi chúng
 có càng nhiều điểm chung thì khi chúng ta làm nghiên cứu, chúng ta thường có thể đưa ra
 nhiều kết luận tổng quát hơn. Cách đơn giản đó là đưa tất cả về một phân phối chuẩn "đơn vị":</p>
-<p><ul></p>
-<p><li>
-Nếu $X\sim N(0,1)$ thì  phân phối được gọi là <font color="red">phân phối chuẩn chuẩn tắc</font>
+<ul>
+<li>Nếu $X\sim N(0,1)$ thì  phân phối được gọi là <font color="red">phân phối chuẩn chuẩn tắc</font>
 và hàm mật độ xác suất rút gọn thành
-$$f(x)={\frac{1}{{\sqrt  {2\pi }}}}\exp \left(-{\frac  {x^{2}}{2}}\right).$$
-</li></p>
-<p><li>
- Nếu $X\sim N(\mu,\sigma^2)$ thì $\frac{X-\mu}{\sigma}\sim N(0,1)$.
-</li>
-&lt;/ul&gt;
+$$f(x)={\frac{1}{{\sqrt  {2\pi }}}}\exp \left(-{\frac  {x^{2}}{2}}\right).$$</li>
+<li>Nếu $X\sim N(\mu,\sigma^2)$ thì $\frac{X-\mu}{\sigma}\sim N(0,1)$.
 Ta kí hiệu $z_\alpha$ là giá trị X sao cho $P(Z\le x)=\alpha$ với  Z là
 phân phối chuẩn chuẩn tắc. Nói cách khác,  $z_\alpha$ là giá trị X sao cho
 diện tích phần nằm dưới đường cong về mé trái của X là $\alpha$. Trong hình sau
 thì phần màu xanh lục có diện tích là $\alpha$ 
-<img src="img/stat/z_a.png"></p>
+<img src="img/stat/z_a.png"></li>
+</ul>
 <p>Bài tập: 1. Phân phối của độ bền (tính theo ngàn km) của lốp xe có phân phối chuẩn N(80,100)</p>
 <p>Xác suất một bánh xe có độ bền lớn hơn 96 ngàn km là bao nhiêu?</p>
 <p>Xác suất một bánh xe có độ bền trong khoảng 70-90 ngàn km là bao nhiêu?</p>
@@ -13168,8 +13172,7 @@ lọt vào trong nghiên cứu này?</li>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>Đánh giá độ chuẩn </h3>
-Chúng ta cần xác định xem dữ liệu có tuân theo phân phối chuẩn hay
+<h3>Đánh giá độ chuẩn </h3><p>Chúng ta cần xác định xem dữ liệu có tuân theo phân phối chuẩn hay
 không nhưng lưu ý điều này chỉ là xấp xỉ, không phải chắc chắn hoàn toàn.
 Lưu ý rằng khi cỡ mẫu lớn, chẳng hạn như $n&gt;30$ thì định lý giới hạn trung tâm cho ta biết
 $\overline{X}$ có phân phối xấp xỉ được bằng phân phối chuẩn, nên đối với trường hợp này thì chúng ta không cần quá
@@ -13178,12 +13181,11 @@ mẫu chứa outlier, hoặc có độ lệch (skewness) quá cao, có nhiều �
 thì ta có thể kết luận ngay rằng dữ liệu không tuân theo phân phối chuẩn.
 Người ta thường dùng normal quantile plot để đánh giá độ chuẩn. Ta không phân tích
 chi tiết về quantile plot ở đây, nhưng trong R, ta có thể dùng lệnh <i>qqnorm, qqline</i>. Ví dụ:</p>
-<p><pre>
+<pre>
 data = rnorm(100) # khởi tạo dữ liệu nngẫu nhiên
 qqnorm(data, col='green')
 qqline(data)
-</pre>
-Ta được hình sau
+</pre><p>Ta được hình sau
 <img src="img/stat/qqnorm.jpeg">
 Trong hình, các điểm dường như nằm trên một đường thẳng. Do đó, ta có thể giả sử rằng dữ liệu
 tuân theo phân phối chuẩn. Tuy nhiên, nếu dữ liệu không nằm trên cùng một đường thẳng như trong

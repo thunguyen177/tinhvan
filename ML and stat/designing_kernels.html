@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>stat_speed_up</title>
+<title>designing_kernels</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13078,28 +13078,98 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href='https://ellienguyen.style/'><font color="green"> <b> <center> Ellie V  </center> </b></font> </a></p>
-<p><font color="green" size = 10> <b> <center> King of speed </center> </b></font></p>
-<p>"Slow down!" Mai screamed inside the car.</p>
-<p>"Okay, but wait a minute," Parker said and started to speed up when entering the intersection.</p>
-<p>Mai rolled her eyes. After getting out of the intersection, Parker started to slow down, but Mai yelled at him: "Are you crazy? I told you to slow down, but you speed up instead!"</p>
-<p>Parker laughed, "I thought a statistician like you would know better. The intersection is where most accidents occur. So, I try to spend less time there to reduce that risk."</p>
-<p>"Okay, Sir. Smart, what distribution should you use to model the number of car accidents at that intersection? And what distribution should you use to model the time that people have to wait for the road to be cleared after the accident?"</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The choice of a kernel corresponds to the choices of:</p>
+<ul>
+<li><p>a similarity measure for the data</p>
+</li>
+<li><p>a linear representation of the data, by constructing a linear space endowed with a dot product that corresponds to the given kernel</p>
+</li>
+<li><p>a regularization functional. Given a kernel, Theorem 4.9 characterizes a regularization term with the property that an SVM using that kernel can be thought of as penalizing that term; for instance, Gaussian kernels penalize derivatives
+of all orders, and thus enforce smoothness of the solution;</p>
+</li>
+<li><p>choosing a covariance function for correlated observations; in other words, encoding
+prior knowledge about how observations at different points of the input
+domain relate to each other (Section 16.3);</p>
+</li>
+<li><p>choosing a prior over the set of functions (each kernel induces a distribution encoding how likely different functions
+are considered a priori.)</p>
+</li>
+</ul>
+<p>Therefore, the choice of the kernel should reflect prior knowledge about the problem at hand.</p>
+<h1 id="Tricks-for-Constructing-Kernels">Tricks for Constructing Kernels<a class="anchor-link" href="#Tricks-for-Constructing-Kernels">&#182;</a></h1><ul>
+<li>if $k_1,k_2$ are kernels , $\alpha_1, \alpha_2\ge 0 $ then $\alpha_1k_1+\alpha_2k_2$ and $(k_1k_2)(x,x')=k_1(x,x')k_2(x,x')$ are kernels.</li>
+</ul>
+<p>A special case are <strong>conformal transformation</strong>: 
+$k_f(x,x')= f(x)k(x,x')f(x')$ obtained by multiplying a kernel $k$ with a rank - one kernel $k'(x,x')=f(x)f(x')$, where $f$ is a positive function</p>
+<ul>
+<li><p>if $k_1,k_2,...$ are kernels, and $k(x,x'):=\lim_{n\rightarrow \infty }k_n(x,x')$ exists for all $x,x'$, then $k$ is a kernel</p>
+</li>
+<li><p><strong>Necessary (NOT SUFFICIENT) Conditions for Dot Product Kernels</strong>: A differentiable
+function of the dot product $k(x, x') = k((x, x'))$ has to satisfy</p>
+</li>
+</ul>
+$$k(t)\ge 0, k'(t)\ge 0 \;and \; k'(t)+tk''(t)\ge 0$$<p>for any $t &gt; 0$, in order to be a positive definite kernel.</p>
+<ul>
+<li><p><strong>Power Series of Dot Product Kernels</strong>: A function
+$k(x, x') — k((x, x'))$ defined on an infinite dimensional Hilbert space, with a power series expansion
+$k(t)=\sum_{n=0}^\infty a_nt^n$ is a positive definite kernel if and only if for all $n$, we have $a_n &gt; 0$.</p>
+</li>
+<li><p><strong>Fourier Criterion</strong>: Suppose $\mathcal{X}\subset \mathbb{R}^N$. A translation invariant
+function $k(x, x') = k(x — x')$ is a positive definite kernel if the Fourier transform $F[k](\omega )=(2\pi)^{-\frac{N}{2}}\int_{\mathcal{X} }e^{-i\langle\omega ,x\rangle }k(x)dx$ is nonnegative</p>
+</li>
+<li><p>Given a function $k(x, x')$, we can construct <strong>iterated kernels</strong> using</p>
+</li>
+</ul>
+$$k^{(2)}(x,x'):=\int k(x,x'')k(x,x'')dx''$$<p>then $k^{(2)}$  is a positive definite kernel even if $k$ is not, as can be seen by verifying the condition of Mercer's theorem.
+A similar construction can be accomplished in the discrete case.</p>
+<ul>
+<li><strong>tensor sum/product</strong>, which works if the two
+kernels are defined on different domains: If $k_1,k_2$ are kernels defined respectively on $\mathcal{X}_1\times \mathcal{X}_1, \mathcal{X}_2\times \mathcal{X}_2$, then </li>
+</ul>
+$$(k_1\oplus k_2)(x_1,x_2,x_1',x_2')=k_1(x_1,x_1')+k_2(x_2,x_2')$$$$(k_1\otimes k_2)(x_1,x_2,x_1',x_2')=k_1(x_1,x_1')k_2(x_2,x_2')$$<p>kernels on $(\mathcal{X}_1\times \mathcal{X}_1)\times(\mathcal{X}_2\times \mathcal{X}_2)$. Here, $x_1,x_1'\in \mathcal{X}_1$ and $x_2,x_2'\in \mathcal{X}_2$</p>
+<ul>
+<li><p><strong>R-covolution kernel</strong>: Haussler [234] investigated how to define a kernel between composite objects by building on similarity measures that assess their respective parts; in other words, kernels $k_d$ defined on $\mathcal{X}_d\times \mathcal{X}_d$. Define the R-convolution of $k_1,...,k_D$ as</p>
+<p>$$(k_1*...*k_D)(x,x')=\sum_R\prod_{d=1}^Dk_d(x_d,x_d')$$
+where the sum runs over all possible ways (allowed by R) in which we can decompose $x$ into $x_1,...,x_D$ and $x'$ into $x_1',...,x_D'$. If there is only a finite number of ways,
+the relation R is called finite. In this case, it can be shown that the R-convolutions a valid kernel.  ANOVA kernels have been shown to
+work rather well in multi-dimensional SV regression problems (cf. Chapter 9 and [529])</p>
+</li>
+</ul>
+<h1 id="String-kernel">String kernel<a class="anchor-link" href="#String-kernel">&#182;</a></h1><p>Bag-of words maps a given text to a sparse vector, where each component corresponds to a word, and a component
+is set to one (or some other number) whenever the related word occurs in the text.
+Using an efficient sparse representation, the dot product between two such vectors
+can be computed quickly. Furthermore, this dot product is by construction a valid
+Sparse Vector kernel, referred to as a sparse vector kernel. However, is
+Kernel that it does not take into account the word ordering of a document. Other sparse
+vector kernels are also conceivable, such as one that maps a text to the set of pairs
+of words that are in the same sentence [265,585], or those which look only at pairs
+of words within a certain vicinity with respect to each other</p>
+<p>Another idea is to compare the strings by means of the substrings they contain. The more
+substrings two strings have in common, the more similar they are. The substrings
+need not always be contiguous; that said, the further apart the first and last
+element of a substring are, the less weight should be given to the similarity.
+Remarkably, it is possible to define an efficient kernel which computes the dot product in the feature space spanned by all substrings of documents, with
+a computational complexity that is linear in the lengths of the documents being
+compared, and the length of the substrings. We now describe this kernel, following
+[333].</p>
 
-    </div>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reference: <strong>Learning with kernels</strong> by Bernhard Schölkopf</p>
 
+</div>
+</div>
 </div>
     </div>
   </div>
