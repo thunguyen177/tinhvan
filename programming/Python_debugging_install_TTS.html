@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>package installation errors </title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <h1> Ellie Nguyen </h1>
+        </div>
+    </header>
+
+   <nav id="navbar">
+      <div class="containerblue">
+        <ul>
+          <li><a href="../index.html"> Home</a> </li>
+          <li> <a href="../ML%20and%20stat/index.html"> Data science</a> </li>
+	  <li> <a href="../paper_note/index.html"> Deep learning paper notes</a> </li>
+          <li> <a href="../Fantistics/index.html">Statistics is fun</a> </li>
+          <li> <a href="../programming/index.html">Programming</a> </li>
+        </ul>
+      </div>
+      <div class="containerpink">
+        <ul>
+	  <li> <a href="../vnm%20cul_his/index.html"> Vietnamese culture</a> </li>
+          <li><a href="../Toi%20sang%20tac/index.html">Tác ph?m</a>
+	  <li><a href="../thong_ke_vui/index.html">Vui h?c th?ng kê</a>
+          <li><a href="../goc%20du%20hoc/index.html">Du h?c và ngo?i ng?</a> </li>
+        </ul>
+      </div>
+  </nav>
+    <div class = "searchbar">
+        <script>
+              (function() {
+                var cx = '000342376851758299742:vxnvik3_5yc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+
+<h3> Error debugging while install dependencies for TTS </h3><br> 
+- Can't build wheel for pyworld: download visual studio build from Microsoft, and install the support for windows/desktop.<br> 
+
+- "from grutt import sentences" doesn't work after finishing the installation: grutt is installed as a dependencies while installing TTS. In this case, munually update gruut. <br> 
+
+- Import mecab error while checking dependencies for torch.hub: go to the source file and comment out those lines.<br> 
+ 
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf9633718532342"></script>
+<div class="addthis_inline_share_toolbox"></div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+<div class="fb-comments" data-href="https://ellienguyen.style/" data-width="" data-numposts="5"></div>
+    <footer id="main-footer">
+        <hr color = "black" width="400px">
+            		Copyright &copy; 2019 Ellie Nguyen. All rights reserved.
+	</footer>
+
+</body>
+
+</html>
