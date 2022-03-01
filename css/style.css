@@ -204,17 +204,71 @@ a:visited{
 	height: auto;
 	margin: auto;
 }
-.button{
-  background-color: black;
-  color: white;
-  padding: 10px;
+.button {
+  background-color: #4CAF50; /* Green */
   border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.buttonblue {background-color: #008CBA;} /* Blue */
+.buttonred {background-color: #f44336;} /* Red */ 
+.buttongray {background-color: #e7e7e7; color: black;} /* Gray */ 
+.buttonblack {background-color: #555555;} /* Black */
+
+.buttonborder {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonbordergreen{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.buttonborderblue {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.buttonborderred {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.buttonbordergray {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.buttonborderblack{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
 }
 
 .button:hover{
-  background: red;
+  background: blue
   color: black;
 }
+
 
 .box-right{
   background: papayawhip;
@@ -229,8 +283,6 @@ a:visited{
   border-left: 5px orange solid;
   padding: 20px;
 }
-
-
 
 .boxpink{
     background: lightgoldenrodyellow;
