@@ -1,5 +1,7 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="../Assistant_ghosts.htm"/>
+ <o:File HRef="item0041.xml"/>
+ <o:File HRef="props042.xml"/>
  <o:File HRef="themedata.thmx"/>
  <o:File HRef="colorschememapping.xml"/>
  <o:File HRef="image001.png"/>
@@ -22,5 +24,6 @@
  <o:File HRef="image018.jpg"/>
  <o:File HRef="image019.png"/>
  <o:File HRef="image020.jpg"/>
+ <o:File HRef="header.htm"/>
  <o:File HRef="filelist.xml"/>
 </xml>
