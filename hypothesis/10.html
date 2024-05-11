@@ -1,18 +1,12 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
-<meta name=Originator content="Microsoft Word 15">
+<!-- saved from url=(0086)file:///C:/Users/thung/OneDrive%20-%20OsloMet/Python%20codes/tinhvan/hypothesis/10.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
 <meta name="robots" content="noindex">
-<link rel=File-List href="3_files/filelist.xml">
-<link rel=Edit-Time-Data href="3_files/editdata.mso">
+<link rel="File-List" href="file:///C:/Users/thung/OneDrive%20-%20OsloMet/Python%20codes/tinhvan/hypothesis/10_files/filelist.xml">
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -21,36 +15,37 @@ w\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<title>Sweetness of magic potion (two-side hypothesis testing)</title>
+<title>When to use the z-test or t-test for the mean</title>
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Thi Thu Nguyen</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Thi Thu Nguyen</o:LastAuthor>
   <o:Revision>1</o:Revision>
-  <o:TotalTime>1</o:TotalTime>
-  <o:Created>2024-04-02T09:16:00Z</o:Created>
-  <o:LastSaved>2024-04-02T09:18:00Z</o:LastSaved>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2024-04-02T14:36:00Z</o:Created>
+  <o:LastSaved>2024-04-02T14:36:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>395</o:Words>
-  <o:Characters>1916</o:Characters>
+  <o:Words>364</o:Words>
+  <o:Characters>1952</o:Characters>
   <o:Lines>41</o:Lines>
-  <o:Paragraphs>18</o:Paragraphs>
-  <o:CharactersWithSpaces>2293</o:CharactersWithSpaces>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>2296</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:CustomDocumentProperties>
-  <o:GrammarlyDocumentId dt:dt="string">bc72aeff-449b-49a3-8fdf-fe26e50eeb6a</o:GrammarlyDocumentId>
+  <o:GrammarlyDocumentId dt:dt="string">d7603111-2b52-454c-9a92-3b2f9639cd9c</o:GrammarlyDocumentId>
  </o:CustomDocumentProperties>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=themeData href="3_files/themedata.thmx">
-<link rel=colorSchemeMapping href="3_files/colorschememapping.xml">
+<link rel="themeData" href="file:///C:/Users/thung/OneDrive%20-%20OsloMet/Python%20codes/tinhvan/hypothesis/10_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="file:///C:/Users/thung/OneDrive%20-%20OsloMet/Python%20codes/tinhvan/hypothesis/10_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:PunctuationKerning/>
@@ -1543,34 +1538,60 @@ div.WordSection1
  </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
+<body lang="EN-US" style="tab-interval:.5in;word-wrap:break-word">
 
-<div class=WordSection1>
+<div class="WordSection1">
 
-<h3><a name="_Toc149578056">Sweetness of magic potion (two-side hypothesis
-testing)</a><o:p></o:p></h3>
+<h3><a name="_Toc149578063">When to use the z-test or t-test for the mean</a><o:p></o:p></h3>
 
-<p class=MsoNormal>Let's say you work as a wizard's apprentice, and you are
-responsible for brewing a magic potion. The master checked and claimed that the
-sweetness of the potion is just right, with a mean sweetness level of 8 on a
-scale from 1 to 10. However, you've recently made a change to one element of
-the potion recipe, and you suspect it might have affected the sweetness.<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Here's an example of hypothesis testing to determine if the
-sweetness of the magic potion has changed after the recipe modification. First,
-we set up the hypotheses:<o:p></o:p></p>
+<p class="MsoNormal">When dealing with large samples, usually consisting of 30 or
+more data points, the z-test can be applied with minimal constraints. However,
+if outliers are present and their removal is not justified, it is recommended
+to conduct the hypothesis test both with and without the outliers to assess
+their impact. If the conclusion is affected, consider using an alternative
+method or gathering a new sample.<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>   </span>- Null Hypothesis (<!--[if gte msEquation 12]><m:oMath><m:sSub><m:sSubPr><span
+<p class="MsoNormal">Also, in the case of moderate-sized samples, typically 15-30
+observations, the z-test can be utilized unless the dataset contains outliers
+or if the variable being analyzed significantly deviates from a normal
+distribution. However, <o:p></o:p></p>
+
+<p class="MsoNormal">1. For small samples, typically fewer than 15 data points,
+it is advisable to employ the z-test if the variable in question follows a
+normal distribution or closely approximates it.<o:p></o:p></p>
+
+<p class="MsoNormal">2. If outliers are present, but their removal is justified
+and results in a dataset suitable for the z-test, then you may proceed with the
+z-test.<o:p></o:p></p>
+
+<p class="MsoNormal">3. Some transformations can be applied to turn the data into
+approximately normal, such as <!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r><m:r>&#8594;
+  </m:r></span></i><m:rad><m:radPr><m:degHide m:val="on"/><span
    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif'><m:r>H</m:r></span></i></m:e><m:sub><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>o</m:r></span></i></m:sub></m:sSub></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
+   normal'><m:ctrlPr></m:ctrlPr></span></m:radPr><m:deg></m:deg><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e></m:rad><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+ mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>,
+  </m:r><m:r>x</m:r><m:r>&#8594;</m:r></span></i><m:func><m:funcPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:funcPr><m:fName><span
+   style='font-family:"Cambria Math",serif;mso-fareast-font-family:"Times New Roman";
+   mso-fareast-theme-font:minor-fareast'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+      m:val="p"/></m:rPr>log</m:r></span></m:fName><m:e><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+   "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>x</m:r></span></i></m:e></m:func><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+ mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>,</m:r></span></i></m:oMath><![endif]--><!--[if !msEquation]--><span style="font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
 mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
 minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
 0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
  coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
  filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
@@ -1590,361 +1611,59 @@ mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:16pt;
- height:16.5pt'>
- <v:imagedata src="3_files/image001.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=21 height=22
-src="3_files/image002.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>):
-The mean sweetness of the potion is still 8 after the recipe modification.<o:p></o:p></p>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:111.25pt;
+ height:18pt'>
+ <v:imagedata src="10_files/image001.png" o:title="" chromakey="white"/>
+</v:shape><![endif]--><!--[if !vml]--><img width="148" height="24" src="./10_files/image002.png" v:shapes="_x0000_i1025"><!--[endif]--></span><!--[endif]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast"><span style="mso-spacerun:yes">&nbsp;</span></span>Box-Cox transform, etc.<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>   </span>- Alternative
-Hypothesis (<!--[if gte msEquation 12]><m:oMath><m:sSub><m:sSubPr><span
-   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif'><m:r>H</m:r></span></i></m:e><m:sub><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>A</m:r></span></i></m:sub></m:sSub></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:16pt;height:16.5pt'>
- <v:imagedata src="3_files/image003.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=21 height=22
-src="3_files/image004.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>):
-The mean sweetness of the potion has changed (it's not equal to 8).<o:p></o:p></p>
+<p class="MsoNormal">4. A commonly used graphical tool for assessing normality is
+the Q-Q plot<o:p></o:p></p>
 
-<p class=MsoNormal>In mathematical terms, if we denote <!--[if gte msEquation 12]><m:oMath><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>&#956;</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:8pt;height:16.5pt'>
- <v:imagedata src="3_files/image005.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=11 height=22
-src="3_files/image006.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-style='mso-spacerun:yes'> </span>as the population mean of sweetness level then
-the hypotheses can be written as<o:p></o:p></span></p>
+<p class="MsoNormal">5. Some tests to assess univariate normality can be<o:p></o:p></p>
 
-<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
-    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
-    normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-    "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>H</m:r></span></i></m:e><m:sub><i
-    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>o</m:r></span></i></m:sub></m:sSub><i
-  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-  mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>:</m:r><m:r>&#956;</m:r><m:r>=8</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;mso-font-kerning:0pt;mso-ligatures:none;mso-ansi-language:EN-US;
-mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
- id="_x0000_i1025" type="#_x0000_t75" style='width:56.25pt;height:16.5pt'>
- <v:imagedata src="3_files/image007.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=75 height=22
-src="3_files/image008.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><o:p></o:p></span></p>
+<p class="MsoNormal">Shapiro–Wilk test, <o:p></o:p></p>
 
-<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:sSub><m:sSubPr><span
-    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-    normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
-    normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-    "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>H</m:r></span></i></m:e><m:sub><i
-    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>A</m:r></span></i></m:sub></m:sSub><i
-  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-  mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>:</m:r><m:r>&#956;</m:r><m:r>&#8800;8</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;mso-font-kerning:0pt;mso-ligatures:none;mso-ansi-language:EN-US;
-mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
- id="_x0000_i1025" type="#_x0000_t75" style='width:56pt;height:16.5pt'>
- <v:imagedata src="3_files/image009.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=75 height=22
-src="3_files/image010.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><o:p></o:p></span></p>
+<p class="MsoNormal">Pearson's chi-squared test,<o:p></o:p></p>
 
-<p class=MsoNormal>This is hypothesis for the mean. So, if we can collect at
-least 30 observations, we can use the z-test. So, suppose that you collect a
-random sample of 30 potions, measure their sweetness levels, and found that the
-mean sweetness level is <!--[if gte msEquation 12]><m:oMath><m:acc><m:accPr><m:chr
-    m:val="&#773;"/><span style='font-family:"Cambria Math",serif;mso-ascii-font-family:
-   "Cambria Math";mso-hansi-font-family:"Cambria Math";font-style:italic;
-   mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:accPr><m:e><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e></m:acc><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>=</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:22.25pt;height:16.5pt'>
- <v:imagedata src="3_files/image011.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=22
-src="3_files/image012.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-style='mso-spacerun:yes'> </span></span>8.1, and the standard deviation is <!--[if gte msEquation 12]><m:oMath><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>s</m:r><m:r>=0.5</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:43.25pt;height:16.5pt'>
- <v:imagedata src="3_files/image013.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=58 height=22
-src="3_files/image014.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>.
-</span><span style='mso-spacerun:yes'>  </span><o:p></o:p></p>
+<p class="MsoNormal">Kolmogorov–Smirnov test, <o:p></o:p></p>
 
-<p class=MsoNormal>We set the significance level <!--[if gte msEquation 12]><m:oMath><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>&#945;</m:r><m:r>
-  </m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:12pt;height:16.5pt'>
- <v:imagedata src="3_files/image015.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=16 height=22
-src="3_files/image016.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>=
-0.05.<o:p></o:p></p>
+<p class="MsoNormal">D'Agostino's K-squared test,<o:p></o:p></p>
 
-<p class=MsoNormal>The test statistic is<o:p></o:p></p>
+<p class="MsoNormal">Jarque–Bera test,<o:p></o:p></p>
 
-<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
-  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>Z</m:r><m:r>=</m:r></span></i><m:f><m:fPr><span
-    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-    normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><m:acc><m:accPr><m:chr
-       m:val="&#773;"/><span style='font-family:"Cambria Math",serif;
-      mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
-      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:accPr><m:e><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i></m:e></m:acc><i
-    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>-</m:r><m:r>8</m:r></span></i></m:num><m:den><i
-    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>s</m:r><m:r>/</m:r></span></i><m:rad><m:radPr><m:degHide
-       m:val="on"/><span style='font-family:"Cambria Math",serif;mso-ascii-font-family:
-      "Cambria Math";mso-hansi-font-family:"Cambria Math";font-style:italic;
-      mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:radPr><m:deg></m:deg><m:e><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>n</m:r></span></i></m:e></m:rad></m:den></m:f><i
-  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>=</m:r></span></i><m:f><m:fPr><span
-    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-    mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-    normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-    normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-    "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>8.1-8</m:r></span></i></m:num><m:den><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>0.5</m:r></span></i></m:num><m:den><m:rad><m:radPr><m:degHide
-         m:val="on"/><span style='font-family:"Cambria Math",serif;mso-ascii-font-family:
-        "Cambria Math";mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
-        minor-fareast;mso-hansi-font-family:"Cambria Math";font-style:italic;
-        mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:radPr><m:deg></m:deg><m:e><i
-        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>30</m:r></span></i></m:e></m:rad></m:den></m:f></m:den></m:f><i
-  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-  mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>=1.10</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;mso-font-kerning:0pt;mso-ligatures:none;mso-ansi-language:EN-US;
-mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
- id="_x0000_i1025" type="#_x0000_t75" style='width:167.5pt;height:50pt'>
- <v:imagedata src="3_files/image017.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=223 height=67
-src="3_files/image018.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><o:p></o:p></p>
+<p class="MsoNormal">Anderson–Darling test,<o:p></o:p></p>
 
-<p class=MsoNormal>Note that unlike in previous examples, our alternative
-hypothesis in this case is <!--[if gte msEquation 12]><m:oMath><m:sSub><m:sSubPr><span
-   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-   "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>H</m:r></span></i></m:e><m:sub><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>A</m:r></span></i></m:sub></m:sSub><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
- mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>:</m:r><m:r>&#956;</m:r><m:r>&#8800;8</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:56pt;height:16.5pt'>
- <v:imagedata src="3_files/image009.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=75 height=22
-src="3_files/image010.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>.
-Therefore, the abnormal events can fall on either the left or the right tail of
-the distribution. So, we can visualize the critical regions in relation to
-critical values like this:<o:p></o:p></span></p>
+<p class="MsoNormal">Cramér–von Mises criterion,<o:p></o:p></p>
 
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="line-height:107%"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">6. Suppose you wish to
+conduct a hypothesis test for a population mean with a small sample, but your
+preliminary data analysis reveals either the presence of outliers or a
+departure from normal distribution. In such cases, neither the z-test nor the
+t-test is suitable. However, under specific conditions, you can employ a
+nonparametric method. For instance, if the variable in question exhibits a
+symmetric distribution, you can utilize the Wilcoxon signed-rank test to
+conduct a hypothesis test for the population mean.<o:p></o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center'><span
-style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1332352997"
- o:spid="_x0000_i1025" type="#_x0000_t75" alt="A diagram of a curve&#10;&#10;Description automatically generated"
- style='width:242.5pt;height:165.75pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="3_files/image019.png" o:title="A diagram of a curve&#10;&#10;Description automatically generated"/>
-</v:shape><![endif]--><![if !vml]><img width=323 height=221
-src="3_files/image020.jpg"
-alt="A diagram of a curve&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_1332352997"><![endif]></span><o:p></o:p></p>
+<p class="MsoNormal" style="line-height:107%"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">It's worth noting that
+most nonparametric methods do not rely on approximate normality, are robust
+against outliers and extreme values, and can be applied regardless of sample
+size. However, parametric methods like the z-test and t-test tend to yield more
+accurate results when the assumptions of normality and other prerequisites are
+met.<o:p></o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>In the figure, note that since <!--[if gte msEquation 12]><m:oMath><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>&#945;</m:r><m:r>=0.05</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:53.25pt;height:16.5pt'>
- <v:imagedata src="3_files/image021.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=71 height=22
-src="3_files/image022.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-style='mso-spacerun:yes'> </span>and the abnormal events can fall on either the
-left or the right tail of the distribution. The critical region for each side
-(left/right) is based on </span><!--[if gte msEquation 12]><m:oMath><m:f><m:fPr><span
-   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-   "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>&#945;</m:r></span></i></m:num><m:den><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:den></m:f><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
- mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>=</m:r></span></i><m:f><m:fPr><span
-   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-   "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>0.05</m:r></span></i></m:num><m:den><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:den></m:f><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
- mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>=0.025</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:7.0pt;mso-text-raise:-7.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:96.75pt;height:23.75pt'>
- <v:imagedata src="3_files/image023.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=129 height=32
-src="3_files/image024.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-style='mso-spacerun:yes'> </span>to ensure that the sum of the dotted areas are
-equal to </span><!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:
- normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
- "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>&#945;</m:r><m:r>=0.05</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:53.25pt;height:16.5pt'>
- <v:imagedata src="3_files/image021.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=71 height=22
-src="3_files/image022.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>.
-Also, the standard normal distribution has a bell shape that symmetric around
-the mean 0. Therefore, as the critical value for the right tail is </span><!--[if gte msEquation 12]><m:oMath><m:sSub><m:sSubPr><span
-   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-   "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>z</m:r></span></i></m:e><m:sub><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>0.025</m:r></span></i></m:sub></m:sSub><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
- mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>=1.96</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:76.5pt;height:16.5pt'>
- <v:imagedata src="3_files/image025.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=102 height=22
-src="3_files/image026.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>,
-the critical value for the left tail is </span><!--[if gte msEquation 12]><m:oMath><m:sSub><m:sSubPr><span
-   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-   "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>z</m:r></span></i></m:e><m:sub><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-   mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>0.025</m:r></span></i></m:sub></m:sSub><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
- mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>=-1.96</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:97.5pt;height:16.5pt'>
- <v:imagedata src="3_files/image027.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=130 height=22
-src="3_files/image028.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>.<o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-mso-fareast-theme-font:minor-fareast'>Now, since </span><!--[if gte msEquation 12]><m:oMath><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
- mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>1.96&lt;1.10&lt;1.96</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:125.25pt;height:16.5pt'>
- <v:imagedata src="3_files/image029.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=167 height=22
-src="3_files/image030.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>,
-we see that </span><!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:
- normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
- "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>Z</m:r><m:r>=1.10</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:14.0pt;mso-bidi-font-size:11.0pt;font-family:"Times New Roman",serif;
-mso-fareast-font-family:Aptos;mso-fareast-theme-font:minor-latin;mso-bidi-theme-font:
-minor-bidi;position:relative;top:3.0pt;mso-text-raise:-3.0pt;mso-font-kerning:
-0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
-mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
- style='width:53pt;height:16.5pt'>
- <v:imagedata src="3_files/image031.png" o:title="" chromakey="white"/>
-</v:shape><![endif]--><![if !vml]><img width=71 height=22
-src="3_files/image032.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
-style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-style='mso-spacerun:yes'> </span>does not fall into any of the rejection
-regions. So, from this experiment, you cannot conclude that the sweetness level
-has changed yet.<o:p></o:p></span></p>
+<p class="MsoListParagraph"><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
 
 </div>
 
-</body>
 
-</html>
+
+
+</body></html>
